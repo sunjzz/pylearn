@@ -170,24 +170,25 @@ class Ftp(Comm):
             Comm.user = recv_dict['username']
             if recv_dict['username'] in user_list:
                 if recv_dict['password'] == database[recv_dict['username']][0]:
-                    self.request.send(bytes("登录成功，欢迎！", encoding='utf8'))
+                    self.request.sendall(bytes("登录成功，欢迎！", encoding='utf8'))
                     log(Comm.user, '登录成功！')
                     Comm.user_state = 1
                     Comm.current_path = '%s' % Comm.user
-                    state_code = json.dumps({'user_state': 1})
-                    self.request.send(bytes(state_code, encoding='utf8'))
+                    state_code = json.dumps({"user_state": 1})
+                    print(state_code)
+                    self.request.sendall(bytes(state_code, encoding='utf8'))
                     break
                 else:
-                    self.request.send(bytes("密码错误！", encoding='utf8'))
+                    self.request.sendall(bytes("密码错误！", encoding='utf8'))
                     log(Comm.user, '登录失败，密码错误！')
-                    state_code = json.dumps({'user_state': 0})
-                    self.request.send(bytes(state_code, encoding='utf8'))
+                    state_code = json.dumps({"user_state": 0})
+                    self.request.sendall(bytes(state_code, encoding='utf8'))
                     break
             else:
-                self.request.send(bytes("用户不存在！", encoding='utf8'))
+                self.request.sendall(bytes("用户不存在！", encoding='utf8'))
                 log(Comm.user, '登录失败，用户名不存在！')
-                state_code = json.dumps({'user_state': 0})
-                self.request.send(bytes(state_code, encoding='utf8'))
+                state_code = json.dumps({"user_state": 0})
+                self.request.sendall(bytes(state_code, encoding='utf8'))
                 break
 
     def handle(self):

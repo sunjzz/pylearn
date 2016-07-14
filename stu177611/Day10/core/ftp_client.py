@@ -3,6 +3,8 @@
 import socket
 import json
 import os
+import sys
+import time
 import re
 import getpass
 import hashlib
@@ -38,11 +40,13 @@ class Action:
         data = json.dumps(data)
         c.send(bytes(data, encoding='utf8'))
 
-        auth_msg = c.recv(1024)
+        auth_msg = c.recv(4096)
         print(auth_msg.decode())
 
-        data = c.recv(1024).decode()
-        data = json.loads(data).get('user_state')
+        data = c.recv(4096)
+        data = data.decode()
+        data = json.loads(data)
+        user_state = data.get("user_state")
 
         return data
 
@@ -91,6 +95,7 @@ class Action:
         """
         if os.path.isfile(file_path):
             file_size = os.stat(file_path).st_size
+            print('file_size:',file_size, type(file_size))
             # 对windows和linux路径分隔符不一致做统一处理
             file_name = re.split(r'[\\/]', file_path).pop()
             file_hash = Action.calehash(file_path)
@@ -104,9 +109,22 @@ class Action:
             if confirm_data == '200':
                 print("start sending file ", file_name)
                 f = open(file_path, 'rb')
+                send_size = 0
+                rate = 0
+                old_rate = 0
                 for line in f:
                     c.send(line)
+                    # 根据已传输的大小比例计算进度条 '#' 的个数
+                    send_size += len(line)
+                    rate = send_size * 50 // file_size
+                    # 如果进度条的长度比上次有增加则刷新进度条
+                    if rate - old_rate > 0:
+                        r = '\r%s%s%d%%' % (rate * '#', (50 - rate) * ' ', rate * 2)
+                        sys.stdout.write(r)
+                        sys.stdout.flush()
+                    old_rate = rate
                 recv_data = c.recv(1024).decode()
+                print('\n%s' % '文件上传完成！')
                 print(recv_data)
             else:
                 print(confirm_data)
@@ -129,12 +147,20 @@ class Action:
         print('file:%s size:%s' % (file_path, file_size))
         f = open(file_path, 'wb')
         recv_size = 0
+        rate = 0
+        old_rate = 0
         while recv_size < int(file_size):
             data = c.recv(4096)
             f.write(data)
             recv_size += len(data)
+            rate = recv_size * 50 // int(file_size)
+            if rate - old_rate > 0:
+                r = '\r%s%s%d%%' % (rate * '#', (50 - rate) * ' ', rate * 2)
+                sys.stdout.write(r)
+                sys.stdout.flush()
+            old_rate = rate
         f.close()
-        print("file recv done")
+        print('\n%s' % '文件下载完成！')
         file_hash = c.recv(1024).decode()
         file_comp = Action.calehash(file_path)
         if file_hash == file_comp:
