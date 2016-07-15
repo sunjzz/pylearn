@@ -119,7 +119,7 @@ class Action:
                     rate = send_size * 50 // file_size
                     # 如果进度条的长度比上次有增加则刷新进度条
                     if rate - old_rate > 0:
-                        r = '\r%s%s%d%%' % (rate * '#', (50 - rate) * ' ', rate * 2)
+                        r = '\r[%s%s]%d%%' % (rate * '#', (50 - rate) * ' ', rate * 2)
                         sys.stdout.write(r)
                         sys.stdout.flush()
                     old_rate = rate
@@ -141,32 +141,36 @@ class Action:
         Action.send_data = {'action': 'get', 'file_name': file_path}
         Action.send_data = json.dumps(Action.send_data)
         c.send(bytes(Action.send_data, encoding='utf8'))
-        file_size = json.loads(c.recv(1024).decode()).get('file_size')
-        client_response = {"status": 200}
-        c.send(bytes(json.dumps(client_response), encoding='utf8'))
-        print('file:%s size:%s' % (file_path, file_size))
-        f = open(file_path, 'wb')
-        recv_size = 0
-        rate = 0
-        old_rate = 0
-        while recv_size < int(file_size):
-            data = c.recv(4096)
-            f.write(data)
-            recv_size += len(data)
-            rate = recv_size * 50 // int(file_size)
-            if rate - old_rate > 0:
-                r = '\r%s%s%d%%' % (rate * '#', (50 - rate) * ' ', rate * 2)
-                sys.stdout.write(r)
-                sys.stdout.flush()
-            old_rate = rate
-        f.close()
-        print('\n%s' % '文件下载完成！')
-        file_hash = c.recv(1024).decode()
-        file_comp = Action.calehash(file_path)
-        if file_hash == file_comp:
-            print('文件校验一致!')
+        data = c.recv(1024)
+        if data.decode() != '404':
+            file_size = json.loads(c.recv(1024).decode()).get('file_size')
+            client_response = {"status": 200}
+            c.send(bytes(json.dumps(client_response), encoding='utf8'))
+            print('file:%s size:%s' % (file_path, file_size))
+            f = open(file_path, 'wb')
+            recv_size = 0
+            rate = 0
+            old_rate = 0
+            while recv_size < int(file_size):
+                data = c.recv(4096)
+                f.write(data)
+                recv_size += len(data)
+                rate = recv_size * 50 // int(file_size)
+                if rate - old_rate > 0:
+                    r = '\r[%s%s]%d%%' % (rate * '#', (50 - rate) * ' ', rate * 2)
+                    sys.stdout.write(r)
+                    sys.stdout.flush()
+                old_rate = rate
+            f.close()
+            print('\n%s' % '文件下载完成！')
+            file_hash = c.recv(1024).decode()
+            file_comp = Action.calehash(file_path)
+            if file_hash == file_comp:
+                print('文件校验一致!')
+            else:
+                print('文件校验不一致！请重传！')
         else:
-            print('文件校验不一致！请重传！')
+            print('文件不存在！')
 
     @staticmethod
     def comm_mkdir(file_path):
