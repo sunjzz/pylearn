@@ -130,20 +130,36 @@ class Comm(socketserver.BaseRequestHandler):
         file_name = args[0].get('file_name')
         file_path = '%s/%s' % (Comm.current_path, file_name)
         if os.path.exists(file_path):
-            file_size = os.stat('%s%s/%s' % (settings.DATA_DIR, user_name, file_name)).st_size
-            file_info = {'file_size': file_size}
-            self.request.send(bytes(json.dumps(file_info), encoding='utf8'))
-            client_confirmation_msg = self.request.recv(1024)
-            confirm_data = json.loads(client_confirmation_msg.decode())
-            f = open('%s%s/%s' % (settings.DATA_DIR, user_name, file_name), 'rb')
-            send_size = 0
-            if confirm_data['status'] == 200:
-                for line in f:
-                    self.request.send(line)
-                print("file send done")
-            f.close()
-            file_hash = Comm.calehash('%s%s/%s' % (settings.DATA_DIR, user_name, file_name))
-            self.request.send(bytes("%s" % file_hash, encoding='utf8'))
+            self.request.send(bytes('200', encoding='utf8'))
+            file_info = json.loads(self.request.recv(1024).decode())
+            if file_info['file_status'] == '401':
+                file_size = file_info['file_size']
+                client_confirmation_msg = self.request.recv(1024)
+                confirm_data = json.loads(client_confirmation_msg.decode())
+                f = open('%s%s/%s' % (settings.DATA_DIR, user_name, file_name), 'rb')
+                f.seek(file_size)
+                if confirm_data['status'] == 200:
+                    for line in f:
+                        self.request.send(line)
+                    print("file send done")
+                f.close()
+                file_hash = Comm.calehash('%s%s/%s' % (settings.DATA_DIR, user_name, file_name))
+                self.request.send(bytes("%s" % file_hash, encoding='utf8'))
+
+            else:
+                file_size = os.stat('%s%s/%s' % (settings.DATA_DIR, user_name, file_name)).st_size
+                file_info = {'file_size': file_size}
+                self.request.send(bytes(json.dumps(file_info), encoding='utf8'))
+                client_confirmation_msg = self.request.recv(1024)
+                confirm_data = json.loads(client_confirmation_msg.decode())
+                f = open('%s%s/%s' % (settings.DATA_DIR, user_name, file_name), 'rb')
+                if confirm_data['status'] == 200:
+                    for line in f:
+                        self.request.send(line)
+                    print("file send done")
+                f.close()
+                file_hash = Comm.calehash('%s%s/%s' % (settings.DATA_DIR, user_name, file_name))
+                self.request.send(bytes("%s" % file_hash, encoding='utf8'))
         else:
             self.request.send(bytes('404', encoding='utf8'))
         log(Comm.user, 'get %s/%s' % (Comm.current_path, file_name))
