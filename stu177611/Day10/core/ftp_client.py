@@ -32,7 +32,8 @@ class Action:
         """
         c.send(bytes('login', encoding='utf8'))
         username = input("用户名：").strip()
-        password = getpass.getpass("密码: ")
+        # password = getpass.getpass("密码: ")
+        password = input("密码: ")
         password_auth = hashlib.md5(password.encode('utf-8'))
         pwd = password_auth.hexdigest()
 
@@ -110,7 +111,6 @@ class Action:
                 print("start sending file ", file_name)
                 f = open(file_path, 'rb')
                 send_size = 0
-                rate = 0
                 old_rate = 0
                 for line in f:
                     c.send(line)
