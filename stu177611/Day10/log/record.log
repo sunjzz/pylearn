@@ -49,4 +49,7 @@
 2016-07-15 01:40:28,460 - ftp_logger - INFO - admin - 登录成功！
 2016-07-15 01:40:52,736 - ftp_logger - INFO - admin - get admin/test.zip
 2016-07-15 01:43:52,333 - ftp_logger - INFO -  - 注册成功！
-2016-07-15 11:55:29,110 - ftp_logger - INFO - admin - 登录成功！
+2016-07-16 11:14:27,999 - ftp_logger - INFO - admin - 登录成功！
+2016-07-16 11:14:29,989 - ftp_logger - INFO - admin - ls admin/
+2016-07-16 11:14:47,656 - ftp_logger - INFO - admin - cd admin
+2016-07-16 11:14:51,958 - ftp_logger - INFO - admin - ls admin/

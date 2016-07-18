@@ -129,7 +129,6 @@ class Comm(socketserver.BaseRequestHandler):
         user_name = args[0].get('username')
         file_name = args[0].get('file_name')
         file_path = '%s/%s' % (Comm.current_path, file_name)
-        print(file_path)
         if os.path.exists(file_path):
             self.request.send(bytes('200', encoding='utf8'))
             file_info = json.loads(self.request.recv(1024).decode())
@@ -138,7 +137,7 @@ class Comm(socketserver.BaseRequestHandler):
                 client_confirmation_msg = self.request.recv(1024)
                 confirm_data = json.loads(client_confirmation_msg.decode())
                 f = open('%s%s/%s' % (settings.DATA_DIR, user_name, file_name), 'rb')
-                f.seek(file_size, 1)
+                f.seek(file_size)
                 if confirm_data['status'] == 200:
                     for line in f:
                         self.request.send(line)

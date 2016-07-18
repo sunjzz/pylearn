@@ -1,3 +1,169 @@
+<<<<<<< .mine
+"""Author ZhengZhong,Jiang"""
+
+import os
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from conf import settings
+import socketserver
+import subprocess
+import json
+
+
+class Comm:
+
+    def comm_cd(self, *args, **kwargs):
+        user_path = args[0]
+
+    def comm_mkdir(self, *args, **kwargs):
+        pass
+
+    def comm_ls(self, *args, **kwargs):
+        res = subprocess.Popen(data.decode(), shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        cmd_res = res.stdout.read()
+        if not cmd_res:
+            cmd_res = res.stderr.read()
+        else:
+            if len(cmd_res):
+                cmd_res = bytes("\n", encoding='utf-8')
+
+    def comm_put(self, *args, **kwargs):
+        filename = args[0].get('filename')
+        filesize = args[0].get('filesize')
+        server_response = {"status": 200}
+        self.request.send(bytes(json.dumps(server_response), encoding='utf-8'))
+        f = open(filename, 'wb')
+        recv_size = 0
+        while recv_size < filesize:
+            data = self.request.recv(4096)
+            f.write(data)
+            recv_size += len(data)
+            print('filesize: %s  recvsize:%s' % (filesize, recv_size))
+        print("file recv success")
+        f.close()
+
+
+class Ftp(Comm, socketserver.BaseRequestHandler):
+
+    def auth(self):
+        while True:
+            database = json.load(open("%s/user.db" % settings.DB_DIR,'r'))
+            print(database)
+            data = self.request.recv(1024)
+            print(data.decode())
+            recv_dict = json.loads(data.decode(), encoding='utf-8')
+            print(recv_dict['username'])
+            print(database.keys())
+            if recv_dict['username'] in database.keys():
+                if recv_dict['password'] == database[recv_dict['username']]:
+                    self.user_state = 1
+                else:
+                    print("密码错误！")
+            else:
+                print("用户不存在！")
+
+    def handle(self):
+        self.auth()
+        if self.user_state == 1:
+            while True:
+                data = self.request.recv(1024)
+                if len(data) == 0:break
+                print('[%s] says: %s' % (self.client_address, data.decode()))
+                task_data = json.loads(data.decode())
+                task_action = task_data.get("action")
+                if hasattr(self, "comm_%s" % task_action):
+                    func = getattr(self, "comm_%s" % task_action)
+                    func(task_data)
+                else:
+                    print("task action is not supported", task_action)
+
+if __name__ == '__main__':
+    server = socketserver.ThreadingTCPServer(('0.0.0.0',8000),Ftp)
+    server.serve_forever()
+||||||| .r2042
+"""Author ZhengZhong,Jiang"""
+
+import os
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from conf import settings
+import socketserver
+import subprocess
+import json
+
+
+class Comm:
+
+    def comm_cd(self, *args, **kwargs):
+        user_path = args[0]
+
+    def comm_mkdir(self, *args, **kwargs):
+        pass
+
+    def comm_ls(self, *args, **kwargs):
+        res = subprocess.Popen(data.decode(), shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        cmd_res = res.stdout.read()
+        if not cmd_res:
+            cmd_res = res.stderr.read()
+        else:
+            if len(cmd_res):
+                cmd_res = bytes("\n", encoding='utf-8')
+
+    def comm_put(self, *args, **kwargs):
+        filename = args[0].get('filename')
+        filesize = args[0].get('filesize')
+        server_response = {"status": 200}
+        self.request.send(bytes(json.dumps(server_response), encoding='utf-8'))
+        f = open(filename, 'wb')
+        recv_size = 0
+        while recv_size < filesize:
+            data = self.request.recv(4096)
+            f.write(data)
+            recv_size += len(data)
+            print('filesize: %s  recvsize:%s' % (filesize, recv_size))
+        print("file recv success")
+        f.close()
+
+
+
+class Ftp(Comm, socketserver.BaseRequestHandler):
+
+    def auth(self):
+        while True:
+            database = json.load(open("%s/user.db" % settings.DB_DIR,'r'))
+            print(database)
+            data = self.request.recv(1024)
+            print(data.decode())
+            recv_dict = json.loads(data.decode(), encoding='utf-8')
+            print(recv_dict['username'])
+            print(database.keys())
+            if recv_dict['username'] in database.keys():
+                if recv_dict['password'] == database[recv_dict['username']]:
+                    self.user_state = 1
+                else:
+                    print("密码错误！")
+            else:
+                print("用户不存在！")
+
+    def handle(self):
+        self.auth()
+        if self.user_state == 1:
+            while True:
+                data = self.request.recv(1024)
+                if len(data) == 0:break
+                print('[%s] says: %s' % (self.client_address, data.decode()))
+                task_data = json.loads(data.decode())
+                task_action = task_data.get("action")
+                if hasattr(self, "comm_%s" % task_action):
+                    func = getattr(self, "comm_%s" % task_action)
+                    func(task_data)
+                else:
+                    print("task action is not supported", task_action)
+
+if __name__ == '__main__':
+    server = socketserver.ThreadingTCPServer(('0.0.0.0',8000),Ftp)
+    server.serve_forever()
+=======
 """Author ZhengZhong,Jiang"""
 
 import os
@@ -220,3 +386,4 @@ def start():
     initialize()
     server = socketserver.ThreadingTCPServer(('0.0.0.0', 8000), Ftp)
     server.serve_forever()
+>>>>>>> .r2224
