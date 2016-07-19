@@ -5,13 +5,13 @@ import threading
 import queue
 import time
 
-q = queue.Queue(20)
+q = queue.Queue(5)
 
 
 def f1(args):
-    while True:
-        print(q.put(args), q.get(args), '包子')
-        time.sleep(2)
+    q.put(args)
+    # print(q.put(args), q.get(args), '包子')
+    time.sleep(2)
 
 for i in range(30):
     c = threading.Thread(target=f1, args=(i, ))
@@ -21,6 +21,7 @@ for i in range(30):
 def f2(args):
     while True:
         q.get(args)
+        print(q.put(args), q.get(args), '包子')
 
 count = 0
 while True:
