@@ -10,8 +10,8 @@ q = queue.Queue(5)
 
 def f1(args):
     q.put(args)
-    # print(q.put(args), q.get(args), '包子')
     time.sleep(2)
+
 
 for i in range(30):
     c = threading.Thread(target=f1, args=(i, ))
@@ -28,4 +28,7 @@ while True:
     count += 1
     s = threading.Thread(target=f2, args=(count, ))
     s.start()
+
+while True:
+    s = threading
 
