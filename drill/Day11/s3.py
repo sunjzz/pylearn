@@ -9,7 +9,11 @@ q = queue.Queue(5)
 
 
 def f1(args):
+<<<<<<< HEAD
     q.put(args)
+=======
+    q.put(str(args) + '- 包子')
+>>>>>>> 6d7a8d84ebc01d793c689eda74f2b180e9be15b2
     time.sleep(2)
 
 
@@ -20,8 +24,7 @@ for i in range(30):
 
 def f2(args):
     while True:
-        q.get(args)
-        print(q.put(args), q.get(args), '包子')
+        print(args, q.get(args))
 
 count = 0
 while True:
