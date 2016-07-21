@@ -9,12 +9,7 @@ q = queue.Queue(5)
 
 
 def f1(args):
-<<<<<<< HEAD
-    q.put(args)
-=======
-    q.put(str(args) + '- 包子')
->>>>>>> 6d7a8d84ebc01d793c689eda74f2b180e9be15b2
-    time.sleep(2)
+    q.put('%s - 包子' % str(args))
 
 
 for i in range(30):
@@ -24,14 +19,12 @@ for i in range(30):
 
 def f2(args):
     while True:
-        print(args, q.get(args))
+        print(args, q.get())
+        time.sleep(2)
+        if q.qsize() == 0:
+            break
 
-count = 0
-while True:
-    count += 1
-    s = threading.Thread(target=f2, args=(count, ))
+for i in range(3):
+    s = threading.Thread(target=f2, args=(i, ))
     s.start()
-
-while True:
-    s = threading
 
