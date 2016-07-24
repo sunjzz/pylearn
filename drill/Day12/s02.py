@@ -7,7 +7,6 @@ import socket
 
 
 @contextlib.contextmanager
-def func(host, port):
 def fu(host, port):
     sk = socket.socket()
     sk.bind((host, port))
