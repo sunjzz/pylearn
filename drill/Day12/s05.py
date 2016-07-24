@@ -4,5 +4,5 @@
 
 import s03
 
-obj = redisHelper()
+obj = s03.redisHelper()
 obj.public('hello!', 'fm103.7')
