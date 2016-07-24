@@ -5,7 +5,8 @@
 import contextlib
 import socket
 
-def func(host, port):
+
+def fu(host, port):
     sk = socket.socket()
     sk.bind((host, port))
     sk.listen(5)
@@ -14,5 +15,5 @@ def func(host, port):
     finally:
         sk.close()
 
-with func('127.0.0.1', 8888) as f:
+with fu('127.0.0.1', 8888) as f:
     print(f)
