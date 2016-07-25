@@ -4,10 +4,13 @@
 
 list = [11, 22, 33, 44, 55]
 
-n = 0
-def f(n):
-    n += 1
-    yield list[n]
 
-for i in f:
+def f(n):
+    n = -1
+    while n<len(list)-1:
+        n += 1
+        yield list[n]
+
+
+for i in f(len(list)):
     print(i)
