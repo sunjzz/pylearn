@@ -4,7 +4,7 @@
 
 import pika
 
-conn = pika.BlockingConnection(pika.ConnectionParameters(host='12.12.11.137'))
+conn = pika.BlockingConnection(pika.ConnectionParameters(host='12.12.11.140'))
 
 channel = conn.channel()
 
