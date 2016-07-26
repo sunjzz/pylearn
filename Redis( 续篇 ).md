@@ -296,13 +296,125 @@ exchange type = direct
 
 之前示例，发送消息时明确指定某个队列并向其中发送消息，RabbitMQ还支持根据关键字发送，即：队列绑定关键字，发送者将数据根据关键字发送到消息exchange，exchange根据关键字判定应该将数据发送至指定队列。
 
+生产者：
+
 ```
 import pika
 conn = pika.BlocakingConnection(pika.ConnectionParameters(host='12.12.11.140'))
 chan = conn.channel()
 
 chan.exchange_declare(exchange='sayhello', type='direct')
-r
+severity = 'error'
+message = '123'
+chan.basic_publish(exchange='sayhello, routing_key=severity, body=message')
+print("[x] Sent %r:%r" % (severity, message))
+conn.close()
+```
 
+消费者一：
+
+```
+import pika
+conn = pika.BlockingConnection(pika.ConnnetionParameters(hosts='12.12.11.140'))
+chan = conn.channel()
+
+chan.exchange_declare(exchange='sayhello', type='direct')
+result = chan.queue_declare(exclusive=True)
+queue_name = result.method.queue
+
+severities = ['error', ]
+for severity in severities:
+	chan.queue_bind(exchange='sayhello', queue=queue_name, routing_key=severity)
+	print("[*] Waiting for logs. To exit press CTRL+C.")
+def callback(ch, method, properties, body):
+	print("[x] %r:%r" % (method.routing_key, body))
+	
+chan.basic_consume(callback, queue=queue_name, no_ack=True)
+chan.start_consuming()
+```
+
+消费者二：
+
+```
+import pika
+conn = pika.BlockingConnection(pika.ConnnetionParameters(hosts='12.12.11.140'))
+chan = conn.channel()
+
+chan.exchange_declare(exchange='sayhello', type='direct')
+result = chan.queue_declare(exclusive=True)
+queue_name = result.method.queue
+
+severities = ['error', 'warning', 'info' ]
+for severity in severities:
+	chan.queue_bind(exchange='sayhello', queue=queue_name, routing_key=severity)
+	print("[*] Waiting for logs. To exit press CTRL+C.")
+def callback(ch, method, properties, body):
+	print("[x] %r:%r" % (method.routing_key, body))
+	
+chan.basic_consume(callback, queue=queue_name, no_ack=True)
+chan.start_consuming()
+```
+
+6, 模糊匹配
+
+exchange type = topic
+
+在topic类型下，可以让队列绑定几个模糊的关键字，之后发送者将数据发送到exchange，exchange将传入”路由值“和 ”关键字“进行匹配，匹配成功，则将数据发送到指定队列。
+
+\# 表示可以0个或多个单词
+
+\* 表示只能匹配一个单词
+
+eg:
+
+| 发送者路由值         | 队列中   | 结果   |
+| -------------- | ----- | ---- |
+| old.boy.python | old.* | 不匹配  |
+| old.boy.python | old.# | 匹配   |
+
+生产者：
+
+```
+import pika
+
+conn = pika.BlockingConnection(pika.ConnectionParameters(host='12.12.11.140'))
+chan = conn.channel()
+
+chan.exchange_declare(exchange='sayhello', type='topic')
+routing_key = 'old.boy.python'
+message = 'Hello World! '
+chan.basic_publish(exchange='sayhello', routing_key=routing_key, body=message)
+print("[x] Sent %r:%r" % (routing_key, message))
+conn.close()
+```
+
+消费者：
+
+```
+import pika
+import sys
+
+conn = pika.BlockingConnnection(pika.ConnectionParameters(host='12.12.11.140'))
+chan = conn.channel()
+chan.exchange_declare(exchange='sayhello', type='topic')
+
+result = chan.queue_declare(exclusive=True)
+queue_name = result.method.queue
+
+binding_keys = 'old.#'
+if not binding_keys:
+	sys.stderr.write("Usage: %s [binding_keys]... \n" % sys.argv[0])
+	sys.exit[1]
+
+for binding_key in binding_keys:
+	chan.queue_bind(exchange='say_hello', queue=queue_name, routing_key=binding_key)
+	
+print("[*] Waiting for logs. To exit press CTRL+C.")
+
+def callback(ch, method, properties, body):
+	print("[x] %r:%r" % (method.routing_key, body))
+
+chan.basic_consume(callback, queue=queue_name, no_ack=True)
+chan.start_consuming()
 ```
 
