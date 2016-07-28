@@ -33,7 +33,7 @@ class Rpcclient(object):
 
         while self.reponse == None:
             self.conn.process_data_events()
-        return str(self.reponse)
+        return str(self.reponse, encoding='utf8')
 
 cmd_rpc = Rpcclient()
 
@@ -41,7 +41,7 @@ command = input('Please input Command >>> ').strip()
 print("[x] Requesting cmd '%s'" % command)
 
 response = cmd_rpc.call(command)
-print("[.] Got %r \n%s " % (command, response))
+print("[.] Got %r \n %s " % (command, response))
 
 
 

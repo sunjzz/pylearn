@@ -18,14 +18,16 @@ def run(cmd):
     if not len(run_info):
         run_info = run_cmd.stderr.read()
     if len(run_info) == 0:
-        run_info = "cmd has output"
-    print(str(run_info, encoding='utf8'))
+        run_info = bytes("cmd has output", encoding='gbk')
+    print(run_info)
+    run_info = str(run_info, encoding='gbk')
+    print(run_info)
     return run_info
 
 
 def on_request(ch, method, props, body):
     print("[.] Run Command: %s" % body.decode())
-    response = run(body.decode())
+    response = run(str(body, encoding='utf8'))
 
     ch.basic_publish(exchange='',
                      routing_key=props.reply_to,
