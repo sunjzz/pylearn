@@ -72,7 +72,3 @@ print(ret[0].id)
 # session.add_all()
 
 
-
-
-
-

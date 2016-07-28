@@ -418,3 +418,150 @@ chan.basic_consume(callback, queue=queue_name, no_ack=True)
 chan.start_consuming()
 ```
 
+### PyMySQL 和 SQLAlchemy
+
+###### PyMySQL
+
+使用python操作mysql数据库的模块pymysql， pymysql和mysqldb用法差不多，如果对性能要求不是特别强，使用pymysql更加方便，这里只介绍pymysql的用法。
+
+安装： pip3 install pymysql
+
+```
+import pymysql
+
+conn = pymysql.connect(host='12.12.11.140', port=3306, user='root', passwd='python', db='pylearn')
+cusor = conn.cursor(cusor=pymysql.cursors.DictCursor)
+cursor.execute("select * from test")
+
+row_1 = cursor.fetchone()	# 获取第一行数据
+row_many = cusor.fetchmany(3)	# 获取前3行数据
+
+cursor.scroll(-2, mode='relative') # 指针相对上移两行
+row_all = cusor.fetchall()	# 获取所有数据
+
+conn.commit()
+cursor.close()
+conn.close()
+```
+
+**说明：**scroll(self, value, mode='relative'):移动指针到某一行.如果mode='relative',则表示从当前所在行移动value条,如果mode='absolute',则表示从结果集的第一 行移动value条。
+
+###### SQLAlchemy
+
+SQLAlchemy是Python编程语言下的一款ORM框架，该框架建立在数据库API之上，使用关系对象映射进行数据库操作，简言之便是：将对象转换成SQL，然后使用数据API执行SQL并获取执行结果。
+
+![img](http://images2015.cnblogs.com/blog/425762/201601/425762-20160117042127803-263417768.png)
+
+Dialect用于和数据API进行交流，根据配置文件的不同调用不同的数据库API，从而实现对数据库的操作。
+
+```
+MySQL-Python
+    mysql+mysqldb://<user>:<password>@<host>[:<port>]/<dbname>
+ 
+pymysql
+    mysql+pymysql://<username>:<password>@<host>/<dbname>[?<options>]
+ 
+MySQL-Connector
+    mysql+mysqlconnector://<user>:<password>@<host>[:<port>]/<dbname>
+ 
+cx_Oracle
+    oracle+cx_oracle://user:pass@host:port/dbname[?key=value&key=value...]
+```
+
+更多[参考官网](http://docs.sqlalchemy.org/en/latest/dialects/index.html)
+
+步骤一：
+
+使用 Engine/ConnectionPooling/Dialect 进行数据库操作，Engine使用ConnectionPooling连接数据库，然后再通过Dialect执行SQL语句
+
+步骤二：
+
+使用 Schema Type/SQL Expression Language/Engine/ConnectionPooling/Dialect 进行数据库操作。Engine使用Schema Type创建一个特定的结构对象，之后通过SQL Expression Language将该对象转换成SQL语句，然后通过 ConnectionPooling 连接数据库，再然后通过 Dialect 执行SQL，并获取结果。
+
+[详细参考1](http://www.jianshu.com/p/e6bba189fcbd)
+
+[详细参考2](http://docs.sqlalchemy.org/en/latest/core/expression_api.html)
+
+**说明：**SQLAlchemy无法修改表结构，如果需要可以使用SQLAlchemy开发者开源的另外一个软件Alembic来完成。
+
+步骤三：
+
+使用 ORM/Schema Type/SQL Expression Language/Engine/ConnectionPooling/Dialect 所有组件对数据进行操作。根据类创建对象，对象转换成SQL，执行SQL。
+
+```
+# Author:Alex Li
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, Integer, String, ForeignKey, UniqueConstraint, Index
+from sqlalchemy.orm import sessionmaker, relationship
+from sqlalchemy import create_engine
+
+engine = create_engine("mysql+pymysql://root:123@127.0.0.1:3306/s13", max_overflow=5)
+
+Base = declarative_base()
+
+# 创建单表
+class Users(Base):
+    __tablename__ = 'users'
+    id = Column(Integer, primary_key=True)
+    name = Column(String(32))
+    extra = Column(String(16))
+
+    __table_args__ = (
+    UniqueConstraint('id', 'name', name='uix_id_name'),
+        Index('ix_id_name', 'name', 'extra'),
+    )
+
+# 一对多
+class Favor(Base):
+    __tablename__ = 'favor'
+    nid = Column(Integer, primary_key=True)
+    caption = Column(String(50), default='red', unique=True)
+
+
+class Person(Base):
+    __tablename__ = 'person'
+    nid = Column(Integer, primary_key=True)
+    name = Column(String(32), index=True, nullable=True)
+    favor_id = Column(Integer, ForeignKey("favor.nid"))
+
+# 多对多
+class ServerToGroup(Base):
+    __tablename__ = 'servertogroup'
+    nid = Column(Integer, primary_key=True, autoincrement=True)
+    server_id = Column(Integer, ForeignKey('server.id'))
+    group_id = Column(Integer, ForeignKey('group.id'))
+
+class Group(Base):
+    __tablename__ = 'group'
+    id = Column(Integer, primary_key=True)
+    name = Column(String(64), unique=True, nullable=False)
+
+
+class Server(Base):
+    __tablename__ = 'server'
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    hostname = Column(String(64), unique=True, nullable=False)
+    port = Column(Integer, default=22)
+
+# Base.metadata.create_all(engine)
+# Base.metadata.drop_all(engine)
+
+Session = sessionmaker(bind=engine)
+session = Session()
+
+# obj = Users(name='alex111',extra='sss')
+# session.add(obj)
+# session.commit()
+q = session.query(Users)
+print(q)
+ret = session.query(Users).all()
+print(ret[0].name)
+print(ret[0].id)
+
+# session.commit()
+# session.add_all()
+```
+
+### Paramiko
+
