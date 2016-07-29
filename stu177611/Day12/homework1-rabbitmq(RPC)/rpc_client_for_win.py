@@ -23,7 +23,7 @@ class Rpcclient(object):
 
     def call(self, cmd):
         self.reponse = None
-        self.corr_id = str(uuid.uuid3(uuid.NAMESPACE_OID, self.callback_queue))
+        self.corr_id = str(uuid.uuid4())
         self.chan.basic_publish(exchange='',
                                 routing_key='rpc_queue',
                                 properties=pika.BasicProperties(
