@@ -565,3 +565,126 @@ print(ret[0].id)
 
 ### Paramiko
 
+**SSHClient**
+
+用于连接远程服务器并执行基本命令
+
+密码认证：
+
+```
+import paramiko
+  
+# 创建SSH对象
+ssh = paramiko.SSHClient()
+# 允许连接不在know_hosts文件中的主机
+ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+# 连接服务器
+ssh.connect(hostname='c1.salt.com', port=22, username='root', password='123456')
+  
+# 执行命令
+stdin, stdout, stderr = ssh.exec_command('df')
+# 获取命令结果
+result = stdout.read()
+  
+# 关闭连接
+ssh.close()
+```
+
+使用封装Transport方式：
+
+```
+import paramiko
+
+transport = paramiko.Transport('hostname', 22)
+transport.connect(username='root', password='123456')
+
+ssh = paramiko.SSHClient()
+ssh._transport = transport
+
+stdin, stdout, stderr = ssh.exec_command('df')
+print stdout.read()
+
+transport.close()
+```
+
+密钥认证：
+
+```
+import paramiko
+ 
+private_key = paramiko.RSAKey.from_private_key_file('/home/auto/.ssh/id_rsa')
+ 
+# 创建SSH对象
+ssh = paramiko.SSHClient()
+# 允许连接不在know_hosts文件中的主机
+ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+# 连接服务器
+ssh.connect(hostname='c1.salt.com', port=22, username='root', key=private_key)
+ 
+# 执行命令
+stdin, stdout, stderr = ssh.exec_command('df')
+# 获取命令结果
+result = stdout.read()
+ 
+# 关闭连接
+ssh.close()
+```
+
+使用封装Transport方式：
+
+```
+import paramiko
+
+private_key = paramiko.RSAKey.from_private_key_file('/home/auto/.ssh/id_rsa')
+
+transport = paramiko.Transport(('hostname', 22))
+transport.connect(username='wupeiqi', pkey=private_key)
+
+ssh = paramiko.SSHClient()
+ssh._transport = transport
+
+stdin, stdout, stderr = ssh.exec_command('df')
+
+transport.close()
+```
+
+**SFTPClient**
+
+用于连接远程服务器并执行上传下载
+
+**基于密码认证上传下载**
+
+```
+import paramiko
+ 
+transport = paramiko.Transport('hostname',22)
+transport.connect(username='root',password='123456')
+ 
+sftp = paramiko.SFTPClient.from_transport(transport)
+# 将location.py 上传至服务器 /tmp/test.py
+sftp.put('/tmp/location.py', '/tmp/test.py')
+# 将remove_path 下载到本地 local_path
+sftp.get('remove_path', 'local_path')
+ 
+transport.close()
+```
+
+**基于公钥密钥上传下载**
+
+```
+import paramiko
+ 
+private_key = paramiko.RSAKey.from_private_key_file('/home/auto/.ssh/id_rsa')
+ 
+transport = paramiko.Transport('hostname', 22)
+transport.connect(username='wupeiqi', pkey=private_key )
+ 
+sftp = paramiko.SFTPClient.from_transport(transport)
+# 将location.py 上传至服务器 /tmp/test.py
+sftp.put('/tmp/location.py', '/tmp/test.py')
+# 将remove_path 下载到本地 local_path
+sftp.get('remove_path', 'local_path')
+ 
+transport.close()
+```
+

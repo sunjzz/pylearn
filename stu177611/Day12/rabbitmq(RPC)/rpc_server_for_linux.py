@@ -18,19 +18,20 @@ def run(cmd):
     if not len(run_info):
         run_info = run_cmd.stderr.read()
     if len(run_info) == 0:
-        run_info = bytes("cmd has output", encoding='gbk')
-    print(run_info)
-    run_info = str(run_info, encoding='gbk')
+        run_info = bytes("cmd has output", encoding='utf8')
+    run_info=str(run_info, encoding='utf8')
     print(run_info)
     return run_info
 
 
 def on_request(ch, method, props, body):
     print("[.] Run Command: %s" % body.decode())
-    response = run(str(body, encoding='utf8'))
+    response = run(body.decode())
 
     ch.basic_publish(exchange='',
+                     # 消息返回的队列路由
                      routing_key=props.reply_to,
+                     # 封装消息ID，用于校验
                      properties=pika.BasicProperties(
                          correlation_id=props.correlation_id, ),
                      body=response)
