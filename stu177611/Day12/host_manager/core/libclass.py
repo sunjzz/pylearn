@@ -38,7 +38,7 @@ class Manager(ServiceLine, Host):
             ret = session.query(table).filter_by(condition).all()
         else:
             ret = session.query(table).all()
-        if 
+        if
         print(ret)
         session.commit()
 
