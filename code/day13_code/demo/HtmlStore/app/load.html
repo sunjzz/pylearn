@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .shade{
+            position:fixed;z-index:1040;top:0;left:0;right:0;bottom:0;background-color:#999;filter:alpha(opacity=50); -moz-opacity:0.5;opacity:0.5;
+        }
+
+        .loading{
+            position:fixed;z-index:1050;top:40%;left:50%;height:32px;width:32px;margin:0 0 0 -16px;background:url(../img/loading.gif);
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- 遮罩层开始 -->
+    <div id='shade' class='shade'></div>
+    <!-- 遮罩层结束 -->
+    <!-- 加载层开始 -->
+    <div id='loading' class='loading'></div>
+    <!-- 加载层结束 -->
+
+
+</body>
+</html>
