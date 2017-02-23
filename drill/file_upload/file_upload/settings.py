@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'pkg_requests.urls'
+ROOT_URLCONF = 'file_upload.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'pkg_requests.wsgi.application'
+WSGI_APPLICATION = 'file_upload.wsgi.application'
 
 
 # Database
