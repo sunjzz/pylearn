@@ -3,13 +3,17 @@
  */
 
 window.onload = function () {
-    var obj = ele("button");
-    bind(obj, "click", function () {
-        upload();
+    var obj1 = ele("button1");
+    bind(obj1, "click", function () {
+        upload_ajax();
+    });
+    var obj2 = ele("button2");
+        bind(obj2, "click", function () {
+        upload_jquery();
     });
 };
 
-function upload() {
+function upload_ajax() {
     var form = new FormData();
     form.append("file", ele("file").files[0]);
 
@@ -24,6 +28,21 @@ function upload() {
     xhr.send(form);
 }
 
+function upload_jquery() {
+    var form  = new FormData();
+    form.append("file", $("#file")[0].files[0]);
+    $.ajax({
+        type: "POST",
+        url: "/index/",
+        data: form,
+        processData: false, //不做字典到字符串的转换
+        contentType: false, //请求头
+        success: function (arg) {
+            console.log(arg)
+        }
+    });
+}
+
 function bind(obj, type, fun) {
     return obj.addEventListener(type, fun, false);
 }
@@ -31,4 +50,6 @@ function bind(obj, type, fun) {
 function ele(eleId) {
     return document.getElementById(eleId);
 }
+
+
 
