@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 import os
 
 # Create your views here.
@@ -10,4 +10,5 @@ def index(request):
         for chunk in file.chunks():
             f.write(chunk)
         f.close()
+        return HttpResponse('OK!')
     return render(request, 'index.html')
