@@ -2,6 +2,8 @@ from django.shortcuts import render,HttpResponse
 import requests
 import os
 
+
+
 def index(request):
     if request.method == 'POST':
         file_obj = request.FILES.get('file')

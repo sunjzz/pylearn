@@ -1,5 +1,5 @@
 """
-WSGI config for file_upload project.
+WSGI config for pkg_requests project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
