@@ -16,8 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from website import views
+from django.conf.urls import include
 
 urlpatterns = [
+    url(r'^website/', include('website.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^index/', views.index),
+    url(r'^disk/', views.disk),
+    url(r'^moment_input', views.moment_input),
 ]
