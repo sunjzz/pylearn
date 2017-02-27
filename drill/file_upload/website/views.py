@@ -44,5 +44,6 @@ def moment_input(request):
         form = MomentForm()
     PROJECT_ROOT =  os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     print(PROJECT_ROOT)
+    print(form)
     return render(request, os.path.join(PROJECT_ROOT, 'templates', 'moment_input.html'),
                   {'form': form})
