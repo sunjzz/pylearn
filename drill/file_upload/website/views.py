@@ -31,7 +31,7 @@ def disk(request):
     return render_to_response('disk.html', {'uf': uf})
 
 def welcome(request):
-    return HttpResponse('<h1>杨文欢迎你！</h1>')
+    return HttpResponse('<h1>欢迎你！</h1>')
 
 def moment_input(request):
     if request.method == 'POST':
@@ -39,7 +39,7 @@ def moment_input(request):
         if form.is_valid():
             moment = form.save()
             moment.save()
-            return HttpResponseRedirect(reverse("website.views.welcome"))
+            return HttpResponseRedirect(reverse('welcome'))
     else:
         form = MomentForm()
     PROJECT_ROOT =  os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
