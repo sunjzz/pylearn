@@ -67,23 +67,19 @@ class ArgvHandler(object):
                 args = args[1:]
                 url_with_args = "%s?%s" %(url,args)
                 try:
-                    req = urllib2.Request(url_with_args)
-                    req_data = urllib2.urlopen(req,timeout=settings.Params['request_timeout'])
-                    callback = req_data.read()
+                    callback = requests.get(url_with_args,timeout=settings.Params['request_timeout'])
+                    callback = callback.json()
                     print("-->server response:",callback)
                     return callback
-                except urllib2.URLError as e:
+                except requests.exceptions.RequestException as e:
                     sys.exit("\033[31;1m%s\033[0m"%e)
             elif method == "post":
                 try:
-                    data_encode = urllib.urlencode(data)
-                    req = urllib2.Request(url=url,data=data_encode)
-                    res_data = urllib2.urlopen(req,timeout=settings.Params['request_timeout'])
-                    callback = res_data.read()
-                    callback = json.loads(callback)
+                    callback = requests.get(url, params=data, timeout=settings.Params['request_timeout'])
+                    callback = callback.json()
                     print("\033[31;1m[%s]:[%s]\033[0m response:\n%s" %(method,url,callback))
                     return callback
-                except Exception as e:
+                except requests.exceptions.RequestException as e:
                     sys.exit("\033[31;1m%s\033[0m"%e)
         else:
             raise KeyError
@@ -98,7 +94,7 @@ class ArgvHandler(object):
         if os.path.isfile(asset_id_file):
             asset_id = open(asset_id_file).read().strip()
             if asset_id.isdigit():
-                return  asset_id
+                return asset_id
             else:
                 has_asset_id =  False
         else:
@@ -107,7 +103,7 @@ class ArgvHandler(object):
     def __update_asset_id(self,new_asset_id):
         asset_id_file = settings.Params['asset_id']
         f = open(asset_id_file,"wb")
-        f.write(str(new_asset_id))
+        f.write(str(new_asset_id).encode('utf-8'))
         f.close()
 
 
