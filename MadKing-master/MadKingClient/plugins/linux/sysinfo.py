@@ -6,7 +6,6 @@ import os,sys,subprocess
 import re
 
 
-
 def collect():
     filter_keys = ['Manufacturer','Serial Number','Product Name','UUID','Wake-up Type']
     raw_data = {}
@@ -18,7 +17,7 @@ def collect():
             cmd_res = cmd_res.strip()
 
             res_to_list = cmd_res.split(':')
-            if len(res_to_list)> 1:#the second one is wanted string
+            if len(res_to_list)> 1: #the second one is wanted string
                 raw_data[key] = res_to_list[1].strip()
             else:
 

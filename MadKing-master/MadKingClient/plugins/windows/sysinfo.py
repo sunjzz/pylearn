@@ -3,11 +3,10 @@ __author__ = 'Alex Li'
 
 
 import platform
-import pypiwin32_system32
+import win32com
 import wmi
 import os
 
-obj = pypiwin32_system32
 
 def collect():
     data = {

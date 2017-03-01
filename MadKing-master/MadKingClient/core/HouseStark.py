@@ -131,7 +131,7 @@ class ArgvHandler(object):
         self.log_record(response)
 
     def log_record(self,log,action_type=None):
-        f = file(settings.Params["log_file"],"ab")
+        f = open(settings.Params["log_file"],"a")
         if log is str:
             pass
         if type(log) is dict:

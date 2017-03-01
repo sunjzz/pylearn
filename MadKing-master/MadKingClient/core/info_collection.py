@@ -25,7 +25,7 @@ class InfoCollection(object):
             formatted_data = self.build_report_data(info_data)
             return formatted_data
         except AttributeError as e:
-            sys.exit("Error:MadKing doens't support os [%s]! " % os_platform)
+            sys.exit("Error:MadKing doesn't support os [%s]! " % os_platform)
     def Linux(self):
         sys_info = plugin_api.LinuxSysInfo()
 
