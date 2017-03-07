@@ -5,9 +5,6 @@ from website.forms import MomentForm
 import os
 # Create your views here.
 
-class UserForm(forms.Form):
-    user_name = forms.CharField()
-    user_info = forms.FileField()
 
 
 def index(request):

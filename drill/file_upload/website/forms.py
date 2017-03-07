@@ -1,5 +1,12 @@
 from django.forms import ModelForm, ValidationError
+from django import forms
 from website.models import Moment
+
+
+class UserForm(forms.Form):
+    user_name = forms.CharField()
+    user_info = forms.FileField()
+
 
 class MomentForm(ModelForm):
     class Meta:

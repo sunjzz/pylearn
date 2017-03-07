@@ -33,6 +33,3 @@ class MyAdminSite(admin.AdminSite):
 admin_site = MyAdminSite()
 admin_site.register(models.Moment, MomentAdmin)
 
-
-
-
