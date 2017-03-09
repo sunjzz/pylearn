@@ -4,9 +4,6 @@ import sys
 import copy
 
 
-sys.setrecursionlimit(100000)
-
-
 def call_time(func):
     def wrapper(*args,  **kwargs):
         t1 = time.time()
@@ -60,6 +57,7 @@ def insert_sort(data):
         while j >= 0 and data[j] > tmp:
             data[j+1] = data[j]
             j -= 1
+        print(j)
         data[j+1] = tmp
     return data
 
@@ -69,6 +67,7 @@ def quick_sort(data, left, right):
         mid = partition(data, left, right)
         quick_sort(data, left, mid - 1)
         quick_sort(data, mid + 1, right)
+    return data
 
 
 def partition(data, left, right):
@@ -88,17 +87,12 @@ def partition(data, left, right):
 def quick_sort_x(data):
     return quick_sort(data, 0, len(data)-1)
 
+sys.setrecursionlimit(100000)
+data = list(range(1000))
+data2 = [5, 4, 7, 8, 2, 3, 1, 9]
+# random.shuffle(data)
+data.reverse()
+insert_sort(data2)
+print(data2)
+quick_sort_x(data)
 
-data = list(range(5012))
-random.shuffle(data)
-data1 = copy.deepcopy(data)
-data2 = copy.deepcopy(data)
-data3 = copy.deepcopy(data)
-data4 = copy.deepcopy(data)
-data5 = copy.deepcopy(data)
-# bubble_sort(data1)
-# bubble_sort_v(data2)
-# choice_sort(data3)
-# insert_sort(data4)
-print("source:", data5)
-quick_sort_x(data5)
