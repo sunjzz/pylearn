@@ -87,6 +87,9 @@ def partition(data, left, right):
 def quick_sort_x(data):
     return quick_sort(data, 0, len(data)-1)
 
+
+
+
 sys.setrecursionlimit(100000)
 data = list(range(1000))
 data2 = [5, 4, 7, 8, 2, 3, 1, 9]
