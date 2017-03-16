@@ -1,6 +1,13 @@
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+# @Time     : 2017/3/16 0016 下午 15:33
+# @Author   : ZhengZhong,Jiang
+
+data = [5, 4, 7, 8, 2, 3, 1, 9]
+
 
 def bubble_sort(data):
-    for i in range(len(data)-1):
+    for i in range(len(data) - 1):
         flag = True
         for j in range(len(data) - i - 1):
             if data[j] > data[j+1]:
@@ -17,41 +24,42 @@ def choice_sort(data):
         for j in range(i + 1, len(data)):
             if data[i] > data[j]:
                 min_loc = j
-        data[i], data[min_loc] = data[min_loc], data[i]
     return data
 
 
 def insert_sort(data):
-    for i in range(1, len(data)-1):
+    for i in range(len(data)):
         tmp = data[i]
         j = i - 1
-        while j >= 0 and data[j] > data[i]:
+        while j >= 0 and data[j] > tmp:
             data[j+1] = data[j]
             j -= 1
         data[i] = tmp
     return data
 
 
-def recursion(data, left, right):
+def quick_sort(data, left, right):
     if left < right:
-        mid = quick_sort(data, left, right)
-        recursion(data, left, mid - 1)
-        recursion(data, mid + 1, right)
+        mid = partition(data, left, right)
+        quick_sort(data, left, mid - 1)
+        quick_sort(data, mid + 1, right)
     return data
 
 
-def quick_sort(data, left, right):
+def partition(data, left, right):
     tmp = data[left]
-    while left < right and data[right] >= tmp:
-        right -= 1
-    while left < right and data[left] <= tmp:
-        left += 1
+    while left < right:
+        while left < right and data[right] >= tmp:
+            right -= 1
+        data[left] = data[right]
+        while left < right and data[left] <= tmp:
+            left += 1
+        data[right] = data[left]
     data[left] = tmp
     return left
 
-
-data = [1, 5, 2, 4, 9, 7, 8]
 print(bubble_sort(data))
 print(choice_sort(data))
 print(insert_sort(data))
-print(recursion(data, 0, 6))
+print(quick_sort(data, 0, 7))
+
