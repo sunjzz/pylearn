@@ -58,6 +58,34 @@ def partition(data, left, right):
     data[left] = tmp
     return left
 
+
+def adjust_heap(data,i,size):
+    lchild = 2 * i + 1
+    rchild = 2 * i + 1
+    max_loc = i
+    if i < size/2:
+        if lchild < size and data[lchild] > data[max_loc]:
+            max_loc = lchild
+        if rchild < size and data[rchild] > data[max_loc]:
+            max_loc = rchild
+        if max_loc != i:
+            data[max_loc], data[i] = data[i], data[max_loc]
+        adjust_heap(data, max_loc, size)
+
+
+def build_heap(data, size):
+    for i in range(0, size)[::-1]:
+        adjust_heap(data, i, size)
+
+
+def heap_sort(data):
+    size = len(data)
+    build_heap(data, size)
+    for i in range(0, size)[::-1]:
+        data[0], data[i] = data[i], data[0]
+        adjust_heap(data, i, size)
+
+
 print(bubble_sort(data))
 print(choice_sort(data))
 print(insert_sort(data))
