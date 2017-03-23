@@ -5,10 +5,14 @@
 
 import xadmin
 
-from .models import EmailVerifyRecord
+from .models import EmailVerifyRecord, UserProfile
 
 class EmailVerifyRecordAdmin(object):
     pass
 
 
+class UserProfileAdmin(object):
+    pass
+
 xadmin.site.register(EmailVerifyRecord, EmailVerifyRecordAdmin)
+xadmin.site.register(UserProfile, UserProfileAdmin)

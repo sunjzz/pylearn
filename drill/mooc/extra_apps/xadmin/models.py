@@ -147,7 +147,8 @@ class Log(models.Model):
     ip_addr = models.GenericIPAddressField(_('action ip'), blank=True, null=True)
     content_type = models.ForeignKey(
         ContentType,
-        models.SET_NULL,
+        models.SET_DEFAULT,
+        default= None,
         verbose_name=_('content type'),
         blank=True, null=True,
     )
