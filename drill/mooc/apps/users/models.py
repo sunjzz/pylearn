@@ -36,8 +36,8 @@ choice_send_type = (
 class EmailVerifyRecord(models.Model):
     code = models.CharField(max_length=20, verbose_name=u"验证码")
     email = models.EmailField(max_length=50, verbose_name=u"邮箱")
-    send_type = models.CharField(choices=choice_send_type, max_length=10)
-    send_time = models.DateField(default=datetime.now) #实例化时间
+    send_type = models.CharField(choices=choice_send_type, max_length=10, verbose_name=u"验证码类型")
+    send_time = models.DateTimeField(default=datetime.now, verbose_name=u"发送时间") #实例化时间
 #   send_time = models.DateField(default=datetime.now()) 注意这种写法时间是models编译时间
 
     class Meta:
