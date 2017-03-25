@@ -6,7 +6,8 @@
 import xadmin
 from xadmin import  views
 
-from .models import EmailVerifyRecord, Banner
+
+from .models import EmailVerifyRecord, Banner, UserProfile
 
 
 class BaseSetting(object):
@@ -19,10 +20,7 @@ class GlobalSetting(object):
     site_footer = u"CCVT" #页脚
     menu_style = "accordion" #左侧栏收缩功能
 
-<<<<<<< HEAD
-=======
-from .models import EmailVerifyRecord, UserProfile
->>>>>>> 805612d10b9c7ea265f35d3a69f41c802b452307
+
 
 class EmailVerifyRecordAdmin(object):
     list_display = ['code', 'email', 'send_type', 'send_time']
@@ -36,15 +34,8 @@ class BannerAdmin(object):
     list_filter = ['title', 'image', 'url', 'index', 'add_time']
 
 
-<<<<<<< HEAD
+
 xadmin.site.register(EmailVerifyRecord, EmailVerifyRecordAdmin)
 xadmin.site.register(Banner, BannerAdmin)
 xadmin.site.register(views.BaseAdminView, BaseSetting)
 xadmin.site.register(views.CommAdminView, GlobalSetting)
-=======
-class UserProfileAdmin(object):
-    pass
-
-xadmin.site.register(EmailVerifyRecord, EmailVerifyRecordAdmin)
-xadmin.site.register(UserProfile, UserProfileAdmin)
->>>>>>> 805612d10b9c7ea265f35d3a69f41c802b452307
