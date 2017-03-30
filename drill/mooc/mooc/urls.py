@@ -5,7 +5,7 @@ from django.views.generic import TemplateView
 import xadmin
 
 
-from users.views import LoginView
+from users.views import LoginView, RegisterView
 
 urlpatterns = [
     # Examples:
@@ -15,7 +15,7 @@ urlpatterns = [
     url(r'^xadmin/', include(xadmin.site.urls)),
     url('^$', TemplateView.as_view(template_name="index.html"), name="index"),
     url(r'^login/$', LoginView.as_view(), name= "login"),
-    # url('^register/$', RegisterView.as_view(), name="register"),
-
+    url('^register/$', RegisterView.as_view(), name="register"),
+    url(r'^captcha/', include('captcha.urls')),
 
 ]
