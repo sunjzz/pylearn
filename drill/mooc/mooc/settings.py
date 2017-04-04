@@ -49,6 +49,7 @@ INSTALLED_APPS = (
     'xadmin',
     'crispy_forms',
     'captcha',
+    'pure_pagination',
 )
 
 AUTH_USER_MODEL = "users.UserProfile"
@@ -123,9 +124,13 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
-EMAIL_HOST = "smtp.163.com"
+EMAIL_HOST = "smtp.sina.com"
 EMAIL_PORT = 25
-EMAIL_HOST_USER = "sun_jzz@hotmail.com"
-EMAIL_HOST_PASSWORD = "Exlogin01"
+EMAIL_HOST_USER = "zhengzhongbox@sina.com"
+EMAIL_HOST_PASSWORD = "key@1234"
 EMAIL_USE_TLS = False
-EMAIL_FROM = "sun_jzz@hotmail.com"
+EMAIL_FROM = "zhengzhongbox@sina.com"
+
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
