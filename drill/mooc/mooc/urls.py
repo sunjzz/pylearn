@@ -1,7 +1,7 @@
 from django.conf.urls import include, url
 from django.contrib import admin
 from django.views.generic import TemplateView
-from django.views.static import serve
+from django.views.static import serve #
 
 import xadmin
 
@@ -28,7 +28,7 @@ urlpatterns = [
     url(r'^modify_pwd/$', ModifyPwdView.as_view(), name="modify_pwd"),
 
     #course org list
-    url(r'^org_list/$', OrgView.as_view(), name="org_list"),
+    url(r'^org/', include('organization.urls', namespace="org")),
 
     # config upload files access path.
     url(r'^media/(?P<path>.*)/$', serve, {"document_root": MEDIA_ROOT})
