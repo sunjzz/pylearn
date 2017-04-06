@@ -1,9 +1,9 @@
 # _*_ encoding: utf-8 _*_
 from datetime import datetime
 
-
 from django.db import models
 
+from organization.models import CourseOrg
 # Create your models here.
 
 
@@ -15,6 +15,7 @@ choice_degree = (
 
 
 class Course(models.Model):
+    course_org = models.ForeignKey(CourseOrg, verbose_name=u"课程机构", null=True, blank=True)
     name = models.CharField(max_length=50, verbose_name=u"课程名称")
     desc = models.CharField(max_length=300, verbose_name=u"课程描述")
     detail = models.TextField(verbose_name=u"课程详情")

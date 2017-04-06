@@ -51,13 +51,13 @@
                     {% for course_org in all_orgs.object_list %}
                         <dl class="des difdes">
                             <dt>
-                                <a href="org-detail-homepage.html">
+                                <a href="{% url 'org:org_home' course_org.id %}">
                                     <img width="200" height="120" class="scrollLoading" data-url="{{ MEDIA_URL }}{{ course_org.image }}" src="{% static 'images/error-img.png' %}"/>
                                 </a>
                             </dt>
                             <dd>
                                 <div class="clearfix">
-                                     <a href="org-detail-homepage.html">
+                                     <a href="{% url 'org:org_home' course_org.id %}">
                                          <h1>{{ course_org.name }}</h1>
                                          <div class="pic fl">
                                                  <img src="{% static 'images/authentication.png' %}"/>
@@ -149,13 +149,14 @@
                 data:$('#jsStayForm').serialize(),
                 async: true,
                 success: function(data) {
+                    console.log(data);
                     if(data.status == 'success'){
                         $('#jsStayForm')[0].reset();
                         alert("提交成功")
                     }else if(data.status == 'fail'){
                         $('#jsCompanyTips').html(data.msg)
                     }
-                },
+                }
             });
         });
     })
