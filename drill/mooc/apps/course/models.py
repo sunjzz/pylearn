@@ -25,11 +25,31 @@ class Course(models.Model):
     fav_nums = models.IntegerField(default=0, verbose_name=u"收藏人数")
     image = models.ImageField(upload_to="course/%Y/%m", verbose_name=u"封面图", max_length=100)
     click_nums = models.IntegerField(default=0, verbose_name=u"点击数")
+    category = models.CharField(max_length=20, verbose_name=u"课程类别", default='')
     add_time = models.DateTimeField(default=datetime.now, verbose_name=u"添加时间")
 
     class Meta:
         verbose_name = u"课程表"
         verbose_name_plural = verbose_name
+
+    def __unicode__(self):
+        return self.name
+
+    def get_lesson_nums(self):
+        '''
+        获取这门课程的章节数
+        :return: 
+        '''
+        return self.lesson_set.all().count()
+
+    def get_student(self):
+        '''
+        学习这门课程的用户有哪些
+        ps: 该方法可以在前端调用，前端可以调用不带参数的方法
+        :return: 
+        '''
+        return self.usercourse_set.all()[:5]
+
 
 
 class Lesson(models.Model):
@@ -41,6 +61,9 @@ class Lesson(models.Model):
         verbose_name = u"章节"
         verbose_name_plural = verbose_name
 
+    def __unicode__(self):
+        return self.name
+
 
 class Video(models.Model):
     lesson = models.ForeignKey(Lesson, verbose_name=u"视频")
@@ -50,6 +73,9 @@ class Video(models.Model):
     class Meta:
         verbose_name = u"视频"
         verbose_name_plural = verbose_name
+
+    def __unicode__(self):
+        return self.name
 
 
 class CourseResource(models.Model):
@@ -61,6 +87,9 @@ class CourseResource(models.Model):
     class Meta:
         verbose_name = u"课程资源"
         verbose_name_plural = verbose_name
+
+    def __unicode__(self):
+        return self.name
 
 
 
