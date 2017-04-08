@@ -4,6 +4,7 @@ from django.views.generic.base import View
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 
 from course.models import Course
+from operation.models import UserFavorite
 # Create your views here.
 
 
@@ -43,6 +44,28 @@ class CourseDetailView(View):
         course = Course.objects.get(id = int(course_id))
         course.click_nums += 1
         course.save()
+
+        tag = course.tag
+        if tag:
+            relate_courses = Course.objects.filter(tag=tag)[:1]
+        else:
+            relate_courses = []
+
+        has_fav_course = False
+        has_fav_org = False
+
+        if request.user.is_authenticated():
+            if UserFavorite.objects.filter(user=request.user, fav_id=course.id, fav_type=1):
+                has_fav_course = True
+
+            if UserFavorite.objects.filter(user=request.user, fav_id=course.course_org.id, fav_type=2):
+                has_fav_org = True
+        print(relate_courses)
         return render(request, 'course-detail.html', {
             'course': course,
+            'relate_courses': relate_courses,
+            'has_fav_course': has_fav_course,
+            'has_fav_org': has_fav_org
         })
+
+
