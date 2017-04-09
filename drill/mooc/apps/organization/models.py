@@ -47,10 +47,6 @@ class CourseOrg(models.Model):
         return self.name
 
 
-    def get_techer_nums(self):
-        return self.teacher_set.count()
-
-
 class Teacher(models.Model):
     org = models.ForeignKey(CourseOrg, verbose_name=u"所属机构")
     name = models.CharField(max_length=50, verbose_name=u"教师名称")

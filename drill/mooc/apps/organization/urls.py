@@ -3,7 +3,7 @@
 # @DataTime 2017/4/5 0005 下午 17:15
 
 from django.conf.urls import url, include
-from .views import OrgView, AddUserAskView, OrgHomeView, OrgCourseView, OrgDescView, OrgTeacherView, AddFavView
+from .views import OrgView, AddUserAskView, OrgHomeView, OrgCourseView, OrgDescView, OrgTeacherView, AddFavView, TeacherView
 
 urlpatterns = [
     url(r'list/$', OrgView.as_view(), name="org_list"),
@@ -15,4 +15,5 @@ urlpatterns = [
 
     # 机构收藏
     url(r'^add_fav/$', AddFavView.as_view(), name="add_fav"),
+    url(r'^teacher_list/$', TeacherView.as_view(), name="teacher_list"),
 ]

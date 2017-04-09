@@ -187,4 +187,13 @@ class AddFavView(View):
                 return HttpResponse('{"status": "fail", "msg": "收藏出错"}', content_type='application/json')
 
 
-
+class TeacherView(View):
+    def get(self, request):
+        all_teachers = models.Teacher.objects.all()
+        teachers_nums = all_teachers.count()
+        sort_conditon = request.GET.get("sort", "add_times")
+        all_teachers = all_teachers.order_by("-{0}".format(sort_conditon))
+        return render(request, 'teachers-list.html', {
+            'all_teachers': all_teachers,
+            'teachers_nums': teachers_nums
+        })
