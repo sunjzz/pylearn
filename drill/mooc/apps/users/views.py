@@ -13,6 +13,10 @@ from django.views.generic.base import View
 import models
 from forms import LoginForm,RegisterForm,ForgetForm,ModifyPwdForm
 from utils.email_send import send_register_email
+from utils.mixin_utils import LoginRequiredMixin
+
+from .models import UserProfile
+from .forms import UploadImageForm
 
 
 class CustomBackend(ModelBackend):
@@ -122,6 +126,24 @@ class ModifyPwdView(View):
             return render(request, "password_reset.html", {"email": email, "modify_form": modify_form})
 
 
-class UserinfoView(View):
-    pass
+class UserInfoView(LoginRequiredMixin, View):
+    def get(self, request):
+        user = UserProfile.objects.get(id = request.user.id)
+        return render(request, 'usercenter-info.html', {
+            "user": user
+        })
+
+    def post(self, request):
+        print(request.POST)
+        user = UserProfile.objects.get(id=request.user.id)
+        user.nick_name = request.POST.get('nick_name', user.nick_name)
+        user.brithday = request.POST.get('birth_day', user.brithday)
+        user.gender = request.POST.get('gender', user.gender)
+        user.address = request.POST.get('address', user.address)
+        user.mobile = request.POST.get('mobile', user.mobile)
+        user.email = request.POST.get('email', user.email)
+        user.save()
+        return render(request, 'usercenter-info.html', {
+            'user': user
+        })
 

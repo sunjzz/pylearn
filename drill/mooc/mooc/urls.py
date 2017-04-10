@@ -33,6 +33,9 @@ urlpatterns = [
     # course org list
     url(r'^course/', include('course.urls', namespace="course")),
 
+    # user list
+    url(r'^user/', include('users.urls', namespace="user")),
+
     # config upload files access path.
     url(r'^media/(?P<path>.*)/$', serve, {"document_root": MEDIA_ROOT})
 ]

@@ -4,9 +4,10 @@
 
 from django.conf.urls import url, include
 
-from .views import UserinfoView
+from .views import UserInfoView
 
 
 urlpatterns = [
-    url(r'info/$', UserinfoView.as_view(), name='user_info')
+    url(r'^info/$', UserInfoView.as_view(), name='user_info'),
+    url(r'^image/upload/$', UserInfoView.as_view(), name='image_upload'),
 ]
