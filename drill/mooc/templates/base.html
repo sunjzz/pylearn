@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
-	<title>{% block title %}在线首页{% endblock %}</title>
+	<title>{% block title %}首页{% endblock %}</title>
 	<link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
@@ -19,23 +19,25 @@
 		<div  class=" header">
  			<div class="top">
 				<div class="wp">
-					<div class="fl"><p>服务电话：<b>33333333</b></p></div>
+					<div class="fl">
+                        <p>联系方式：<b>3333333333</b></p>
+                    </div>
                     {% if request.user.is_authenticated %}
                         <div class="personal">
                             <dl class="user fr">
                                 <dd>{{ request.user.username }}<img class="down fr" src="{% static 'images/top_down.png' %}"/></dd>
-                                <dt><img width="20" height="20" src="{{ MEDIA_URL }}{{ requset.user.image }}"/></dt>
+                                <dt><img width="20" height="20" src="{{ MEDIA_URL }}{{ request.user.image }}"/></dt>
                             </dl>
                             <div class="userdetail">
                                 <dl>
-                                    <dt><img width="80" height="80" src="{{ MEDIA_URL }}{{ requset.user.image }}"/></dt>
+                                    <dt><img width="80" height="80" src="{{ MEDIA_URL }}{{ request.user.image }}"/></dt>
                                     <dd>
-                                        <h2>{{ request.user.username }}</h2>
+                                        <h2>{{ request.user.nick_name }}</h2>
                                         <p>{{ request.user.username }}</p>
                                     </dd>
                                 </dl>
                                 <div class="btn">
-                                    <a class="personcenter fl" href="{% url 'user:user_home' %}">进入个人中心</a>
+                                    <a class="personcenter fl" href="{% url 'user:user_info' %}">进入个人中心</a>
                                     <a class="fr" href="/logout/">退出</a>
                                 </div>
                             </div>
@@ -44,7 +46,7 @@
                         <a style="color:white" class="fr registerbtn" href="{% url 'register' %}">注册</a>
                         <a style="color:white" class="fr loginbtn" href="{% url 'login' %}">登录</a>
                     {% endif %}
-                </div>
+				</div>
             </div>
             <div class="middle">
                 <div class="wp">

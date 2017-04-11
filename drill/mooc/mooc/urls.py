@@ -18,7 +18,7 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^xadmin/', include(xadmin.site.urls)),
-    url('^$', TemplateView.as_view(template_name="index.html"), name="index"),
+    url(r'^$', TemplateView.as_view(template_name="index.html"), name="index"),
     url(r'^login/$', LoginView.as_view(), name= "login"),
     url(r'^register/$', RegisterView.as_view(), name="register"),
     url(r'^captcha/', include('captcha.urls')),
@@ -27,13 +27,13 @@ urlpatterns = [
     url(r'^reset/(?P<forget_code>.*)/$', ResetView.as_view(), name="reset_pwd"),
     url(r'^modify_pwd/$', ModifyPwdView.as_view(), name="modify_pwd"),
 
-    #course org list
+    # course org list
     url(r'^org/', include('organization.urls', namespace="org")),
 
-    # course org list
+    # course list
     url(r'^course/', include('course.urls', namespace="course")),
 
-    # user list
+    # user center
     url(r'^user/', include('users.urls', namespace="user")),
 
     # config upload files access path.

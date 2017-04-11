@@ -10,7 +10,7 @@
         <div class="wp">
             <ul  class="crumbs">
                 <li><a href="{% url 'index' %}">首页</a>></li>
-                <li><a href="{% url 'user:user_home' %}">个人中心</a>></li>
+                <li><a href="{% url 'user:user_info' %}">个人中心</a>></li>
                 <li>个人信息</li>
             </ul>
         </div>
@@ -26,7 +26,7 @@
         <div class="inforcon">
             <div class="left" style="width:242px;">
                 <iframe id='frameFile' name='frameFile' style='display: none;'></iframe>
-                <form class="clearfix" id="jsAvatarForm" enctype="multipart/form-data" autocomplete="off" method="post" action="/users/image/upload/" target='frameFile'>
+                <form class="clearfix" id="jsAvatarForm" enctype="multipart/form-data" autocomplete="off" method="post" action="{% url 'user:image_upload' %}" target='frameFile'>
                     <label class="changearea" for="avatarUp">
                         <span id="avatardiv" class="pic">
                             <img width="100" height="100" class="js-img-show" id="avatarShow" src="{{ MEDIA_URL }}{{ user.image }}"/>
@@ -42,14 +42,14 @@
                     <a class="button btn-green btn-w100" id="jsUserResetPwd" style="margin:80px auto;width:100px;">修改密码</a>
                 </div>
             </div>
-            <form class="perinform" id="jsEditUserForm" autocomplete="off" method="post" href="{% url 'user:user_home' %}">
+            <form class="perinform" id="jsEditUserForm" autocomplete="off" method="post" href="{% url 'user:user_info' %}">
                 <ul class="right">
                     <li>昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：
                        <input type="text" name="nick_name" id="nick_name" value="{{ user.nick_name }}" maxlength="10">
                         <i class="error-tips"></i>
                     </li>
                     <li>生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日：
-                       <input type="text" id="birth_day" name="birday" value="{{ user.brithday }}" readonly="readonly"/>
+                       <input type="text" id="birth_day" name="birthday" value="{{ user.birthday|default_if_none:'' }}" readonly="readonly"/>
                         <i class="error-tips"></i>
                     </li>
                     <li>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：
