@@ -4,7 +4,7 @@
 from django import forms
 from captcha.fields import CaptchaField
 
-from .models import UserProfile
+from .models import UserProfile, EmailVerifyRecord
 
 
 class LoginForm(forms.Form):
@@ -44,3 +44,4 @@ class UpdateUserEmailForm(forms.ModelForm):
     class Meta:
         model = UserProfile
         fields = ['email']
+

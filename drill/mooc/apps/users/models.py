@@ -27,6 +27,9 @@ class UserProfile(AbstractUser):
     # def __unicode__(self):
     #     return self.nick_name
 
+    def get_msg_nums(self):
+        self.usermessage_set.all().count()
+
 
 choice_send_type = (
     ("register", "注册"),

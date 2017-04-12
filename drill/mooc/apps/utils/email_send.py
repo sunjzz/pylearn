@@ -14,10 +14,6 @@ os.environ['DJANGO_SETTINGS_MODULE'] = 'mooc.settings'
 def send_register_email(email, send_type="register"):
     email_record = EmailVerifyRecord()
     random_str = generic_random_str(16)
-    email_record.code = random_str
-    email_record.email = email
-    email_record.send_type = send_type
-    email_record.save()
 
     email_title = ""
     email_body = ""
@@ -30,11 +26,16 @@ def send_register_email(email, send_type="register"):
         email_title = u"重置密码链接"
         email_body = u"请点击下面链接重置密码：http://127.0.0.1:8000/reset/{0}".format(random_str)
     elif send_type == 'update':
+        random_str = generic_random_str(8)
         email_title = u"修改邮箱地址验证码"
-        email_body = u"验证码：{0}".format(generic_random_str())
+        email_body = u"验证码：{0}".format(random_str)
+    email_record.code = random_str
+    email_record.email = email
+    email_record.send_type = send_type
+    email_record.save()
     send_status = send_mail(email_title, email_body, EMAIL_FROM, [email], )
     if send_status:
-        pass
+        return random_str
 
 
 
