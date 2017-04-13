@@ -29,6 +29,7 @@ org_choice = (
 class CourseOrg(models.Model):
     name = models.CharField(max_length=50, verbose_name=u"机构名称")
     desc = models.TextField(verbose_name=u"机构描述")
+    tag = models.CharField(max_length=10, verbose_name=u"机构标签", default="全国知名")
     category = models.CharField(max_length=20, choices=org_choice, default="pxjg", verbose_name=u"机构类别")
     click_nums = models.IntegerField(default=0, verbose_name=u"点击数")
     fav_nums = models.IntegerField(default=0, verbose_name=u"收藏数")

@@ -21,3 +21,4 @@ urlpatterns = [
 
     url(r'^msg/$', UserMessageView.as_view(), name='user_msg'),
 ]
+

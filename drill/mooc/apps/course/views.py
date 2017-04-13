@@ -18,7 +18,6 @@ class CourseListView(View):
 
         search_keywords = request.GET.get("keywords", "")
 
-
         if sort == 'hot':
             order_field = "-click_nums"
         elif sort == 'students':
@@ -84,7 +83,8 @@ class CourseDetailView(View):
 class CourseInfoView(LoginRequiredMixin, View):
     def get(self, request, course_id):
         course = Course.objects.get(id = int(course_id))
-
+        course.students += 1
+        course.save()
         #查询用户是否已经关联该课程
         user_courses = UserCourse.objects.filter(user=request.user, course=course)
         if not user_courses:
