@@ -5,9 +5,12 @@
 
 import xadmin
 from xadmin import  views
-
+from xadmin.plugins.auth import UserAdmin
 
 from .models import EmailVerifyRecord, Banner, UserProfile
+
+class UserProfileAdmin(UserAdmin):
+    pass
 
 
 class BaseSetting(object):
@@ -26,6 +29,8 @@ class EmailVerifyRecordAdmin(object):
     list_display = ['code', 'email', 'send_type', 'send_time']
     search_fields = ['code', 'email']
     list_filter = ['code', 'email', 'send_type', 'send_time']
+    # icon 修改
+    model_icon = 'fa fa-address-book-o'
 
 
 class BannerAdmin(object):
@@ -34,8 +39,10 @@ class BannerAdmin(object):
     list_filter = ['title', 'image', 'url', 'index', 'add_time']
 
 
-
+# from django.contrib.auth.models import User
+# xadmin.site.unregister(User)
 xadmin.site.register(EmailVerifyRecord, EmailVerifyRecordAdmin)
 xadmin.site.register(Banner, BannerAdmin)
+# xadmin.site.register(UserProfile, UserProfileAdmin)
 xadmin.site.register(views.BaseAdminView, BaseSetting)
 xadmin.site.register(views.CommAdminView, GlobalSetting)

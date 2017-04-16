@@ -16,6 +16,8 @@ class CourseOrgAdmin(object):
     list_display = ['name', 'desc', 'category', 'click_nums','fav_nums', 'image', 'address', 'city', 'add_time']
     search_fields = ['name', 'desc', 'category', 'click_nums','fav_nums', 'image', 'address', 'city']
     list_filter = ['name', 'desc', 'category', 'click_nums','fav_nums', 'image', 'address', 'city', 'add_time']
+    # 当某一个model有外键指向, 以ajax方式加载
+    relfield_style = 'fk-ajax'
 
 
 class TeacherAdmin(object):

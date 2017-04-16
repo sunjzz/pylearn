@@ -12,7 +12,7 @@ from users.views import IndexView, LoginView, LogoutView, RegisterView,ActiveUse
 
 from organization.views import OrgView
 
-from mooc.settings import MEDIA_ROOT, STATIC_ROOT
+from mooc.settings import MEDIA_ROOT
 
 
 urlpatterns = [
@@ -43,7 +43,9 @@ urlpatterns = [
     # config upload files access path.
     url(r'^media/(?P<path>.*)/$', serve, {"document_root": MEDIA_ROOT}),
 
-    url(r'^static/(?P<path>.*)/$', serve, {"document_root": STATIC_ROOT})
+    # url(r'^static/(?P<path>.*)/$', serve, {"document_root": STATIC_ROOT})
+
+    url(r'^ueditor/', include('DjangoUeditor.urls')),
 ]
 
 
