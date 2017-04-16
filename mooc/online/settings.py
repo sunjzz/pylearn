@@ -66,7 +66,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = 'mooc.urls'
+ROOT_URLCONF = 'online.urls'
 
 TEMPLATES = [
     {
@@ -85,7 +85,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'mooc.wsgi.application'
+WSGI_APPLICATION = 'online.wsgi.application'
 
 
 # Database
@@ -94,7 +94,7 @@ WSGI_APPLICATION = 'mooc.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mooc',
+        'NAME': 'online',
         'USER': 'root',
         'PASSWORD': 'key@1234',
         'HOST': '127.0.0.1',

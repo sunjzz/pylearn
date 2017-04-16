@@ -5,7 +5,7 @@ from django.core.mail import send_mail
 
 
 import os
-os.environ['DJANGO_SETTINGS_MODULE'] = 'mooc.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'online.settings'
 
 
 email_send.send_register_email()

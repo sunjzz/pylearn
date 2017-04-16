@@ -12,12 +12,12 @@ from users.views import IndexView, LoginView, LogoutView, RegisterView,ActiveUse
 
 from organization.views import OrgView
 
-from mooc.settings import MEDIA_ROOT
+from online.settings import MEDIA_ROOT
 
 
 urlpatterns = [
     # Examples:
-    # url(r'^$', 'mooc.views.home', name='home'),
+    # url(r'^$', 'online.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^xadmin/', include(xadmin.site.urls)),

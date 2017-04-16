@@ -6,9 +6,9 @@ from random import Random
 from django.core.mail import send_mail
 
 from users.models import EmailVerifyRecord
-from mooc.settings import EMAIL_FROM
+from online.settings import EMAIL_FROM
 
-os.environ['DJANGO_SETTINGS_MODULE'] = 'mooc.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'online.settings'
 
 
 def send_register_email(email, send_type="register"):
