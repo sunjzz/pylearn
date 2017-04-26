@@ -1,0 +1,896 @@
+-- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
+--
+-- Host: localhost    Database: mooc
+-- ------------------------------------------------------
+-- Server version	5.7.17
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `auth_group`
+--
+
+DROP TABLE IF EXISTS `auth_group`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `auth_group` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(80) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `auth_group`
+--
+
+LOCK TABLES `auth_group` WRITE;
+/*!40000 ALTER TABLE `auth_group` DISABLE KEYS */;
+/*!40000 ALTER TABLE `auth_group` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `auth_group_permissions`
+--
+
+DROP TABLE IF EXISTS `auth_group_permissions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `auth_group_permissions` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `group_id` int(11) NOT NULL,
+  `permission_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `auth_group_permissions_group_id_0cd325b0_uniq` (`group_id`,`permission_id`),
+  KEY `auth_group_permissi_permission_id_84c5c92e_fk_auth_permission_id` (`permission_id`),
+  CONSTRAINT `auth_group_permissi_permission_id_84c5c92e_fk_auth_permission_id` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`),
+  CONSTRAINT `auth_group_permissions_group_id_b120cbf9_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `auth_group_permissions`
+--
+
+LOCK TABLES `auth_group_permissions` WRITE;
+/*!40000 ALTER TABLE `auth_group_permissions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `auth_group_permissions` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `auth_permission`
+--
+
+DROP TABLE IF EXISTS `auth_permission`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `auth_permission` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `content_type_id` int(11) NOT NULL,
+  `codename` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `auth_permission_content_type_id_01ab375a_uniq` (`content_type_id`,`codename`),
+  CONSTRAINT `auth_permissi_content_type_id_2f476e4b_fk_django_content_type_id` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=105 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `auth_permission`
+--
+
+LOCK TABLES `auth_permission` WRITE;
+/*!40000 ALTER TABLE `auth_permission` DISABLE KEYS */;
+INSERT INTO `auth_permission` VALUES (1,'Can add log entry',1,'add_logentry'),(2,'Can change log entry',1,'change_logentry'),(3,'Can delete log entry',1,'delete_logentry'),(4,'Can view log entry',1,'view_logentry'),(5,'Can add permission',2,'add_permission'),(6,'Can change permission',2,'change_permission'),(7,'Can delete permission',2,'delete_permission'),(8,'Can add group',3,'add_group'),(9,'Can change group',3,'change_group'),(10,'Can delete group',3,'delete_group'),(11,'Can view group',3,'view_group'),(12,'Can view permission',2,'view_permission'),(13,'Can add content type',4,'add_contenttype'),(14,'Can change content type',4,'change_contenttype'),(15,'Can delete content type',4,'delete_contenttype'),(16,'Can view content type',4,'view_contenttype'),(17,'Can add session',5,'add_session'),(18,'Can change session',5,'change_session'),(19,'Can delete session',5,'delete_session'),(20,'Can view session',5,'view_session'),(21,'Can add 用户信息',6,'add_userprofile'),(22,'Can change 用户信息',6,'change_userprofile'),(23,'Can delete 用户信息',6,'delete_userprofile'),(24,'Can add 邮箱验证码',7,'add_emailverifyrecord'),(25,'Can change 邮箱验证码',7,'change_emailverifyrecord'),(26,'Can delete 邮箱验证码',7,'delete_emailverifyrecord'),(27,'Can add 轮播图',8,'add_banner'),(28,'Can change 轮播图',8,'change_banner'),(29,'Can delete 轮播图',8,'delete_banner'),(30,'Can view 轮播图',8,'view_banner'),(31,'Can view 邮箱验证码',7,'view_emailverifyrecord'),(32,'Can view 用户信息',6,'view_userprofile'),(33,'Can add 课程表',9,'add_course'),(34,'Can change 课程表',9,'change_course'),(35,'Can delete 课程表',9,'delete_course'),(36,'Can add 章节',10,'add_lesson'),(37,'Can change 章节',10,'change_lesson'),(38,'Can delete 章节',10,'delete_lesson'),(39,'Can add 视频',11,'add_video'),(40,'Can change 视频',11,'change_video'),(41,'Can delete 视频',11,'delete_video'),(42,'Can add 课程资源',12,'add_courseresource'),(43,'Can change 课程资源',12,'change_courseresource'),(44,'Can delete 课程资源',12,'delete_courseresource'),(45,'Can view 课程表',9,'view_course'),(46,'Can view 课程资源',12,'view_courseresource'),(47,'Can view 章节',10,'view_lesson'),(48,'Can view 视频',11,'view_video'),(49,'Can add 城市信息',13,'add_citydict'),(50,'Can change 城市信息',13,'change_citydict'),(51,'Can delete 城市信息',13,'delete_citydict'),(52,'Can add 课程机构',14,'add_courseorg'),(53,'Can change 课程机构',14,'change_courseorg'),(54,'Can delete 课程机构',14,'delete_courseorg'),(55,'Can add 教师',15,'add_teacher'),(56,'Can change 教师',15,'change_teacher'),(57,'Can delete 教师',15,'delete_teacher'),(58,'Can view 城市信息',13,'view_citydict'),(59,'Can view 课程机构',14,'view_courseorg'),(60,'Can view 教师',15,'view_teacher'),(61,'Can add 用户咨询',16,'add_userask'),(62,'Can change 用户咨询',16,'change_userask'),(63,'Can delete 用户咨询',16,'delete_userask'),(64,'Can add 课程评论',17,'add_coursecomment'),(65,'Can change 课程评论',17,'change_coursecomment'),(66,'Can delete 课程评论',17,'delete_coursecomment'),(67,'Can add 用户收藏',18,'add_userfavorite'),(68,'Can change 用户收藏',18,'change_userfavorite'),(69,'Can delete 用户收藏',18,'delete_userfavorite'),(70,'Can add 用户消息',19,'add_usermessage'),(71,'Can change 用户消息',19,'change_usermessage'),(72,'Can delete 用户消息',19,'delete_usermessage'),(73,'Can add 用户课程',20,'add_usercourse'),(74,'Can change 用户课程',20,'change_usercourse'),(75,'Can delete 用户课程',20,'delete_usercourse'),(76,'Can view 课程评论',17,'view_coursecomment'),(77,'Can view 用户咨询',16,'view_userask'),(78,'Can view 用户课程',20,'view_usercourse'),(79,'Can view 用户收藏',18,'view_userfavorite'),(80,'Can view 用户消息',19,'view_usermessage'),(81,'Can add Bookmark',21,'add_bookmark'),(82,'Can change Bookmark',21,'change_bookmark'),(83,'Can delete Bookmark',21,'delete_bookmark'),(84,'Can add User Setting',22,'add_usersettings'),(85,'Can change User Setting',22,'change_usersettings'),(86,'Can delete User Setting',22,'delete_usersettings'),(87,'Can add User Widget',23,'add_userwidget'),(88,'Can change User Widget',23,'change_userwidget'),(89,'Can delete User Widget',23,'delete_userwidget'),(90,'Can add log entry',24,'add_log'),(91,'Can change log entry',24,'change_log'),(92,'Can delete log entry',24,'delete_log'),(93,'Can view Bookmark',21,'view_bookmark'),(94,'Can view log entry',24,'view_log'),(95,'Can view User Setting',22,'view_usersettings'),(96,'Can view User Widget',23,'view_userwidget'),(97,'Can add captcha store',25,'add_captchastore'),(98,'Can change captcha store',25,'change_captchastore'),(99,'Can delete captcha store',25,'delete_captchastore'),(100,'Can view captcha store',25,'view_captchastore'),(101,'Can view 轮播课程',26,'view_bannercourse'),(102,'Can add 轮播课程',9,'add_bannercourse'),(103,'Can change 轮播课程',9,'change_bannercourse'),(104,'Can delete 轮播课程',9,'delete_bannercourse');
+/*!40000 ALTER TABLE `auth_permission` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `captcha_captchastore`
+--
+
+DROP TABLE IF EXISTS `captcha_captchastore`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `captcha_captchastore` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `challenge` varchar(32) NOT NULL,
+  `response` varchar(32) NOT NULL,
+  `hashkey` varchar(40) NOT NULL,
+  `expiration` datetime(6) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `hashkey` (`hashkey`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `captcha_captchastore`
+--
+
+LOCK TABLES `captcha_captchastore` WRITE;
+/*!40000 ALTER TABLE `captcha_captchastore` DISABLE KEYS */;
+/*!40000 ALTER TABLE `captcha_captchastore` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `course_course`
+--
+
+DROP TABLE IF EXISTS `course_course`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `course_course` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `desc` varchar(300) NOT NULL,
+  `detail` longtext NOT NULL,
+  `degree` varchar(3) NOT NULL,
+  `learn_time` int(11) NOT NULL,
+  `students` int(11) NOT NULL,
+  `fav_nums` int(11) NOT NULL,
+  `image` varchar(100) NOT NULL,
+  `click_nums` int(11) NOT NULL,
+  `add_time` datetime(6) NOT NULL,
+  `course_org_id` int(11) DEFAULT NULL,
+  `category` varchar(20) NOT NULL,
+  `tag` varchar(50) NOT NULL,
+  `teacher_id` int(11) DEFAULT NULL,
+  `teacher_tell` varchar(300) NOT NULL,
+  `you_need_know` varchar(300) NOT NULL,
+  `is_banner` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `course_course_11456c5a` (`course_org_id`),
+  KEY `course_course_d9614d40` (`teacher_id`),
+  CONSTRAINT `course_cours_course_org_id_6a10e205_fk_organization_courseorg_id` FOREIGN KEY (`course_org_id`) REFERENCES `organization_courseorg` (`id`),
+  CONSTRAINT `course_course_teacher_id_f04a37b5_fk_organization_teacher_id` FOREIGN KEY (`teacher_id`) REFERENCES `organization_teacher` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `course_course`
+--
+
+LOCK TABLES `course_course` WRITE;
+/*!40000 ALTER TABLE `course_course` DISABLE KEYS */;
+INSERT INTO `course_course` VALUES (1,'django入门','django入门','django入门','cj',300,10,5,'course/2017/04/django.jpg',102,'2017-04-06 11:31:00.000000',6,'开发','django',6,'web开发','的点点滴滴',0),(2,'Java 从入门到放弃','Java 从入门到放弃','Java 从入门到放弃','zj',500,100,50,'course/2017/04/java.jpg',100,'2017-04-07 14:06:00.000000',2,'','',NULL,'','',0),(3,'Linux运维架构','Linux运维架构','Linux运维架构','gj',1000,1000,500,'course/2017/04/linux.jpg',10000,'2017-04-07 14:10:00.000000',6,'','',NULL,'','',0),(4,'django','djangodjango','djangodjangodjangodjangodjangodjango','zj',1000,5000,8000,'course/2017/04/django_PFDzw2q.jpg',10002,'2017-04-07 14:12:00.000000',1,'开发','yun',6,'开发','开发',1),(5,'java实战','java实战java实战','java实战java实战java实战java实战java实战java实战java实战java实战java实战java实战java实战java实战java实战','zj',1000,200,100,'course/2017/04/java_QXDz4Za.jpg',1000,'2017-04-07 14:15:00.000000',7,'','',NULL,'','',0),(6,'Linux运维基础','Linux运维基础Linux运维基础','Linux运维基础Linux运维基础Linux运维基础Linux运维基础Linux运维基础Linux运维基础Linux运维基础Linux运维基础','zj',1000,900,100,'course/2017/04/linux_32aBpqH.jpg',10000,'2017-04-07 14:16:00.000000',8,'','',NULL,'','',0),(7,'windows高级管理员','windows高级管理员','windows高级管理员windows高级管理员windows高级管理员','gj',500,1000,145,'course/2017/04/windows.jpg',601,'2017-04-07 14:20:00.000000',7,'','',NULL,'','',0),(8,'vmware虚拟化','vmware虚拟化vmware虚拟化','vmware虚拟化vmware虚拟化vmware虚拟化','gj',2000,5000,3000,'course/2017/04/vmware.jpg',10005,'2017-04-07 14:21:00.000000',3,'vmware','vmware',2,'vmware','vmware',1),(9,'openstack云计算','openstack云计算openstack云计算','openstack云计算openstack云计算openstack云计算','gj',700,7001,5000,'course/2017/04/openstack.jpg',10042,'2017-04-07 14:23:00.000000',4,'运维','yun',NULL,'openstack','openstack',0),(10,'php开发实战','php开发实战php开发实战','php开发实战php开发实战php开发实战','zj',600,300,200,'course/2017/04/php.jpg',519,'2017-04-07 14:24:00.000000',5,'web开发','php',7,'学习php web开发','必须掌握php基础',0);
+/*!40000 ALTER TABLE `course_course` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `course_courseresource`
+--
+
+DROP TABLE IF EXISTS `course_courseresource`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `course_courseresource` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `download` varchar(100) NOT NULL,
+  `add_time` datetime(6) NOT NULL,
+  `course_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `course_courseresource_course_id_d5504211_fk_course_course_id` (`course_id`),
+  CONSTRAINT `course_courseresource_course_id_d5504211_fk_course_course_id` FOREIGN KEY (`course_id`) REFERENCES `course_course` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `course_courseresource`
+--
+
+LOCK TABLES `course_courseresource` WRITE;
+/*!40000 ALTER TABLE `course_courseresource` DISABLE KEYS */;
+INSERT INTO `course_courseresource` VALUES (1,'课件1','course/resource/2017/04/笔记.txt','2017-04-09 17:26:00.000000',10);
+/*!40000 ALTER TABLE `course_courseresource` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `course_lesson`
+--
+
+DROP TABLE IF EXISTS `course_lesson`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `course_lesson` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `add_time` datetime(6) NOT NULL,
+  `course_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `course_lesson_course_id_65df4a1c_fk_course_course_id` (`course_id`),
+  CONSTRAINT `course_lesson_course_id_65df4a1c_fk_course_course_id` FOREIGN KEY (`course_id`) REFERENCES `course_course` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `course_lesson`
+--
+
+LOCK TABLES `course_lesson` WRITE;
+/*!40000 ALTER TABLE `course_lesson` DISABLE KEYS */;
+INSERT INTO `course_lesson` VALUES (1,'第一章','2017-04-09 17:05:00.000000',10),(2,'第二章','2017-04-09 17:05:00.000000',10),(3,'第三章','2017-04-09 17:05:00.000000',10);
+/*!40000 ALTER TABLE `course_lesson` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `course_video`
+--
+
+DROP TABLE IF EXISTS `course_video`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `course_video` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `add_time` datetime(6) NOT NULL,
+  `lesson_id` int(11) NOT NULL,
+  `url` varchar(200) NOT NULL,
+  `learn_time` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `course_video_lesson_id_0731e8a9_fk_course_lesson_id` (`lesson_id`),
+  CONSTRAINT `course_video_lesson_id_0731e8a9_fk_course_lesson_id` FOREIGN KEY (`lesson_id`) REFERENCES `course_lesson` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `course_video`
+--
+
+LOCK TABLES `course_video` WRITE;
+/*!40000 ALTER TABLE `course_video` DISABLE KEYS */;
+INSERT INTO `course_video` VALUES (1,'1.1 hello world','2017-04-09 17:09:00.000000',1,'http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4',0),(2,'1.2 基本概念','2017-04-09 17:10:00.000000',1,'http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4',0),(3,'2.1 test','2017-04-09 17:10:00.000000',2,'http://www.baidu.com',0),(4,'2.2 test2','2017-04-09 17:10:00.000000',2,'http://www.baidu.com',0);
+/*!40000 ALTER TABLE `course_video` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `django_admin_log`
+--
+
+DROP TABLE IF EXISTS `django_admin_log`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `django_admin_log` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `action_time` datetime(6) NOT NULL,
+  `object_id` longtext,
+  `object_repr` varchar(200) NOT NULL,
+  `action_flag` smallint(5) unsigned NOT NULL,
+  `change_message` longtext NOT NULL,
+  `content_type_id` int(11) DEFAULT NULL,
+  `user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `django_admin__content_type_id_c4bce8eb_fk_django_content_type_id` (`content_type_id`),
+  KEY `django_admin_log_user_id_c564eba6_fk_users_userprofile_id` (`user_id`),
+  CONSTRAINT `django_admin__content_type_id_c4bce8eb_fk_django_content_type_id` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`),
+  CONSTRAINT `django_admin_log_user_id_c564eba6_fk_users_userprofile_id` FOREIGN KEY (`user_id`) REFERENCES `users_userprofile` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `django_admin_log`
+--
+
+LOCK TABLES `django_admin_log` WRITE;
+/*!40000 ALTER TABLE `django_admin_log` DISABLE KEYS */;
+/*!40000 ALTER TABLE `django_admin_log` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `django_content_type`
+--
+
+DROP TABLE IF EXISTS `django_content_type`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `django_content_type` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `app_label` varchar(100) NOT NULL,
+  `model` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `django_content_type_app_label_76bd3d3b_uniq` (`app_label`,`model`)
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `django_content_type`
+--
+
+LOCK TABLES `django_content_type` WRITE;
+/*!40000 ALTER TABLE `django_content_type` DISABLE KEYS */;
+INSERT INTO `django_content_type` VALUES (1,'admin','logentry'),(3,'auth','group'),(2,'auth','permission'),(25,'captcha','captchastore'),(4,'contenttypes','contenttype'),(26,'course','bannercourse'),(9,'course','course'),(12,'course','courseresource'),(10,'course','lesson'),(11,'course','video'),(17,'operation','coursecomment'),(16,'operation','userask'),(20,'operation','usercourse'),(18,'operation','userfavorite'),(19,'operation','usermessage'),(13,'organization','citydict'),(14,'organization','courseorg'),(15,'organization','teacher'),(5,'sessions','session'),(8,'users','banner'),(7,'users','emailverifyrecord'),(6,'users','userprofile'),(21,'xadmin','bookmark'),(24,'xadmin','log'),(22,'xadmin','usersettings'),(23,'xadmin','userwidget');
+/*!40000 ALTER TABLE `django_content_type` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `django_migrations`
+--
+
+DROP TABLE IF EXISTS `django_migrations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `django_migrations` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `app` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `applied` datetime(6) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `django_migrations`
+--
+
+LOCK TABLES `django_migrations` WRITE;
+/*!40000 ALTER TABLE `django_migrations` DISABLE KEYS */;
+INSERT INTO `django_migrations` VALUES (1,'contenttypes','0001_initial','2017-03-27 16:42:52.530000'),(2,'contenttypes','0002_remove_content_type_name','2017-03-27 16:42:52.669000'),(3,'auth','0001_initial','2017-03-27 16:42:53.144000'),(4,'auth','0002_alter_permission_name_max_length','2017-03-27 16:42:53.235000'),(5,'auth','0003_alter_user_email_max_length','2017-03-27 16:42:53.248000'),(6,'auth','0004_alter_user_username_opts','2017-03-27 16:42:53.262000'),(7,'auth','0005_alter_user_last_login_null','2017-03-27 16:42:53.278000'),(8,'auth','0006_require_contenttypes_0002','2017-03-27 16:42:53.284000'),(9,'auth','0007_alter_validators_add_error_messages','2017-03-27 16:42:53.300000'),(10,'users','0001_initial','2017-03-27 16:42:53.851000'),(11,'admin','0001_initial','2017-03-27 16:42:54.067000'),(12,'admin','0002_logentry_remove_auto_add','2017-03-27 16:42:54.099000'),(13,'course','0001_initial','2017-03-27 16:42:54.530000'),(14,'operation','0001_initial','2017-03-27 16:42:54.730000'),(15,'operation','0002_auto_20170326_1856','2017-03-27 16:42:55.633000'),(16,'organization','0001_initial','2017-03-27 16:42:55.926000'),(17,'sessions','0001_initial','2017-03-27 16:42:56.004000'),(18,'xadmin','0001_initial','2017-03-27 16:46:34.669000'),(19,'captcha','0001_initial','2017-03-30 15:38:42.394000'),(20,'auth','0008_alter_user_username_max_length','2017-04-01 16:19:24.009000'),(21,'auth','0009_auto_20170401_1619','2017-04-01 16:19:24.033000'),(22,'organization','0002_auto_20170401_1619','2017-04-01 16:19:24.286000'),(23,'organization','0003_auto_20170401_1621','2017-04-01 16:21:26.767000'),(24,'organization','0004_auto_20170405_1423','2017-04-05 14:23:26.091000'),(25,'course','0002_course_course_org','2017-04-06 11:35:55.975000'),(26,'organization','0005_teacher_image','2017-04-06 15:09:56.712000'),(27,'course','0003_course_category','2017-04-07 17:15:01.614000'),(28,'course','0004_auto_20170407_1718','2017-04-07 17:18:22.058000'),(29,'course','0005_course_tag','2017-04-08 18:14:50.691000'),(30,'course','0006_video_url','2017-04-09 17:09:13.747000'),(31,'course','0007_video_learn_time','2017-04-09 17:24:55.750000'),(32,'course','0008_course_teacher','2017-04-09 17:38:52.431000'),(33,'course','0009_auto_20170409_1749','2017-04-09 17:49:32.969000'),(34,'course','0010_auto_20170409_1751','2017-04-09 17:51:25.119000'),(35,'organization','0006_teacher_age','2017-04-10 09:35:06.780000'),(36,'organization','0007_teacher_desc','2017-04-10 11:12:15.572000'),(37,'users','0002_auto_20170410_1713','2017-04-10 17:13:17.042000'),(38,'users','0003_auto_20170410_1713','2017-04-10 17:13:50.512000'),(39,'users','0004_auto_20170411_1540','2017-04-11 15:40:41.804000'),(40,'operation','0003_auto_20170412_1742','2017-04-12 17:42:34.028000'),(41,'users','0005_auto_20170412_1742','2017-04-12 17:42:34.177000'),(42,'course','0011_course_is_banner','2017-04-13 16:04:31.741000'),(43,'organization','0008_courseorg_tag','2017-04-13 16:43:54.809000'),(44,'course','0012_auto_20170414_1616','2017-04-14 16:16:48.343000');
+/*!40000 ALTER TABLE `django_migrations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `django_session`
+--
+
+DROP TABLE IF EXISTS `django_session`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `django_session` (
+  `session_key` varchar(40) NOT NULL,
+  `session_data` longtext NOT NULL,
+  `expire_date` datetime(6) NOT NULL,
+  PRIMARY KEY (`session_key`),
+  KEY `django_session_de54fa62` (`expire_date`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `django_session`
+--
+
+LOCK TABLES `django_session` WRITE;
+/*!40000 ALTER TABLE `django_session` DISABLE KEYS */;
+INSERT INTO `django_session` VALUES ('6h64erbiywg1ht1p9t4s777dway5oi67','OTJhZTZiYTVjMWJmMzFkNWZhZGUxYmViODlkOTY1NzRkOTZhMmVhZDp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiTElTVF9RVUVSWSI6W1sib3JnYW5pemF0aW9uIiwiY291cnNlb3JnIl0sIiJdLCJfYXV0aF91c2VyX2hhc2giOiJjOWEwZmRjNTNmNzkxNmI3NzJkNDcyMDljNmRlZDYzZTMwMzkxNjY1IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoidXNlcnMudmlld3MuQ3VzdG9tQmFja2VuZCJ9','2017-04-19 10:03:28.517000'),('8s1d60tidh00o50j4p8oep6n09auh3el','ZWFmNWVkNDg0MDhlMGU4NDlhNGE2ZDc2NjhmNzBlYzZjMDlmMTg0NTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiTElTVF9RVUVSWSI6W1siY291cnNlIiwidmlkZW8iXSwiIl0sIl9hdXRoX3VzZXJfaGFzaCI6ImM5YTBmZGM1M2Y3OTE2Yjc3MmQ0NzIwOWM2ZGVkNjNlMzAzOTE2NjUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJ1c2Vycy52aWV3cy5DdXN0b21CYWNrZW5kIn0=','2017-04-23 20:41:43.621000'),('co0w3s3isw62a7e898mgvoknk6kky1rd','MjQyMjJkNDU5YWU3MDk2YmY3MTdlZmE3ZDQ5OGQ4MzhlNGY2OTA1Yjp7Il9hdXRoX3VzZXJfaGFzaCI6IjI0MWIyOTc0YmI5NzMwMWNjNTY5MzQwZGZmZDQyNDM0NzYzMjQ0NGIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJ1c2Vycy52aWV3cy5DdXN0b21CYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6IjEifQ==','2017-04-25 16:41:08.714000'),('hf9xsq8lxw6m859hvs4ngkpo5thu4jfj','YjYwYjYzOGNhMDU4ZTA1NzRmODk5YzNiOGY3MjQzOWUwN2I4M2UyZjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6InVzZXJzLnZpZXdzLkN1c3RvbUJhY2tlbmQiLCJMSVNUX1FVRVJZIjpbWyJjb3Vyc2UiLCJjb3Vyc2UiXSwiIl0sIl9hdXRoX3VzZXJfaGFzaCI6ImM3OWZmN2JhNmI1M2FkMGUyZTY3ZGViYjFmZTU2NjI0NTFhYTUzMzciLCJfYXV0aF91c2VyX2lkIjoiMSJ9','2017-04-28 16:43:20.802000');
+/*!40000 ALTER TABLE `django_session` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `operation_coursecomment`
+--
+
+DROP TABLE IF EXISTS `operation_coursecomment`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `operation_coursecomment` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `comment` varchar(200) NOT NULL,
+  `add_time` datetime(6) NOT NULL,
+  `course_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `operation_coursecomment_ea134da7` (`course_id`),
+  KEY `operation_coursecomment_e8701ad4` (`user_id`),
+  CONSTRAINT `operation_coursecomment_course_id_ae7551b0_fk_course_course_id` FOREIGN KEY (`course_id`) REFERENCES `course_course` (`id`),
+  CONSTRAINT `operation_coursecomment_user_id_8f3ff0f8_fk_users_userprofile_id` FOREIGN KEY (`user_id`) REFERENCES `users_userprofile` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `operation_coursecomment`
+--
+
+LOCK TABLES `operation_coursecomment` WRITE;
+/*!40000 ALTER TABLE `operation_coursecomment` DISABLE KEYS */;
+INSERT INTO `operation_coursecomment` VALUES (3,'法第三方','2017-04-09 18:59:10.890000',10,1),(4,'再来一次','2017-04-09 18:59:52.669000',10,1);
+/*!40000 ALTER TABLE `operation_coursecomment` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `operation_userask`
+--
+
+DROP TABLE IF EXISTS `operation_userask`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `operation_userask` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) NOT NULL,
+  `mobile` varchar(11) NOT NULL,
+  `course_name` varchar(50) NOT NULL,
+  `add_time` datetime(6) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `operation_userask`
+--
+
+LOCK TABLES `operation_userask` WRITE;
+/*!40000 ALTER TABLE `operation_userask` DISABLE KEYS */;
+INSERT INTO `operation_userask` VALUES (15,'tony','18734567832','django','2017-04-06 11:21:09.203000');
+/*!40000 ALTER TABLE `operation_userask` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `operation_usercourse`
+--
+
+DROP TABLE IF EXISTS `operation_usercourse`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `operation_usercourse` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `add_time` datetime(6) NOT NULL,
+  `course_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `operation_usercourse_ea134da7` (`course_id`),
+  KEY `operation_usercourse_e8701ad4` (`user_id`),
+  CONSTRAINT `operation_usercourse_course_id_9f1eab2e_fk_course_course_id` FOREIGN KEY (`course_id`) REFERENCES `course_course` (`id`),
+  CONSTRAINT `operation_usercourse_user_id_835fe81a_fk_users_userprofile_id` FOREIGN KEY (`user_id`) REFERENCES `users_userprofile` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `operation_usercourse`
+--
+
+LOCK TABLES `operation_usercourse` WRITE;
+/*!40000 ALTER TABLE `operation_usercourse` DISABLE KEYS */;
+INSERT INTO `operation_usercourse` VALUES (1,'2017-04-07 17:42:00.000000',1,1),(10,'2017-04-07 17:55:00.000000',1,14),(14,'2017-04-09 20:08:48.201000',8,1),(15,'2017-04-09 20:10:46.607000',9,1),(16,'2017-04-09 20:14:45.264000',7,1),(17,'2017-04-09 20:15:09.039000',10,1);
+/*!40000 ALTER TABLE `operation_usercourse` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `operation_userfavorite`
+--
+
+DROP TABLE IF EXISTS `operation_userfavorite`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `operation_userfavorite` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `fav_id` int(11) NOT NULL,
+  `fav_type` int(11) NOT NULL,
+  `add_time` datetime(6) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `operation_userfavorite_e8701ad4` (`user_id`),
+  CONSTRAINT `operation_userfavorite_user_id_ad46a6af_fk_users_userprofile_id` FOREIGN KEY (`user_id`) REFERENCES `users_userprofile` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=63 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `operation_userfavorite`
+--
+
+LOCK TABLES `operation_userfavorite` WRITE;
+/*!40000 ALTER TABLE `operation_userfavorite` DISABLE KEYS */;
+INSERT INTO `operation_userfavorite` VALUES (34,4,2,'2017-04-08 22:18:44.161000',1),(49,1,2,'2017-04-12 14:49:39.997000',1),(52,12,1,'2017-04-12 16:46:04.070000',1),(56,8,1,'2017-04-12 17:18:39.645000',1),(62,8,2,'2017-04-13 15:21:20.044000',1);
+/*!40000 ALTER TABLE `operation_userfavorite` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `operation_usermessage`
+--
+
+DROP TABLE IF EXISTS `operation_usermessage`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `operation_usermessage` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `message` varchar(500) NOT NULL,
+  `has_read` tinyint(1) NOT NULL,
+  `add_time` datetime(6) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `operation_usermessage_user_id_716f8b9d_uniq` (`user_id`),
+  CONSTRAINT `operation_usermessage_user_id_716f8b9d_fk_users_userprofile_id` FOREIGN KEY (`user_id`) REFERENCES `users_userprofile` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `operation_usermessage`
+--
+
+LOCK TABLES `operation_usermessage` WRITE;
+/*!40000 ALTER TABLE `operation_usermessage` DISABLE KEYS */;
+INSERT INTO `operation_usermessage` VALUES (1,23,'欢迎注册！',0,'2017-04-13 14:33:27.244000');
+/*!40000 ALTER TABLE `operation_usermessage` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `organization_citydict`
+--
+
+DROP TABLE IF EXISTS `organization_citydict`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `organization_citydict` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) NOT NULL,
+  `desc` varchar(200) NOT NULL,
+  `add_time` datetime(6) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `organization_citydict`
+--
+
+LOCK TABLES `organization_citydict` WRITE;
+/*!40000 ALTER TABLE `organization_citydict` DISABLE KEYS */;
+INSERT INTO `organization_citydict` VALUES (3,'北京','北京','2017-04-01 15:19:00.000000'),(4,'上海','上海','2017-04-01 15:20:00.000000'),(5,'广州','广州','2017-04-01 15:20:00.000000'),(6,'深圳','深圳','2017-04-01 15:20:00.000000'),(7,'成都','成都','2017-04-01 17:11:00.000000');
+/*!40000 ALTER TABLE `organization_citydict` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `organization_courseorg`
+--
+
+DROP TABLE IF EXISTS `organization_courseorg`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `organization_courseorg` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `desc` longtext NOT NULL,
+  `click_nums` int(11) NOT NULL,
+  `fav_nums` int(11) NOT NULL,
+  `image` varchar(100) NOT NULL,
+  `address` varchar(150) NOT NULL,
+  `add_time` datetime(6) NOT NULL,
+  `city_id` int(11) NOT NULL,
+  `category` varchar(20) NOT NULL,
+  `course_nums` int(11) NOT NULL,
+  `students` int(11) NOT NULL,
+  `tag` varchar(10) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `organization_course_city_id_4a842f85_fk_organization_citydict_id` (`city_id`),
+  CONSTRAINT `organization_course_city_id_4a842f85_fk_organization_citydict_id` FOREIGN KEY (`city_id`) REFERENCES `organization_citydict` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `organization_courseorg`
+--
+
+LOCK TABLES `organization_courseorg` WRITE;
+/*!40000 ALTER TABLE `organization_courseorg` DISABLE KEYS */;
+INSERT INTO `organization_courseorg` VALUES (1,'北京大学','北京大学',2,0,'org/2017/04/beijingdaxue.jpg','北京市海淀区','2017-04-01 15:23:00.000000',3,'gx',1,100,'全国知名'),(2,'清华大学','清华大学',0,0,'org/2017/04/qinghuadaxue.jpg','北京市海淀区','2017-04-01 15:25:00.000000',3,'gx',1,100,'全国知名'),(3,'上海交通大学','上海交通大学',0,0,'org/2017/04/shanghaijiaoda.jpg','上海市徐汇区','2017-04-01 15:26:00.000000',4,'gx',1,0,'全国知名'),(4,'广州大学','广州大学',0,0,'org/2017/04/guangzhoudaxue.jpg','广州市','2017-04-01 15:28:00.000000',5,'gx',1,0,'全国知名'),(5,'深圳大学','深圳大学',0,0,'org/2017/04/shenzhendaxue.jpg','深圳市福田区','2017-04-01 15:29:00.000000',6,'gx',1,0,'全国知名'),(6,'老男孩','老男孩',0,0,'org/2017/04/laonanhai.jpg','北京','2017-04-01 17:37:00.000000',3,'pxjg',5,200,'全国知名'),(7,'达内','达内',0,0,'org/2017/04/danei.jpg','北京','2017-04-01 17:38:00.000000',3,'pxjg',2,100,'全国知名'),(8,'马哥','马哥',1,1,'org/2017/04/mage.jpg','上海','2017-04-01 17:41:00.000000',4,'gr',4,300,'全国知名');
+/*!40000 ALTER TABLE `organization_courseorg` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `organization_teacher`
+--
+
+DROP TABLE IF EXISTS `organization_teacher`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `organization_teacher` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `work_years` int(11) NOT NULL,
+  `work_company` varchar(50) NOT NULL,
+  `work_position` varchar(50) NOT NULL,
+  `points` varchar(10) NOT NULL,
+  `click_nums` int(11) NOT NULL,
+  `fav_nums` int(11) NOT NULL,
+  `add_time` datetime(6) NOT NULL,
+  `org_id` int(11) NOT NULL,
+  `image` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `desc` varchar(200) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `organization_teache_org_id_cd000a1a_fk_organization_courseorg_id` (`org_id`),
+  CONSTRAINT `organization_teache_org_id_cd000a1a_fk_organization_courseorg_id` FOREIGN KEY (`org_id`) REFERENCES `organization_courseorg` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `organization_teacher`
+--
+
+LOCK TABLES `organization_teacher` WRITE;
+/*!40000 ALTER TABLE `organization_teacher` DISABLE KEYS */;
+INSERT INTO `organization_teacher` VALUES (1,'比尔盖茨',15,'microsoft','ceo','666',0,0,'2017-04-01 15:32:00.000000',1,'teacher/2017/04/billgate.jpg',0,''),(2,'施密特',7,'google','ceo','666',0,0,'2017-04-01 15:32:00.000000',2,'teacher/2017/04/shimite.jpg',0,''),(3,'马云',8,'alibaba','ceo','666',0,0,'2017-04-01 15:33:00.000000',3,'teacher/2017/04/mayun.jpg',0,''),(4,'李彦宏',10,'百度','ceo','666',0,0,'2017-04-01 15:34:00.000000',4,'teacher/2017/04/liyanhong.png',0,''),(5,'马化腾',5,'腾讯','ceo','666',18,0,'2017-04-01 15:34:00.000000',5,'teacher/2017/04/mahuateng.jpg',0,''),(6,'Alex',3,'中金','运维开发','666',20,0,'2017-04-06 11:29:00.000000',6,'teacher/2017/04/alex.jpg',0,''),(7,'马永亮',8,'马哥','CEO','666',21,99,'2017-04-06 11:30:00.000000',8,'teacher/2017/04/mage.jpg',0,'');
+/*!40000 ALTER TABLE `organization_teacher` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users_banner`
+--
+
+DROP TABLE IF EXISTS `users_banner`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users_banner` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) NOT NULL,
+  `image` varchar(100) NOT NULL,
+  `url` varchar(200) NOT NULL,
+  `index` int(11) NOT NULL,
+  `add_time` datetime(6) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users_banner`
+--
+
+LOCK TABLES `users_banner` WRITE;
+/*!40000 ALTER TABLE `users_banner` DISABLE KEYS */;
+INSERT INTO `users_banner` VALUES (1,'1','banner/2017/04/57a801860001c34b12000460.jpg','http://www.baidu.com',1,'2017-04-13 16:09:00.000000'),(2,'2','banner/2017/04/57aa86a0000145c512000460.jpg','http://www.163.com',2,'2017-04-13 16:10:00.000000'),(3,'3','banner/2017/04/57aa86a0000145c512000461.jpg','http://www.360.com',3,'2017-04-13 16:10:00.000000'),(4,'4','banner/2017/04/57aa86a0000145c512000462.jpg','http://www.sohu.com.cn',4,'2017-04-13 16:14:00.000000'),(5,'5','banner/2017/04/57aa86a0000145c512000463.jpg','http://www.sina.com.cn',5,'2017-04-13 16:14:00.000000');
+/*!40000 ALTER TABLE `users_banner` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users_emailverifyrecord`
+--
+
+DROP TABLE IF EXISTS `users_emailverifyrecord`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users_emailverifyrecord` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(20) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `send_type` varchar(10) NOT NULL,
+  `send_time` datetime(6) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users_emailverifyrecord`
+--
+
+LOCK TABLES `users_emailverifyrecord` WRITE;
+/*!40000 ALTER TABLE `users_emailverifyrecord` DISABLE KEYS */;
+INSERT INTO `users_emailverifyrecord` VALUES (9,'TxlcjqkTVLJiA4Mz','','register','2017-03-31 15:33:07.942000'),(14,'ASsTMZQiX1a9we5x','sun_jzz@163.com','forget','2017-04-01 10:01:35.399000'),(15,'4yg8ZjjJLtHQb4fH','1@q.com','register','2017-04-13 14:33:27.257000');
+/*!40000 ALTER TABLE `users_emailverifyrecord` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users_userprofile`
+--
+
+DROP TABLE IF EXISTS `users_userprofile`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users_userprofile` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `password` varchar(128) NOT NULL,
+  `last_login` datetime(6) DEFAULT NULL,
+  `is_superuser` tinyint(1) NOT NULL,
+  `username` varchar(30) NOT NULL,
+  `first_name` varchar(30) NOT NULL,
+  `last_name` varchar(30) NOT NULL,
+  `email` varchar(254) NOT NULL,
+  `is_staff` tinyint(1) NOT NULL,
+  `is_active` tinyint(1) NOT NULL,
+  `date_joined` datetime(6) NOT NULL,
+  `nick_name` varchar(50) NOT NULL,
+  `birthday` date DEFAULT NULL,
+  `gender` varchar(6) NOT NULL,
+  `address` varchar(100) NOT NULL,
+  `mobile` varchar(11) DEFAULT NULL,
+  `image` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users_userprofile`
+--
+
+LOCK TABLES `users_userprofile` WRITE;
+/*!40000 ALTER TABLE `users_userprofile` DISABLE KEYS */;
+INSERT INTO `users_userprofile` VALUES (1,'pbkdf2_sha256$24000$dPP7Roe1d36t$KTWxWEQZwTSAc5Dh9utzYpKs/EAy40lR4bOV8xuQlqw=','2017-04-14 10:34:15.334000',1,'tony','','','sun_jzz@hotmail.com',1,1,'2017-03-27 16:43:16.129000','dd','2017-04-10','male','北京市','13500000000','image/2017/04/mysql.png'),(14,'pbkdf2_sha256$20000$PMlUnjaKthiJ$79vH0leBzLmZpy2ZXM2dCNEoghGgWcThzDUIeoxV/TU=','2017-04-01 13:41:08.281000',0,'sun_jzz@163.com','','','sun_jzz@163.com',0,1,'2017-03-31 15:33:07.911000','',NULL,'male','',NULL,'course/2017/04/openstack.jpg'),(23,'pbkdf2_sha256$24000$VrHSrGcKHrqA$h+F+ul/xwdckygdrvKIRTjpME+cAcXdPXzysE1+NCxo=','2017-04-13 14:33:41.195000',0,'1@q.com','','','1@q.com',0,1,'2017-04-13 14:33:19.389000','',NULL,'male','',NULL,'image/default.png');
+/*!40000 ALTER TABLE `users_userprofile` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users_userprofile_groups`
+--
+
+DROP TABLE IF EXISTS `users_userprofile_groups`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users_userprofile_groups` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `userprofile_id` int(11) NOT NULL,
+  `group_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `users_userprofile_groups_userprofile_id_823cf2fc_uniq` (`userprofile_id`,`group_id`),
+  KEY `users_userprofile_groups_group_id_3de53dbf_fk_auth_group_id` (`group_id`),
+  CONSTRAINT `users_userprofil_userprofile_id_a4496a80_fk_users_userprofile_id` FOREIGN KEY (`userprofile_id`) REFERENCES `users_userprofile` (`id`),
+  CONSTRAINT `users_userprofile_groups_group_id_3de53dbf_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users_userprofile_groups`
+--
+
+LOCK TABLES `users_userprofile_groups` WRITE;
+/*!40000 ALTER TABLE `users_userprofile_groups` DISABLE KEYS */;
+/*!40000 ALTER TABLE `users_userprofile_groups` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users_userprofile_user_permissions`
+--
+
+DROP TABLE IF EXISTS `users_userprofile_user_permissions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users_userprofile_user_permissions` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `userprofile_id` int(11) NOT NULL,
+  `permission_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `users_userprofile_user_permissions_userprofile_id_d0215190_uniq` (`userprofile_id`,`permission_id`),
+  KEY `users_userprofile_u_permission_id_393136b6_fk_auth_permission_id` (`permission_id`),
+  CONSTRAINT `users_userprofil_userprofile_id_34544737_fk_users_userprofile_id` FOREIGN KEY (`userprofile_id`) REFERENCES `users_userprofile` (`id`),
+  CONSTRAINT `users_userprofile_u_permission_id_393136b6_fk_auth_permission_id` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users_userprofile_user_permissions`
+--
+
+LOCK TABLES `users_userprofile_user_permissions` WRITE;
+/*!40000 ALTER TABLE `users_userprofile_user_permissions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `users_userprofile_user_permissions` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `xadmin_bookmark`
+--
+
+DROP TABLE IF EXISTS `xadmin_bookmark`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `xadmin_bookmark` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(128) NOT NULL,
+  `url_name` varchar(64) NOT NULL,
+  `query` varchar(1000) NOT NULL,
+  `is_share` tinyint(1) NOT NULL,
+  `content_type_id` int(11) NOT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `xadmin_bookma_content_type_id_60941679_fk_django_content_type_id` (`content_type_id`),
+  KEY `xadmin_bookmark_user_id_42d307fc_fk_users_userprofile_id` (`user_id`),
+  CONSTRAINT `xadmin_bookma_content_type_id_60941679_fk_django_content_type_id` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`),
+  CONSTRAINT `xadmin_bookmark_user_id_42d307fc_fk_users_userprofile_id` FOREIGN KEY (`user_id`) REFERENCES `users_userprofile` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `xadmin_bookmark`
+--
+
+LOCK TABLES `xadmin_bookmark` WRITE;
+/*!40000 ALTER TABLE `xadmin_bookmark` DISABLE KEYS */;
+/*!40000 ALTER TABLE `xadmin_bookmark` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `xadmin_log`
+--
+
+DROP TABLE IF EXISTS `xadmin_log`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `xadmin_log` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `action_time` datetime(6) NOT NULL,
+  `ip_addr` char(39) DEFAULT NULL,
+  `object_id` longtext,
+  `object_repr` varchar(200) NOT NULL,
+  `action_flag` varchar(32) NOT NULL,
+  `message` longtext NOT NULL,
+  `content_type_id` int(11) DEFAULT NULL,
+  `user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `xadmin_log_content_type_id_2a6cb852_fk_django_content_type_id` (`content_type_id`),
+  KEY `xadmin_log_user_id_bb16a176_fk_users_userprofile_id` (`user_id`),
+  CONSTRAINT `xadmin_log_content_type_id_2a6cb852_fk_django_content_type_id` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`),
+  CONSTRAINT `xadmin_log_user_id_bb16a176_fk_users_userprofile_id` FOREIGN KEY (`user_id`) REFERENCES `users_userprofile` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=90 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `xadmin_log`
+--
+
+LOCK TABLES `xadmin_log` WRITE;
+/*!40000 ALTER TABLE `xadmin_log` DISABLE KEYS */;
+INSERT INTO `xadmin_log` VALUES (1,'2017-04-01 15:19:52.940000','127.0.0.1','2','CityDict object','create','已添加',13,1),(2,'2017-04-01 15:20:05.049000','127.0.0.1','3','CityDict object','create','已添加',13,1),(3,'2017-04-01 15:20:11.304000','127.0.0.1','4','CityDict object','create','已添加',13,1),(4,'2017-04-01 15:20:17.334000','127.0.0.1','5','CityDict object','create','已添加',13,1),(5,'2017-04-01 15:20:22.790000','127.0.0.1','6','CityDict object','create','已添加',13,1),(6,'2017-04-01 15:20:36.917000','127.0.0.1',NULL,'','delete','批量删除 1 个 城市信息',NULL,1),(7,'2017-04-01 15:25:27.580000','127.0.0.1','1','北京大学','create','已添加',14,1),(8,'2017-04-01 15:26:23.443000','127.0.0.1','2','清华大学','create','已添加',14,1),(9,'2017-04-01 15:28:47.029000','127.0.0.1','3','上海交通大学','create','已添加',14,1),(10,'2017-04-01 15:29:44.357000','127.0.0.1','4','广州大学','create','已添加',14,1),(11,'2017-04-01 15:30:39.997000','127.0.0.1','5','深圳大学','create','已添加',14,1),(12,'2017-04-01 15:30:54.276000','127.0.0.1','1','北京大学','change','已修改 image 。',14,1),(13,'2017-04-01 15:31:14.978000','127.0.0.1','1','北京大学','change','已修改 image 。',14,1),(14,'2017-04-01 15:31:48.612000','127.0.0.1','1','北京大学','change','已修改 image 。',14,1),(15,'2017-04-01 15:32:52.904000','127.0.0.1','1','比尔盖茨','create','已添加',15,1),(16,'2017-04-01 15:33:18.097000','127.0.0.1','2','施密特','create','已添加',15,1),(17,'2017-04-01 15:33:58.279000','127.0.0.1','3','mayun','create','已添加',15,1),(18,'2017-04-01 15:34:40.096000','127.0.0.1','4','liyanhong','create','已添加',15,1),(19,'2017-04-01 15:34:57.122000','127.0.0.1','5','马化腾','create','已添加',15,1),(20,'2017-04-01 17:11:33.298000','127.0.0.1','7','成都','create','已添加',13,1),(21,'2017-04-01 17:37:58.767000','127.0.0.1','6','老男孩','create','已添加',14,1),(22,'2017-04-01 17:38:09.219000','127.0.0.1','5','深圳大学','change','已修改 category 。',14,1),(23,'2017-04-01 17:38:24.457000','127.0.0.1','4','广州大学','change','已修改 category 。',14,1),(24,'2017-04-01 17:38:28.603000','127.0.0.1','4','广州大学','change','没有字段被修改。',14,1),(25,'2017-04-01 17:38:36.926000','127.0.0.1','3','上海交通大学','change','已修改 category 。',14,1),(26,'2017-04-01 17:38:41.888000','127.0.0.1','2','清华大学','change','已修改 category 。',14,1),(27,'2017-04-01 17:38:47.534000','127.0.0.1','1','北京大学','change','已修改 category 。',14,1),(28,'2017-04-01 17:39:50.665000','127.0.0.1','7','达内','create','已添加',14,1),(29,'2017-04-01 17:44:20.984000','127.0.0.1','8','马哥','create','已添加',14,1),(30,'2017-04-06 11:28:16.489000','127.0.0.1','5','马化腾','change','已修改 work_years 。',15,1),(31,'2017-04-06 11:28:37.528000','127.0.0.1','4','李彦宏','change','已修改 name 和 work_years 。',15,1),(32,'2017-04-06 11:28:49.406000','127.0.0.1','3','马云','change','已修改 name 和 work_years 。',15,1),(33,'2017-04-06 11:28:56.431000','127.0.0.1','2','施密特','change','已修改 work_years 。',15,1),(34,'2017-04-06 11:29:02.780000','127.0.0.1','1','比尔盖茨','change','已修改 work_years 。',15,1),(35,'2017-04-06 11:29:12.443000','127.0.0.1','5','马化腾','change','没有字段被修改。',15,1),(36,'2017-04-06 11:29:51.855000','127.0.0.1','6','Alex','create','已添加',15,1),(37,'2017-04-06 11:31:21.889000','127.0.0.1','7','马永亮','create','已添加',15,1),(38,'2017-04-06 11:33:36.699000','127.0.0.1','1','Course object','create','已添加',9,1),(39,'2017-04-06 11:36:40.079000','127.0.0.1','1','Course object','change','已修改 course_org 。',9,1),(40,'2017-04-06 15:12:56.107000','127.0.0.1','7','马永亮','change','已修改 image 。',15,1),(41,'2017-04-06 15:13:03.750000','127.0.0.1','6','Alex','change','已修改 image 。',15,1),(42,'2017-04-06 15:13:17.829000','127.0.0.1','5','马化腾','change','已修改 image 。',15,1),(43,'2017-04-06 15:13:24.667000','127.0.0.1','4','李彦宏','change','已修改 image 。',15,1),(44,'2017-04-06 15:14:24.064000','127.0.0.1','3','马云','change','已修改 image 。',15,1),(45,'2017-04-06 15:14:31.397000','127.0.0.1','2','施密特','change','已修改 image 。',15,1),(46,'2017-04-06 15:14:37.561000','127.0.0.1','1','比尔盖茨','change','已修改 image 。',15,1),(47,'2017-04-07 14:10:03.991000','127.0.0.1','2','Course object','create','已添加',9,1),(48,'2017-04-07 14:12:23.682000','127.0.0.1','3','Course object','create','已添加',9,1),(49,'2017-04-07 14:14:41.651000','127.0.0.1','4','Course object','create','已添加',9,1),(50,'2017-04-07 14:16:31.509000','127.0.0.1','5','java实战','create','已添加',9,1),(51,'2017-04-07 14:17:30.872000','127.0.0.1','6','Linux运维基础','create','已添加',9,1),(52,'2017-04-07 14:21:31.571000','127.0.0.1','7','windows高级管理员','create','已添加',9,1),(53,'2017-04-07 14:22:20.076000','127.0.0.1','8','vmware虚拟化','create','已添加',9,1),(54,'2017-04-07 14:24:33.951000','127.0.0.1','9','openstack云计算','create','已添加',9,1),(55,'2017-04-07 14:25:11.941000','127.0.0.1','10','php开发实战','create','已添加',9,1),(56,'2017-04-07 17:43:02.491000','127.0.0.1','1','UserCourse object','create','已添加',20,1),(57,'2017-04-07 17:43:11.507000','127.0.0.1','2','UserCourse object','create','已添加',20,1),(58,'2017-04-07 17:47:43.780000','127.0.0.1','7','','create','已添加',20,1),(59,'2017-04-07 17:54:11.522000','127.0.0.1','8','UserCourse object','create','已添加',20,1),(60,'2017-04-07 17:55:27.363000','127.0.0.1','10','UserCourse object','create','已添加',20,1),(61,'2017-04-07 17:55:34.800000','127.0.0.1','11','UserCourse object','create','已添加',20,1),(62,'2017-04-09 17:05:29.670000','127.0.0.1','1','第一章','create','已添加',10,1),(63,'2017-04-09 17:05:45.215000','127.0.0.1','2','第二章','create','已添加',10,1),(64,'2017-04-09 17:05:54.378000','127.0.0.1','3','第三章','create','已添加',10,1),(65,'2017-04-09 17:10:06.128000','127.0.0.1','1','1.1 hello world','create','已添加',11,1),(66,'2017-04-09 17:10:40.701000','127.0.0.1','2','1.2 基本概念','create','已添加',11,1),(67,'2017-04-09 17:10:48.101000','127.0.0.1','3','2.1 test','create','已添加',11,1),(68,'2017-04-09 17:10:56.972000','127.0.0.1','4','2.2 test2','create','已添加',11,1),(69,'2017-04-09 17:26:47.578000','127.0.0.1','1','课件1','create','已添加',12,1),(70,'2017-04-09 17:39:56.977000','127.0.0.1','10','php开发实战','change','已修改 teacher，category 和 tag 。',9,1),(71,'2017-04-09 17:50:31.068000','127.0.0.1','10','php开发实战','change','已修改 you_need_know 和 teacher_tell 。',9,1),(72,'2017-04-09 19:41:57.861000','127.0.0.1','12','UserCourse object','create','已添加',20,1),(73,'2017-04-09 19:42:12.458000','127.0.0.1','13','UserCourse object','create','已添加',20,1),(74,'2017-04-09 20:40:34.333000','127.0.0.1','2','1.2 基本概念','change','已修改 url 。',11,1),(75,'2017-04-09 20:41:38.384000','127.0.0.1','2','1.2 基本概念','change','已修改 url 。',11,1),(76,'2017-04-09 20:41:43.432000','127.0.0.1','1','1.1 hello world','change','已修改 url 。',11,1),(77,'2017-04-10 10:19:47.248000','127.0.0.1','5','马化腾','change','已修改 click_nums 。',15,1),(78,'2017-04-10 10:19:59.927000','127.0.0.1','7','马永亮','change','已修改 click_nums 。',15,1),(79,'2017-04-10 11:38:04.662000','127.0.0.1','1','django入门','change','已修改 teacher，category，tag，you_need_know 和 teacher_tell 。',9,1),(80,'2017-04-13 16:10:21.675000','127.0.0.1','1','Banner object','create','已添加',8,1),(81,'2017-04-13 16:10:39.611000','127.0.0.1','2','Banner object','create','已添加',8,1),(82,'2017-04-13 16:14:23.122000','127.0.0.1','3','Banner object','create','已添加',8,1),(83,'2017-04-13 16:14:35.164000','127.0.0.1','4','Banner object','create','已添加',8,1),(84,'2017-04-13 16:14:49.306000','127.0.0.1','5','Banner object','create','已添加',8,1),(85,'2017-04-13 16:35:40.037000','127.0.0.1','10','php开发实战','change','已修改 is_banner 。',9,1),(86,'2017-04-13 16:36:08.606000','127.0.0.1','8','vmware虚拟化','change','已修改 is_banner，teacher，category，tag，you_need_know 和 teacher_tell 。',9,1),(87,'2017-04-13 16:36:31.560000','127.0.0.1','4','django','change','已修改 is_banner，teacher，category，you_need_know 和 teacher_tell 。',9,1),(88,'2017-04-14 11:23:23.551000','127.0.0.1','9','openstack云计算','change','已修改 category，you_need_know 和 teacher_tell 。',9,1),(89,'2017-04-14 14:39:52.920000','127.0.0.1','10','php开发实战','change','已修改 is_banner 。',26,1);
+/*!40000 ALTER TABLE `xadmin_log` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `xadmin_usersettings`
+--
+
+DROP TABLE IF EXISTS `xadmin_usersettings`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `xadmin_usersettings` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `key` varchar(256) NOT NULL,
+  `value` longtext NOT NULL,
+  `user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `xadmin_usersettings_user_id_edeabe4a_fk_users_userprofile_id` (`user_id`),
+  CONSTRAINT `xadmin_usersettings_user_id_edeabe4a_fk_users_userprofile_id` FOREIGN KEY (`user_id`) REFERENCES `users_userprofile` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `xadmin_usersettings`
+--
+
+LOCK TABLES `xadmin_usersettings` WRITE;
+/*!40000 ALTER TABLE `xadmin_usersettings` DISABLE KEYS */;
+INSERT INTO `xadmin_usersettings` VALUES (1,'dashboard:home:pos','',1),(2,'site-theme','/static/xadmin/css/themes/bootstrap-xadmin.css',1);
+/*!40000 ALTER TABLE `xadmin_usersettings` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `xadmin_userwidget`
+--
+
+DROP TABLE IF EXISTS `xadmin_userwidget`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `xadmin_userwidget` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `page_id` varchar(256) NOT NULL,
+  `widget_type` varchar(50) NOT NULL,
+  `value` longtext NOT NULL,
+  `user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `xadmin_userwidget_user_id_c159233a_fk_users_userprofile_id` (`user_id`),
+  CONSTRAINT `xadmin_userwidget_user_id_c159233a_fk_users_userprofile_id` FOREIGN KEY (`user_id`) REFERENCES `users_userprofile` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `xadmin_userwidget`
+--
+
+LOCK TABLES `xadmin_userwidget` WRITE;
+/*!40000 ALTER TABLE `xadmin_userwidget` DISABLE KEYS */;
+/*!40000 ALTER TABLE `xadmin_userwidget` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2017-04-16 18:02:40
