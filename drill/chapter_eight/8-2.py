@@ -55,3 +55,11 @@ for x in root.findall('.//year'): # 无论year在哪个节点
 
 # root.findall('title[@lang=en]') # title 包含lang属性等于en的元素
 # root.findall('title[@lang=en]') # title 包含lang属性等于en的元素
+
+# root.findall('title[1]') 找到的第一个子元素
+
+# root.findall('title[2]') 找到的第二个子元素
+
+# root.findall('title[last()]') 找到的最后子元素
+
+# root.findall('title[last()-1]') 找到的最后倒数第二个元素
