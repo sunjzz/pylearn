@@ -47,7 +47,7 @@ INSTALLED_APPS = (
     'organization',
     'operation',
     'xadmin',
-    # 'crispy_forms',
+    'crispy_forms',
     'captcha',
     'pure_pagination',
     'DjangoUeditor',
@@ -97,7 +97,7 @@ DATABASES = {
         'NAME': 'online',
         'USER': 'root',
         'PASSWORD': 'key@1234',
-        'HOST': '127.0.0.1',
+        'HOST': '12.12.12.129',
         'PORT': '3306',
     }
 }
