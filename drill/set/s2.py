@@ -3,21 +3,28 @@
 # @time 2017/5/31 0031 下午 16:08
 
 import re
-from xml.etree import ElementTree as ET
+from xml.dom import minidom
 
-with open('result', 'r') as f:
-    str = f.read().decode('gb18030')
-    print(str)
-    xml_str_list = re.split('BytesMessage:|</REQUEST>', str)
-    xml_list = []
-    for index in range(len(xml_str_list)):
-        if xml_str_list[index].startswith('<?xml'):
-            xml_str_list[index]=xml_str_list[index].replace("GB18030","UTF-8")
-            xml_str_list[index] += "</REQUEST>"
-            print(xml_str_list[index])
-            xml_list.append(xml_str_list[index].encode('utf8'))
+
+def wash(file):
+    with open(file, 'r') as f:
+        str = f.read().decode('gb18030')
+        xml_str_list = re.split('BytesMessage:|</REQUEST>', str)
+        xml_list = []
+        for item in xml_str_list:
+            if item.startswith('<?xml'):
+                item=item.replace("GB18030","UTF-8")
+                item += "</REQUEST>"
+                xml_list.append(item.encode('utf8'))
     print(xml_list)
+    return xml_list
 
-# for item in xml_list:
-#     root = ET.fromstring(item)
-#     print(root)
+
+def pretty(xml_list):
+    for item in xml_list:
+        reparsed = minidom.parseString(item)
+        print(reparsed.toprettyxml(indent="\t"))
+
+
+pretty(wash('result'))
+
