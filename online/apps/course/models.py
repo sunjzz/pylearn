@@ -112,8 +112,6 @@ class Video(models.Model):
         return self.name
 
 
-
-
 class CourseResource(models.Model):
     course = models.ForeignKey(Course, verbose_name=u"课程")
     name = models.CharField(max_length=100, verbose_name=u"名称")

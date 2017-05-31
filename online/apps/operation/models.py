@@ -9,6 +9,7 @@ from course.models import Course
 
 # Create your models here.
 
+
 class UserAsk(models.Model):
     name = models.CharField(max_length=20, verbose_name=u"名称")
     mobile = models.CharField(max_length=11, verbose_name=u"手机")

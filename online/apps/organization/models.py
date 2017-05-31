@@ -7,6 +7,7 @@ from django.db import models
 # Create your models here.
 
 
+
 class CityDict(models.Model):
     name = models.CharField(max_length=20, verbose_name=u"城市")
     desc = models.CharField(max_length=200, verbose_name=u"描述")
@@ -68,7 +69,6 @@ class Teacher(models.Model):
 
     def __unicode__(self):
         return self.name
-
 
     def get_course(self):
         return self.course_set.all()

@@ -76,21 +76,21 @@
                     </div>
                     {% for course in courses %}
                         <div class="module1_{{ forloop.counter|add:2 }} box">
-                                <a href="{% url 'course:course_detail' course.id %}">
-                                    <img width="233" height="190" src="{{ MEDIA_URL }}{{ course.image }}"/>
-                                </a>
-                                <div class="des">
-                                    <a href="{% url 'course:course_detail' course.id %}">
-                                        <h2 title="{{ course.name }}">{{ course.name }}</h2>
-                                    </a>
-                                    <span class="fl">难度：<i class="key">{{ course.get_degree_display }}</i></span>
-                                    <span class="fr">学习人数：{{ course.students }}</span>
-                                </div>
-                                <div class="bottom">
-                                    <span class="fl" title="{{ course.course_org }}">{{ course.course_org }}</span>
-                                    <span class="star fr">{{ course.fav_nums }}</span>
-                                </div>
-                            </div>
+							<a href="{% url 'course:course_detail' course.id %}">
+								<img width="233" height="190" src="{{ MEDIA_URL }}{{ course.image }}"/>
+							</a>
+							<div class="des">
+								<a href="{% url 'course:course_detail' course.id %}">
+									<h2 title="{{ course.name }}">{{ course.name }}</h2>
+								</a>
+								<span class="fl">难度：<i class="key">{{ course.get_degree_display }}</i></span>
+								<span class="fr">学习人数：{{ course.students }}</span>
+							</div>
+							<div class="bottom">
+								<span class="fl" title="{{ course.course_org }}">{{ course.course_org }}</span>
+								<span class="star fr">{{ course.fav_nums }}</span>
+							</div>
+						</div>
                     {% endfor %}
 					</div>
 				</div>
@@ -111,19 +111,20 @@
 						<ul>
                         {% for org in course_orgs %}
                             <li class="{% if forloop.counter|divisibleby:'5' %}five{% endif %}">
-                                    <a href="{% url 'org:org_home' org.id %}">
-                                        <div class="company">
-                                            <img width="184" height="100" src="{{ MEDIA_URL }}{{ org.image }}"/>
-                                            <div class="score">
-                                                <div class="circle">
-                                                    <h2>{{ org.tag }}</h2>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p><span class="key" title="{{ org.name }}">{{ org.name }}</span></p>
-                                    </a>
-                                </li>
+								<a href="{% url 'org:org_home' org.id %}">
+									<div class="company">
+										<img width="184" height="100" src="{{ MEDIA_URL }}{{ org.image }}"/>
+										<div class="score">
+											<div class="circle">
+												<h2>{{ org.tag }}</h2>
+											</div>
+										</div>
+									</div>
+									<p><span class="key" title="{{ org.name }}">{{ org.name }}</span></p>
+								</a>
+							</li>
                         {% endfor %}
+						</ul>
 					</div>
 				</div>
 			</div>

@@ -30,7 +30,6 @@ class UserProfile(AbstractUser):
     def get_msg_nums(self):
         self.usermessage_set.all().count()
 
-
     def get_unread_nums(self):
         from operation.models import UserMessage
         return UserMessage.objects.filter(user=self.id, has_read=False).count()
@@ -41,6 +40,7 @@ choice_send_type = (
     ("forget", "找回密码"),
     ("update", "修改邮箱"),
 )
+
 
 class EmailVerifyRecord(models.Model):
     code = models.CharField(max_length=20, verbose_name=u"验证码")

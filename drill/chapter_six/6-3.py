@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 # @author ZhengZhong,Jiang
-# @time 2017/4/26 0026 下午 16:17
+# @time 2017/4/27 0027 下午 15:03
 
-
-from xml.etree.ElementTree import parse
+from xml.etree.ElementTree import Element, ElementTree, tostring
 
 f = open('demo.xml', 'r')
 
@@ -63,3 +62,36 @@ for x in root.findall('.//year'): # 无论year在哪个节点
 # root.findall('title[last()]') 找到的最后子元素
 
 # root.findall('title[last()-1]') 找到的最后倒数第二个元素
+
+e = Element('Data')
+
+e.set('name', 'abc')
+
+tostring(e)
+
+e.text = '123'
+
+tostring(e)
+
+print(tostring(e))
+
+e2 = Element('Row')
+
+e.append(e2)
+
+e3 = Element('Open')
+
+e3.text = '8.80'
+
+e2.append(e3)
+
+print(tostring(e))
+
+
+et = ElementTree(e)
+
+print('---', e2.tail)
+
+et.write('test.xml')
+
+
