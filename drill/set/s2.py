@@ -18,6 +18,6 @@ with open('result', 'r') as f:
             xml_list.append(xml_str_list[index].encode('utf8'))
     print(xml_list)
 
-# for item in xml_list:
+print# for item in xml_list:
 #     root = ET.fromstring(item)
 #     print(root)
