@@ -2,930 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02a7df16-5683-4612-9219-513184127b2b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/pylearn.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/drill/set/result2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/drill/set/s3.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/.idea/dataSources.local.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/.idea/dataSources.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/.idea/dataSources/5a84b8e7-ad62-41c6-a80c-4737b9db897f.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/.idea/dbnavigator.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/.idea/online.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/.idea/preferred-vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/.idea/runConfigurations/online.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/course/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/course/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/course/adminx.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/course/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/course/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/course/migrations/0002_course_course_org.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/course/migrations/0003_course_category.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/course/migrations/0004_auto_20170407_1718.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/course/migrations/0005_course_tag.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/course/migrations/0006_video_url.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/course/migrations/0007_video_learn_time.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/course/migrations/0008_course_teacher.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/course/migrations/0009_auto_20170409_1749.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/course/migrations/0010_auto_20170409_1751.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/course/migrations/0011_course_is_banner.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/course/migrations/0012_auto_20170414_1616.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/course/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/course/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/course/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/course/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/course/views.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/operation/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/operation/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/operation/adminx.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/operation/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/operation/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/operation/migrations/0002_auto_20170326_1856.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/operation/migrations/0003_auto_20170412_1742.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/operation/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/operation/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/operation/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/operation/views.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/organization/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/organization/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/organization/adminx.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/organization/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/organization/forms.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/organization/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/organization/migrations/0002_auto_20170401_1619.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/organization/migrations/0003_auto_20170401_1621.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/organization/migrations/0004_auto_20170405_1423.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/organization/migrations/0005_teacher_image.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/organization/migrations/0006_teacher_age.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/organization/migrations/0007_teacher_desc.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/organization/migrations/0008_courseorg_tag.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/organization/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/organization/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/organization/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/organization/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/organization/views.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/users/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/users/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/users/adminx.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/users/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/users/forms.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/users/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/users/migrations/0002_auto_20170410_1713.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/users/migrations/0003_auto_20170410_1713.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/users/migrations/0004_auto_20170411_1540.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/users/migrations/0005_auto_20170412_1742.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/users/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/users/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/users/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/users/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/users/views.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/utils/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/utils/demo.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/utils/email_send.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/apps/utils/mixin_utils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/course/2017/03/timg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/course/resource/2017/03/timg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/.tx/config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/adminx.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/filters.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/forms.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/layout.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/de_DE/LC_MESSAGES/django.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/de_DE/LC_MESSAGES/django.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/de_DE/LC_MESSAGES/djangojs.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/de_DE/LC_MESSAGES/djangojs.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/en/LC_MESSAGES/django.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/en/LC_MESSAGES/django.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/en/LC_MESSAGES/djangojs.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/en/LC_MESSAGES/djangojs.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/es_MX/LC_MESSAGES/django.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/es_MX/LC_MESSAGES/django.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/es_MX/LC_MESSAGES/djangojs.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/es_MX/LC_MESSAGES/djangojs.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/eu/LC_MESSAGES/django.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/eu/LC_MESSAGES/django.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/eu/LC_MESSAGES/djangojs.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/eu/LC_MESSAGES/djangojs.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/id_ID/LC_MESSAGES/django.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/id_ID/LC_MESSAGES/django.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/id_ID/LC_MESSAGES/djangojs.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/id_ID/LC_MESSAGES/djangojs.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/ja/LC_MESSAGES/django.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/ja/LC_MESSAGES/django.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/ja/LC_MESSAGES/djangojs.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/ja/LC_MESSAGES/djangojs.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/lt/LC_MESSAGES/django.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/lt/LC_MESSAGES/django.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/lt/LC_MESSAGES/djangojs.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/lt/LC_MESSAGES/djangojs.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/nl_NL/LC_MESSAGES/django.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/nl_NL/LC_MESSAGES/django.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/nl_NL/LC_MESSAGES/djangojs.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/nl_NL/LC_MESSAGES/djangojs.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/pl/LC_MESSAGES/django.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/pl/LC_MESSAGES/django.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/pl/LC_MESSAGES/djangojs.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/pl/LC_MESSAGES/djangojs.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/pt_BR/LC_MESSAGES/django.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/pt_BR/LC_MESSAGES/django.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/pt_BR/LC_MESSAGES/djangojs.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/pt_BR/LC_MESSAGES/djangojs.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/ru_RU/LC_MESSAGES/django.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/ru_RU/LC_MESSAGES/django.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/ru_RU/LC_MESSAGES/djangojs.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/ru_RU/LC_MESSAGES/djangojs.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/zh_Hans/LC_MESSAGES/django.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/zh_Hans/LC_MESSAGES/django.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/zh_Hans/LC_MESSAGES/djangojs.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/locale/zh_Hans/LC_MESSAGES/djangojs.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/actions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/aggregation.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/ajax.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/auth.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/batch.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/bookmark.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/chart.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/comments.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/details.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/editable.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/excel.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/export.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/filters.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/images.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/inline.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/language.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/layout.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/mobile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/multiselect.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/passwords.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/portal.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/quickfilter.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/quickform.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/refresh.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/relate.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/relfield.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/sitemenu.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/sortablelist.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/themes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/topnav.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/ueditor.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/utils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/wizard.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/plugins/xversion.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/sites.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/component.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/css/themes/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/css/themes/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/css/themes/bootstrap-xadmin.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/css/xadmin.form.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/css/xadmin.main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/css/xadmin.mobile.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/css/xadmin.page.dashboard.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/css/xadmin.plugin.aggregation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/css/xadmin.plugin.formset.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/css/xadmin.plugin.quickfilter.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/css/xadmin.plugins.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/css/xadmin.responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/css/xadmin.widget.editable.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/css/xadmin.widget.select-transfer.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.page.dashboard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.page.form.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.page.list.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.actions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.batch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.bookmark.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.charts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.details.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.editable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.filters.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.formset.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.portal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.quick-form.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.quickfilter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.refresh.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.revision.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.sortablelist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.themes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.responsive.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.widget.datetime.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.widget.multiselect.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.widget.select-transfer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/js/xadmin.widget.select.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/autotype/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.is.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.kr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.ms.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.nb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.pt-BR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.rs-latin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.rs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.sl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.sw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-TW.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-image-gallery/img/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-modal/css/bootstrap-modal.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-modal/img/ajax-loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-modal/js/bootstrap-modal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-modal/js/bootstrap-modalmanager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-multiselect/css/bootstrap-multiselect.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-multiselect/js/bootstrap-multiselect.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-timepicker/css/bootstrap-timepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-timepicker/css/bootstrap-timepicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-timepicker/js/bootstrap-timepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap-timepicker/js/bootstrap-timepicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/flot/excanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/flot/excanvas.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.colorhelpers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.aggregate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.canvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.categories.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.crosshair.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.errorbars.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.fillbetween.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.image.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.navigate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.pie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.resize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.selection.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.stack.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.symbol.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.threshold.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.time.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/font-awesome/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/font-awesome/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.core.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.effect.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.effect.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.mouse.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.sortable.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.widget.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.widget.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/jquery/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/jquery/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/load-image/load-image.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/load-image/load-image.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2-spinner.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_eu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_pt-BR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_pt-PT.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_ua.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_zh-CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_zh-hans.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/select2/select2x2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/selectize/selectize.bootstrap2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/selectize/selectize.bootstrap3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/selectize/selectize.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/selectize/selectize.default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/selectize/selectize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/selectize/selectize.legacy.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/selectize/selectize.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/snapjs/snap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/snapjs/snap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/static/xadmin/vendor/snapjs/snap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/404.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/500.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/auth/password_reset/complete.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/auth/password_reset/confirm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/auth/password_reset/done.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/auth/password_reset/email.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/auth/password_reset/form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/auth/user/add_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/auth/user/change_password.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/base.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/base_site.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/blocks/comm.top.setlang.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/blocks/comm.top.theme.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/blocks/comm.top.topnav.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/blocks/modal_list.left_navbar.quickfilter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/blocks/model_form.before_fieldsets.wizard.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/blocks/model_form.submit_line.wizard.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/blocks/model_list.nav_form.search_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/blocks/model_list.nav_menu.bookmarks.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/blocks/model_list.nav_menu.filters.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/blocks/model_list.results_bottom.actions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/blocks/model_list.results_top.charts.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/blocks/model_list.results_top.date_hierarchy.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/blocks/model_list.top_toolbar.exports.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/blocks/model_list.top_toolbar.layouts.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/blocks/model_list.top_toolbar.refresh.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/blocks/model_list.top_toolbar.saveorder.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/edit_inline/accordion.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/edit_inline/base.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/edit_inline/blank.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/edit_inline/one.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/edit_inline/stacked.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/edit_inline/tab.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/edit_inline/tabular.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/excel/model_list.top_toolbar.import.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/filters/char.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/filters/checklist.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/filters/date.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/filters/fk_search.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/filters/list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/filters/number.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/filters/quickfilter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/filters/rel.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/forms/transfer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/grids/thumbnails.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/includes/box.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/includes/pagination.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/includes/sitemenu_accordion.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/includes/sitemenu_default.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/includes/submit_line.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/includes/toggle_back.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/includes/toggle_menu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/layout/field_value.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/layout/field_value_td.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/layout/fieldset.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/layout/input_group.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/layout/td-field.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/views/app_index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/views/batch_change_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/views/dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/views/form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/views/invalid_setup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/views/logged_out.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/views/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/views/model_dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/views/model_delete_confirm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/views/model_delete_selected_confirm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/views/model_detail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/views/model_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/views/model_history.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/views/model_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/views/quick_detail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/views/quick_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/views/recover_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/views/recover_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/views/revision_diff.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/views/revision_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/widgets/addform.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/widgets/base.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/widgets/chart.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/widgets/list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templates/xadmin/widgets/qbutton.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templatetags/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/templatetags/xadmin_tags.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/util.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/vendors.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/views/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/views/base.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/views/dashboard.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/views/delete.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/views/detail.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/views/edit.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/views/form.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/views/list.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/views/website.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/extra_apps/xadmin/widgets.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/manage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/banner/2017/04/57a801860001c34b12000460.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/banner/2017/04/57aa86a0000145c512000460.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/banner/2017/04/57aa86a0000145c512000461.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/banner/2017/04/57aa86a0000145c512000462.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/banner/2017/04/57aa86a0000145c512000463.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/course/2017/04/django.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/course/2017/04/django_PFDzw2q.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/course/2017/04/java.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/course/2017/04/java_QXDz4Za.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/course/2017/04/linux.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/course/2017/04/linux_32aBpqH.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/course/2017/04/openstack.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/course/2017/04/php.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/course/2017/04/vmware.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/course/2017/04/windows.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/course/resource/2017/04/笔记.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/image/2017/04/mysql.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/org/2017/04/beijingdaxue.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/org/2017/04/danei.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/org/2017/04/guangzhoudaxue.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/org/2017/04/laonanhai.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/org/2017/04/mage.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/org/2017/04/qinghuadaxue.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/org/2017/04/shanghaijiaoda.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/org/2017/04/shenzhendaxue.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/teacher/2017/04/alex.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/teacher/2017/04/billgate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/teacher/2017/04/liyanhong.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/teacher/2017/04/mage.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/teacher/2017/04/mahuateng.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/teacher/2017/04/mayun.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/media/teacher/2017/04/shimite.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/mysql.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/online/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/online/settings.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/online/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/online/wsgi.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/css/animate.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/css/aui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/css/aui_iconfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/css/login.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/css/lq.datetimepick.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/css/mooc.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/css/muke/base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/css/muke/common-less.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/css/muke/course/common-less.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/css/muke/course/course-comment.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/css/muke/course/learn-less.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/css/reset.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/css/video-js.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/01_mid.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/01_small.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/02_mid.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/02_small.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/57a801860001c34b12000460.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/57aa86a0000145c512000460.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/about_nav_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/aobama.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/arrow_g.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/authentication.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/bank1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/bank2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/bank3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/bank4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/bank5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/banner.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/banner_icon1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/banner_icon2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/banner_icon3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/banner_icon4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/bgblack.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/billbg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/billbox.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/billboxactive.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/billcheck.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/billcheckg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/bjdx.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/btn1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/btn2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/btn3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/btn4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/check.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/check2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/check3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/check4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/check_alt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/checkbox.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/checked.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/code.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/companydes.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/companylogo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/companyrank.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/compright.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/contract.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/course.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/delete.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/diary-edit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/dig_close.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/down.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/drop_plus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/drop_plus_g.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/error-img.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/feature1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/feature2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/feature3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/feature4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/feature5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/feature6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/filebg/avi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/filebg/cdr.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/filebg/csv.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/filebg/doc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/filebg/jpg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/filebg/mp3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/filebg/pdf.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/filebg/png.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/filebg/ppt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/filebg/rar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/filebg/txt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/filebg/xls.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/filebg/zip.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/filebg/复件 txt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/fold.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/footlogo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/footlogo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/fqy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/g_star.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/gj.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/goback.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/gold.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/group.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/group_recommend.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/gx.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/h_star.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/header_middle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/help_index_pic.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/homepage.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/ht-top.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/icon-diary-jl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/icon-diary-my.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/icon-diary-user.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/icon-release-active.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/icon-release-on.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/icon-release-over.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/icon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/laba.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/list_time.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/login-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/logo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/logo2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/mask.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/mayun.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/module1_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/module1_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/module3_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/module4_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/module4_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/module4_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/module4_4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/module4_4_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/module4_6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/module5_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/module5_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/module6_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/module6bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/my.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/mysql.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/nav_arrow.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/nav_hot.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/njdx.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/oyf.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/path2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/path3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/path4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/path5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/path6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pathbg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pathbg2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pay1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pay2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pay3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pay4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/paypic1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/paypic2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pic1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pic10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pic11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pic12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pic13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pic1_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pic2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pic3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pic4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pic403.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pic404.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pic5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pic503.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pic6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pic7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pic8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pic9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pixel.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/plus.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/pop-tips-info-arr.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/python-zhengze.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/python.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/qhdx-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/qhdx.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/r_star.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/rankgold.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/rankgreen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/release1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/release2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/release3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/release4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/release5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/release6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/release7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/release8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/rightform1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/rightform2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/rightform3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/rolling.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/sass.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/scores.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/search_btn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/select-arr-default.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/select_arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/select_arrow2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/send.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/share_c1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/share_c1_g.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/share_c2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/share_c3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/share_c4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/share_c5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/share_c6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/share_c7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/share_c8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/share_c9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/side1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/side1_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/side2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/side2_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/side3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/side3_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/side4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/side4_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/slide_l.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/slide_l_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/slide_r.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/slide_r_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/star-btn-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/star-btn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/star-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/star.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/tab-jt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/tab.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/tel.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/tell.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/time.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/top_down.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/unfold.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/up.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/upload.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/user.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/weixi_icon2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/weixi_image.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/weixi_sm.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/word403.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/word503.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/x_alt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/images/zwj.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/img/background.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/img/cancel-off-big.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/img/cancel-on-big.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/img/coffee.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/img/face-a-off.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/img/face-a.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/img/face-b-off.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/img/face-b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/img/face-c-off.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/img/face-c.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/img/face-d-off.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/img/face-d.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/img/face-off.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/img/medal-off.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/img/medal-on.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/img/star-half-big.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/img/star-off-big.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/img/star-on-big.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/AdrInputPopDiv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/area.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/autocomplete-init.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/comment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/deco-comment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/deco-common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/deco-user.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/fastclick.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/fliplightbox.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/fold.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/jQuery.artTxtCount.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/jcarousel.connected-carousels.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/jquery-migrate-1.2.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/jquery-powerFloat-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/jquery-xmenu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/jquery.autocomplete.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/jquery.cookie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/jquery.formset.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/jquery.imagezoom.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/jquery.jcarousel.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/jquery.uploadify.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/login.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/lq.datetimepick.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/datePicker/mobiscroll.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/datePicker/mobiscroll.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/jquery.flexslider-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/jquery.raty.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/jquery.scrollLoading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/jquery.timer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/jquery.upload.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/laydate/laydate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/laydate/need/laydate.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/laydate/skins/default/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/laydate/skins/default/laydate.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/layer/extend/layer.ext.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/layer/layer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/layer/skin/default/icon-ext.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/layer/skin/default/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/layer/skin/default/loading-0.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/layer/skin/default/loading-1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/layer/skin/default/loading-2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/layer/skin/layer.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/layer/skin/layer.ext.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/queryCity/css/cityLayout.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/queryCity/images/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/queryCity/images/bg_mc_0113_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/queryCity/images/bg_mc_0113_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/queryCity/images/bg_mc_0113_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/queryCity/images/bg_mc_0113_4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/queryCity/images/bg_mc_0130_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/queryCity/images/bg_mc_0130_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/queryCity/images/ts-indexcity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/queryCity/js/public.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/queryCity/js/public2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/queryCity/js/queryAllAreas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/queryCity/js/queryAllProvinces.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/queryCity/js/queryCities.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/plugins/upload.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/select.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/selectUi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/unslider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/validateDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/video.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/videojs-ie8.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/js/wechat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/Entity/2016/11/default_middile_14_20161113173158_261.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/Entity/2016/11/default_middile_1_20161113172604_856.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/Entity/ueditor/default_middile_13_20161113185849_453.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/banner/2016/11/57a801860001c34b12000460.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/banner/2016/11/57a801860001c34b12000460_z4Vb8zl.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/banner/2016/11/57aa86a0000145c512000460.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/banner/2016/11/57aa86a0000145c512000460_GXIBATC.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/banner/2016/11/57aa86a0000145c512000460_nMwvoQD.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/course/resource/2016/11/curl_wget.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/course/resource/2016/11/media.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/courses/2016/11/540e57300001d6d906000338-240-135.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/courses/2016/11/540e57300001d6d906000338-240-135_MSIqfvw.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/courses/2016/11/540e57300001d6d906000338-240-135_Z3HIQ2t.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/courses/2016/11/540e57300001d6d906000338-240-135_mvvGYHL.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/courses/2016/11/540e57300001d6d906000338-240-135_n0L8vbw.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/courses/2016/11/540e57300001d6d906000338-240-135_wH52IED.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/courses/2016/11/57035ff200014b8a06000338-240-135.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/courses/2016/11/57035ff200014b8a06000338-240-135_0nFiBSI.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/courses/2016/11/57035ff200014b8a06000338-240-135_dHfj8Nq.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/courses/2016/11/default_middile_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/courses/2016/11/mysql.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/courses/2016/12/57035ff200014b8a06000338-240-135_dHfj8Nq.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/courses/2016/12/mysql.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/courses/2016/12/python文件处理.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/courses/2016/12/python错误和异常.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/courses/2016/12/python面向对象.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/courses/ueditor/57a801860001c34b12000460_z4Vb8zl_20161210233313_629.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/courses/ueditor/57aa86a0000145c512000460_20161210234050_865.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/courses/ueditor/aobama_20161113225004_372.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/courses/ueditor/aobama_20161113225044_773.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/image/2016/11/default_middile_18.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/image/2016/11/default_middile_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/image/2016/11/default_middile_2_WZ1559E.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/image/2016/11/default_middile_7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/image/2016/11/default_middile_8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/image/2016/12/default_big_14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/org/2016/11/bjdx.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/org/2016/11/imooc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/org/2016/11/imooc_Gn1sRjp.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/org/2016/11/imooc_OO2ykYP.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/org/2016/11/imooc_V0TJOyb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/org/2016/11/imooc_Y2Tonsq.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/org/2016/11/imooc_klgAUn5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/org/2016/11/imooc_qEaMov1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/org/2016/11/njdx.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/org/2016/11/qhdx-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/org/2016/12/bjdx.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/org/2016/12/bjdx_bcd0m07.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/org/2016/12/bjdx_cCpdUw8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/org/2016/12/imooc_Gn1sRjp.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/org/2016/12/imooc_klgAUn5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/teacher/2016/11/aobama.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/static/media/teacher/2016/11/aobama_CXWwMef.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/404.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/500.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/base.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/course-comment.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/course-detail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/course-list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/course-play.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/course-video.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/forgetpwd.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/org-detail-course.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/org-detail-desc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/org-detail-homepage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/org-detail-teachers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/org-list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/org_base.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/password_reset.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/register.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/send_success.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/teacher-detail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/teachers-list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/usercenter-base.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/usercenter-fav-course.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/usercenter-fav-org.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/usercenter-fav-teacher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/usercenter-info.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/usercenter-message.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc/templates/usercenter-mycourse.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/drill/chapter_six/.idea/workspace.xml" afterPath="$PROJECT_DIR$/drill/chapter_six/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/drill/set/.idea/misc.xml" afterPath="$PROJECT_DIR$/drill/set/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/drill/set/.idea/set.iml" afterPath="$PROJECT_DIR$/drill/set/.idea/set.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/drill/set/.idea/workspace.xml" afterPath="$PROJECT_DIR$/drill/set/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/drill/set/s1.py" afterPath="$PROJECT_DIR$/drill/set/s1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/drill/set/s2.py" afterPath="$PROJECT_DIR$/drill/set/s2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/.idea/misc.xml" afterPath="$PROJECT_DIR$/mysite/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/.idea/mysite.iml" afterPath="$PROJECT_DIR$/mysite/.idea/mysite.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/.idea/workspace.xml" afterPath="$PROJECT_DIR$/mysite/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mooc/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mooc/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mooc/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -943,7 +21,7 @@
       <file leaf-file-name="s1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drill/set/s1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="266">
               <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding />
             </state>
@@ -1047,7 +125,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-3" />
-    <option name="width" value="1378" />
+    <option name="width" value="1370" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -1099,7 +177,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1160,7 +238,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1376,6 +454,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -1449,6 +533,14 @@
       <option name="presentableId" value="Default" />
       <updated>1496621182745</updated>
     </task>
+    <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:sunjzz/pylearn&#10;&#10;# Conflicts:&#10;#&#9;drill/chapter_six/.idea/workspace.xml&#10;#&#9;drill/set/.idea/workspace.xml&#10;#&#9;drill/set/s2.py">
+      <created>1496996587969</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1496996587969</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1457,20 +549,19 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="0" width="1378" height="744" extended-state="1" />
-    <editor active="true" />
+    <frame x="-3" y="0" width="1370" height="744" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22913505" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23282443" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5098361" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5098361" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6721311" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1487,11 +578,77 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge branch 'master' of github.com:sunjzz/pylearn&#10;&#10;# Conflicts:&#10;#&#9;drill/chapter_six/.idea/workspace.xml&#10;#&#9;drill/set/.idea/workspace.xml&#10;#&#9;drill/set/s2.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of github.com:sunjzz/pylearn&#10;&#10;# Conflicts:&#10;#&#9;drill/chapter_six/.idea/workspace.xml&#10;#&#9;drill/set/.idea/workspace.xml&#10;#&#9;drill/set/s2.py" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/drill/set/s1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drill/set/s4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="35" column="37" lean-forward="false" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+          <folding>
+            <element signature="e#82#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/mysite/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/mysite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2052">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drill/set/s2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="e#84#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drill/set/s3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/drill/set/s1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -1647,7 +804,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/drill/set/s1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="266">
           <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
           <folding />
         </state>
