@@ -50,7 +50,7 @@ def check_server(all_hosts):
 
 def conf_bak():
     now_time = time.strftime('%Y-%m-%d',time.localtime(time.time()))
-    shutil.copy('nginx.conf', 'nginx.conf.tmp')
+    shutil.copy('nginx.conf', 'nginx.conf.%s' % now_time)
 
 
 def modify_conf(error_hosts):
