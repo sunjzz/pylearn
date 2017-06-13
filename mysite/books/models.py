@@ -23,7 +23,6 @@ class Publisher(models.Model):
         verbose_name_plural = u'出版社表'
 
 
-
 class Author(models.Model):
     first_name = models.CharField(max_length=30, verbose_name=u'名字')
     last_name = models.CharField(max_length=40, verbose_name=u'姓氏')
@@ -41,7 +40,7 @@ class Book(models.Model):
     title = models.CharField(max_length=100, verbose_name=u'书名')
     authors = models.ManyToManyField(Author, verbose_name=u'作者')
     publisher = models.ForeignKey(Publisher, verbose_name=u'出版机构')
-    publisher_date = models.DateField(blank=True, null=True, verbose_name=u'出版日期')
+    publication_date = models.DateField(blank=True, null=True, verbose_name=u'出版日期')
 
     def __str__(self):
         return self.title

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Search</title>
+</head>
+<body>
+    {% if error %}
+        <p style="color: red;">Please submit a search term.</p>
+    {% endif %}
+    <form action="" method="post">
+        <input type="text" name="q"/>
+        <input type="submit" value="Search"/>
+        {% csrf_token %}
+    </form>
+    <p>You searchd for: <strong>{{ query }}</strong></p>
+    {% if books %}
+        <p>Found {{ books|length }} book{{ books|pluralize }}</p>
+        <ul>
+            {% for book in books %}
+                <li>{{ book.title }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No books matched your search criteria.</p>
+    {% endif %}
+</body>
+</html>
