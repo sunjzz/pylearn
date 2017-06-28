@@ -1,0 +1,155 @@
+.auth_dialog_loading {
+    padding: 50px;
+    text-align: center;
+}
+
+.auth_dialog_tip {
+    color: #9cf;
+    font-size: 12px;
+    font-family: "\5b8b\4f53";
+    padding: 7px 0 0 41px;
+    margin-bottom: 9px;
+}
+
+.auth_dialog_component {
+    margin-top: 5px;
+}
+
+.auth_dialog_component .auth_dialog_head .auth_dialog_title {
+    line-height: 26px;
+}
+
+.auth_dialog_grid_input .auth_dialog_backspace {
+    background: #CCC url("/v2/images/modules/auth-dialog/auth_dialog_backspace.png") no-repeat 0 0;
+    border-right: 0 none;
+    cursor: pointer;
+    width: 40px;
+}
+
+.auth_dialog_grid_head {
+    padding-left: 20px;
+}
+
+.auth_dialog_component .auth_dialog_title {
+    font-size: 12px;
+    font-family: "\5b8b\4f53";
+    padding-right: 10px;
+    line-height: 33px;
+}
+
+.auth_dialog_component .auth_dialog_input_wrap {
+    display: inline-block;
+    position: relative;
+}
+
+.auth_dialog_grid_head div {
+    float: left;
+}
+
+.auth_dialog_component .auth_dialog_grid_content {
+    padding: 10px 0 20px 20px;
+}
+
+.auth_dialog_component .auth_dialog_grid_content a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.auth_dialog_component .auth_dialog_grid_input {
+    border: 1px solid #CCCCCC;
+}
+
+.auth_dialog_grid_input div {
+    border-right: 1px solid #DDDDDD;
+    height: 40px;
+    width: 54px;
+    background: #fff;
+}
+
+.auth_dialog_img {
+    background-position: 0 0;
+    display: inline-block;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 145px;
+}
+
+.auth_dialog_help {
+    margin: 9px 20px 0 0;
+    text-align: center;
+}
+
+.auth_dialog_buttons {
+    margin: 12px 0 0 45px;
+    width: 190px;
+}
+
+.auth_dialog_buttons a {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: -moz-linear-gradient(center top, #FFFFFF, #FAFAFA) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-color: #fff #fff #fff;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    float: left;
+    height: 40px;
+    margin: 0 1px 1px 0;
+    outline: 0 none;
+    width: 54px;
+}
+
+.auth_dialog_buttons div {
+    cursor: pointer;
+    height: 40px;
+    width: 54px;
+}
+
+body .auth_dialog_grid_input .auth_dialog_btn_0,
+body .auth_dialog_buttons .auth_dialog_btn_0 {
+    background-position: -10px -54px;
+}
+
+body .auth_dialog_grid_input .auth_dialog_btn_1,
+body .auth_dialog_buttons .auth_dialog_btn_1 {
+    background-position: -50px -54px;
+}
+
+body .auth_dialog_grid_input .auth_dialog_btn_2,
+body .auth_dialog_buttons .auth_dialog_btn_2 {
+    background-position: -90px -54px;
+}
+
+body .auth_dialog_grid_input .auth_dialog_btn_3,
+body .auth_dialog_buttons .auth_dialog_btn_3 {
+    background-position: -10px -94px;
+}
+
+body .auth_dialog_grid_input .auth_dialog_btn_4,
+body .auth_dialog_buttons .auth_dialog_btn_4 {
+    background-position: -50px -94px;
+}
+
+body .auth_dialog_grid_input .auth_dialog_btn_5,
+body .auth_dialog_buttons .auth_dialog_btn_5 {
+    background-position: -90px -94px;
+}
+
+body .auth_dialog_grid_input .auth_dialog_btn_6,
+body .auth_dialog_buttons .auth_dialog_btn_6 {
+    background-position: -10px -134px;
+}
+
+body .auth_dialog_grid_input .auth_dialog_btn_7,
+body .auth_dialog_buttons .auth_dialog_btn_7 {
+    background-position: -50px -134px;
+}
+
+body .auth_dialog_grid_input .auth_dialog_btn_8,
+body .auth_dialog_buttons .auth_dialog_btn_8 {
+    background-position: -90px -134px;
+}

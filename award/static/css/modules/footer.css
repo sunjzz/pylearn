@@ -1,0 +1,35 @@
+/*-- footer 全站通用页尾
+------------------------------------------------------------------------------------------*/
+.footer {
+    margin: 30px auto 0;
+    min-width: 1000px;
+    height: 150px;
+    color: #999;
+    line-height: 22px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.footer_link {
+    font-size: 14px;
+    padding: 35px 0 20px;
+    color: #666;
+}
+
+.footer_link a {
+    color: #666;
+}
+
+.footer_copy a {
+    color: #999;
+}
+
+.footer a:hover {
+    color: #690;
+    text-decoration: none;
+    width: 100px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+

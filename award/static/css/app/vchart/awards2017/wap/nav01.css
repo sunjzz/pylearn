@@ -1,0 +1,358 @@
+.wap_topbar {
+    width: 100%;
+    height: 1.706rem;
+    background-color: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wap_logo .go-mi {
+    width: 2rem;
+    height: 1.375rem;
+    display: block;
+}
+
+.wap_topbar .wap_login_btn {
+    width: 1.8rem;
+    height: 0.9171rem;
+    text-align: center;
+    color: #fff9f4;
+    font-size: 0.45rem;
+    line-height: 0.9171rem;
+    padding: 0 0.5rem 0 0.512rem;
+}
+
+.wap_topbar .wap_regisger_btn {
+    display: inline;
+    width: 1.8rem;
+    height: 1.706rem;
+    text-align: center;
+    color: #fff9f4;
+    font-size: 0.45rem;
+    line-height: 1.706rem;
+    padding-left: 0.5rem;
+}
+
+.wap_topbar .wap_username {
+    width: 3.3rem;
+    overflow: hidden;
+    margin-top: 0.45rem;
+    color: #fff9f4;
+    font-size: 0.4rem;
+    line-height: 0.7rem;
+    padding: 0 0.5rem 0 6rem;
+}
+
+.wap_topbar .wap_logo {
+    float: left;
+    width: 1.96266rem;
+    height: 0.9171rem;
+    background-image: url(/v2/images/app/vchart/awards2017/wap/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0.362rem 0 0 0.64rem;
+}
+
+.headimg {
+    width: 1.088rem;
+    height: 1.088rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    margin: 0.2986rem 0.512rem 0 0;
+}
+
+.wap_topbar .wap_logout_btn {
+    width: 2.3rem;
+    height: 1.706rem;
+    margin-top: 0.45rem;
+    text-align: center;
+    color: #fff9f4;
+    font-size: 0.4rem;
+    line-height: 1.706rem;
+}
+
+.wap_topbar .login-box {
+    margin-right: 0.64rem;
+}
+
+.wap_header {
+    width: 1.088rem;
+    height: 1.088rem;
+    background: url(/v2/images/app/vchart/awards2017/wap/header.png);
+    display: inline-block;
+    background-size: cover;
+    margin-top: 0.2986rem;
+}
+
+.vchart {
+    padding-bottom: 2rem;
+}
+
+.banner {
+    background: url('/v2/images/app/vchart/awards2017/wap/b7.jpg') no-repeat;
+    width: 16rem;
+    height: 12.3733rem;
+    background-size: cover;
+    margin-top: 1.706rem;
+    position: relative;
+}
+
+.hold-box {
+}
+
+.hold-box .hold-time {
+    position: absolute;
+    left: 7.5rem;
+    top: 10.5rem;
+    font-size: 0.512rem;
+    color: #fff;
+}
+
+.hold-box .hold-line {
+    position: absolute;
+    left: 7.5rem;
+    top: 10.6rem;
+    background: url(/v2/images/app/vchart/awards2017/index/banner-line.png) no-repeat;
+    height: 0.08533rem;
+    padding: 0 0.3rem;
+}
+
+.hold-time {
+    margin-top: -1rem;
+    margin-left: -1.1rem;
+}
+
+.share-box {
+    padding: 0 0.64rem 1.28rem;
+}
+
+.share-title {
+    color: #bbb;
+    font-size: 0.512rem;
+    padding: 0.64rem 0 0.4266rem 0;
+}
+
+.shareicon {
+    width: 8.3rem;
+    margin-left: 3rem;
+    display: inline-block;
+}
+
+.shareicon .sina {
+    background: url('/v2/images/app/vchart/awards2017/wap/sina.png') no-repeat;
+    width: 1.92rem;
+    height: 1.92rem;
+    background-size: cover;
+    display: inline-block;
+}
+
+.shareicon .wechat {
+    background: url('/v2/images/app/vchart/awards2017/wap/wechat.png') no-repeat;
+    width: 1.92rem;
+    height: 1.92rem;
+    background-size: cover;
+    display: inline-block;
+}
+
+.shareicon .friend {
+    background: url('/v2/images/app/vchart/awards2017/wap/friend.png') no-repeat;
+    width: 1.92rem;
+    height: 1.92rem;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 1.1rem
+}
+
+.shareicon .qq {
+    background: url('/v2/images/app/vchart/awards2017/wap/qq.png') no-repeat;
+    width: 1.92rem;
+    height: 1.92rem;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 1.2rem
+}
+
+.shareicon .qqzone {
+    background: url('/v2/images/app/vchart/awards2017/wap/qq2.png') no-repeat;
+    width: 1.92rem;
+    height: 1.92rem;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 1.2rem
+}
+
+.navbox {
+    background: url('/v2/images/app/vchart/awards2017/wap/navbg.png') no-repeat;
+    width: 16rem;
+    height: 1.2373rem;
+    background-size: cover;
+}
+
+.navbox1 {
+    background: url(/v2/images/app/vchart/awards2017/wap/nav3.jpg) no-repeat;
+    width: 16rem;
+    height: 1.642666rem;
+    background-size: cover;
+}
+
+.nav-main {
+    width: 10.88rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.navlink {
+    position: absolute;
+    left: 0;
+    top: -0.1rem;
+}
+
+.nav-main1 {
+    width: 15rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.navlink .nav1 {
+    background: url('/v2/images/app/vchart/awards2017/wap/shouye2.png') no-repeat;
+    width: 1.472rem;
+    height: 1.23733rem;
+    background-size: cover;
+    display: inline-block;
+    float: left;
+    font-size: 0;
+}
+
+.navlink .nav2 {
+    background: url('/v2/images/app/vchart/awards2017/wap/about3.png') no-repeat;
+    width: 2.8373333rem;
+    height: 1.23733rem;
+    background-size: cover;
+    display: inline-block;
+    float: left;
+    font-size: 0;
+}
+
+.navlink .nav3 {
+    background: url('/v2/images/app/vchart/awards2017/wap/year.png') no-repeat;
+    width: 1.408rem;
+    height: 1.28rem;
+    background-size: cover;
+    display: inline-block;
+    float: left;
+    font-size: 0;
+    margin: 0 1.2rem 0 0.6rem;
+}
+
+.navlink .nav4 {
+    background: url(/v2/images/app/vchart/awards2017/wap/piao.png) no-repeat;
+    width: 2.816rem;
+    height: 1.237333rem;
+    background-size: cover;
+    display: inline-block;
+    float: left;
+    font-size: 0;
+    margin: 0 0.3rem 0 0.5rem;
+}
+
+.navlink .nav5 {
+    background: url('/v2/images/app/vchart/awards2017/wap/cj.png') no-repeat;
+    width: 2.79466rem;
+    height: 1.216rem;
+    background-size: cover;
+    display: inline-block;
+    float: left;
+    font-size: 0;
+    margin-left: 0.8rem;
+}
+
+.navlink .nav6 {
+    background: url('/v2/images/app/vchart/awards2017/index/rtitle1.png') no-repeat;
+    width: 2.96rem;
+    height: 1.3rem;
+    background-size: cover;
+    display: inline-block;
+    float: left;
+    font-size: 0;
+    margin-left: 0.75rem;
+}
+
+.navlink .nav1-hover {
+    background: url('/v2/images/app/vchart/awards2017/wap/shouyehover.png') no-repeat;
+    width: 1.472rem;
+    height: 1.28rem;
+    background-size: cover;
+    display: inline-block;
+    float: left;
+    font-size: 0;
+}
+
+.navlink .nav2-hover {
+    background: url('/v2/images/app/vchart/awards2017/wap/abouthover.png') no-repeat;
+
+    height: 1.32266rem;
+    background-size: cover;
+    display: inline-block;
+    float: left;
+    font-size: 0;
+}
+
+.navlink .nav3-hover {
+    background: url('/v2/images/app/vchart/awards2017/wap/yearhover1.png') no-repeat;
+    width: 1.4933rem;
+    height: 1.216rem;
+    background-size: cover;
+    display: inline-block;
+    float: left;
+    font-size: 0;
+}
+
+.navlink .nav5-hover {
+    background: url('/v2/images/app/vchart/awards2017/wap/cj-hover.png') no-repeat;
+    width: 2.79466rem;
+    height: 1.216rem;
+    background-size: cover;
+    display: inline-block;
+    float: left;
+    font-size: 0;
+}
+
+.navlink .nav6-hover {
+    background: url('/v2/images/app/vchart/awards2017/index/rtitle1-hover.png') no-repeat;
+    width: 2.96rem;
+    height: 1.3rem;
+    background-size: cover;
+    display: inline-block;
+    float: left;
+    font-size: 0;
+}
+
+.tabSeat {
+    border-bottom: solid 1px #3d3d3d;
+}
+
+.tabSeat ul {
+    margin: 0 auto;
+    width: 15rem;
+    margin-top: 1.2rem;
+}
+
+.tabSeat ul li a {
+    color: #fff;
+    line-height: 1.18rem;
+    display: inline-block;
+    font-style: italic;
+    font-size: 0.54rem;
+    height: 1.18rem;
+}
+
+.tabSeat ul li a.hover {
+    color: #fee100;
+    border-bottom: solid 1px #fee100;
+}

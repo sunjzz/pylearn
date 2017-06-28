@@ -1,0 +1,223 @@
+/*
+* @Author: Administrator
+* @Date:   2017-01-11 15:33:23
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-01-11 16:32:03
+*/
+#projects, #projects .grid {
+    height: 640px;
+    width: 820px;
+}
+
+#projects {
+    background-color: #cccccc;
+}
+
+.project {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0 0 15px 15px;
+}
+
+.project {
+    float: left;
+    width: 222px;
+    height: 311px;
+}
+
+.grid {
+    width: 640px;
+    margin: 0 auto;
+    position: relative;
+}
+
+div.projects {
+    height: 640px;
+}
+
+div.projects {
+    float: left;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+div.projects .controls {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+}
+
+div.projects .controls {
+    float: left;
+    width: 222px;
+    height: 311px;
+}
+
+.controls .mask {
+    float: left;
+    position: relative;
+    background: url(../images/project_card_bg.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+div.projects .controls .bottom {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+div.projects .controls .bottom {
+    background: url(../images/project_card_bot_bg.png) no-repeat;
+    position: absolute;
+    bottom: -9px;
+    right: 0;
+    width: 222px;
+    height: 66px;
+}
+
+div.projects .controls .bottom + .bottom + .bottom {
+    bottom: -3px;
+}
+
+div.projects .controls .bottom + .bottom {
+    bottom: -6px;
+}
+
+div.projects .controls:hover .bottom + .bottom + .bottom {
+    bottom: -8px;
+}
+
+div.projects .controls:hover .bottom + .bottom {
+    bottom: -14px;
+}
+
+div.projects .controls:hover .bottom {
+    bottom: -20px;
+}
+
+.project.ani0 {
+    right: 630px;
+    bottom: 300px;
+}
+
+.project.ani1 {
+    right: 420px;
+    bottom: 300px;
+}
+
+.project.ani2 {
+    right: 210px;
+    bottom: 300px;
+}
+
+.project.ani3 {
+    right: 630px;
+    bottom: 0px;
+}
+
+.project.ani4 {
+    right: 420px;
+    bottom: 0px;
+}
+
+.project.ani5 {
+    right: 210px;
+    bottom: 0;
+}
+
+.project .front {
+    background: url(../images/project_front_bg.png) no-repeat;
+    display: table;
+}
+
+.project .back, .project .front {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.project .back {
+    background: url(../images/project_back_bg.png) no-repeat;
+}
+
+.project .back span {
+    color: #FFFFFF;
+    font-size: 16px;
+    padding-top: 120px;
+    display: block;
+}
+
+.project .back, .project .front {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 210px;
+    height: 300px;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.project, .project .back, .project .front, .socials a, .transform_holder .back, .transform_holder .front, .transform_holder .transform {
+    -webkit-transition: all 1s cubic-bezier(0.68, -.55, .265, 1.55);
+    -moz-transition: all 1s cubic-bezier(0.68, -.55, .265, 1.55);
+    -o-transition: all 1s cubic-bezier(0.68, -.55, .265, 1.55);
+    -ms-transition: all 1s cubic-bezier(0.68, -.55, .265, 1.55);
+    transition: all 1s cubic-bezier(0.68, -.55, .265, 1.55);
+}
+
+.project {
+    -webkit-perspective: 640px;
+    -moz-perspective: 640px;
+    -o-perspective: 640px;
+    perspective: 640px;
+    -ms-transform: perspective(640px);
+    -moz-transform: perspective(640px);
+    -ms-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+}
+
+.project .back, .project .front {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+/*.project .front {*/
+/*-webkit-transform: rotateY(0deg);*/
+/*-ms-transform: rotateY(0deg);*/
+/*}*/
+/*.project .back {*/
+/*-webkit-transform: rotateY(180deg);*/
+/*-moz-transform: rotateY(180deg);*/
+/*-o-transform: rotateY(180deg);*/
+/*-ms-transform: rotateY(180deg);*/
+/*transform: rotateY(180deg);*/
+/*}*/
+.rotate180 {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.rotate0 {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}

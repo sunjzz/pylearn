@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap 实例 - 条纹表格</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<table class="table table-striped">
+	<caption>书籍列表</caption>
+	<thead>
+		<tr>
+			<th>书名</th>
+			<th>作者</th>
+			<th>出版机构</th>
+			<th>出版时间</th>
+		</tr>
+	</thead>
+	<tbody>
+    {% for book in book_list %}
+        <tr>
+			<td>{{ book.title }}</td>
+			<td>{{ book.authors }}</td>
+			<td>{{ book.publisher }}</td>
+			<td>{{ book.publication_date }}</td>
+		</tr>
+    {% endfor %}
+	</tbody>
+</table>
+
+</body>
+</html>

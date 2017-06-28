@@ -1,0 +1,68 @@
+/*-- tab×é¼þ ( CHT 2013/08/08 )    .group_tab
+------------------------------------------------------------------------------------------*/
+
+.subnav {
+    height: 36px;
+    overflow: hidden;
+}
+
+.subnav_pd {
+    padding: 61px 0 20px;
+}
+
+.subnav_title {
+    padding-left: 16px;
+    font-size: 24px;
+    color: #690;
+    font-family: \5fae\8f6f\96c5\9ed1;
+}
+
+.subnav .group_tab {
+    margin-top: 8px;
+}
+
+.subnav .group_tab a {
+    font-size: 16px;
+}
+
+.group_tab {
+
+}
+
+.group_tab a {
+    height: 20px;
+    line-height: 20px;
+    margin: 0 5px;
+    padding: 3px 8px 5px;
+    font-size: 14px;
+    color: #666;
+    display: inline-block;
+    font-family: \5fae\8f6f\96c5\9ed1;
+    vertical-align: top;
+    *margin-left: 10px;
+    _margin-left: 8px;
+}
+
+.group_tab a:hover {
+    color: #fff;
+    background-color: #690;
+    text-decoration: none;
+}
+
+.group_tab .cur {
+    margin: 0 11px;
+    padding: 3px 2px 5px;
+    border-bottom: 2px #690 solid;
+    vertical-align: top;
+    *margin-left: 16px;
+    _margin-left: 14px;
+}
+
+.group_tab .cur:hover {
+    color: #666;
+    background: none;
+}
+
+.group_tab .ico_line {
+    margin: 9px 0 0 0;
+}

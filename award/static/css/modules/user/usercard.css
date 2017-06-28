@@ -1,0 +1,626 @@
+/*-- 全站弹出层
+------------------------------------------------------------------------------------------*/
+/*重置图片元素*/
+em, i {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.c_c {
+    color: #ccc;
+}
+
+.mr_20 {
+    margin: 20px;
+}
+
+.mr_l10 {
+    margin-left: 10px;
+}
+
+.mr_lrb {
+    margin: 0 20px 15px 20px;
+    overflow: hidden;
+    zoom: 1
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/*清除内外边距*/
+h3, h4 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+.fb14 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/*去除虚线*/
+
+:focus {
+    outline: 0;
+}
+
+/*-- ico图标
+------------------------------------------------------------------------------------------*/
+/*.ico_boy,.ico_girl,.ico_address,*/
+.p_are_attleft, .p_are_attright {
+    background: url(http://s.yytcdn.com/images/common/widget/usercard/ico_popup.png) no-repeat;
+    display: block;
+}
+
+/*男 女 地址*/
+.ico_boy, .ico_girl, .ico_address {
+    height: 16px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.ico_boy {
+    width: 72px;
+    float: left
+}
+
+.ico_girl {
+    background-position: -8px -160px;
+    width: 25px;
+}
+
+.ico_address {
+    width: 150px;
+}
+
+.p_name_info .avatar img {
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+
+/*  名片定制  关注按钮、已关注按钮样式*/
+
+.ico_card_follow, .ico_card_letter, .ico_card_has, .ico_card_mutual {
+    background: url(/v2/images/modules/usercard/ico_card_btn_725.png) no-repeat;
+    display: inline-block;
+    width: 75px;
+    height: 25px;
+    line-height: 25px;
+    cursor: pointer;
+    text-align: left;
+}
+
+/*关注按钮*/
+.ico_card_follow {
+    background-position: 0 0;
+    color: white;
+    width: 50px;
+    padding-left: 25px;
+}
+
+.ico_card_follow:hover {
+    text-decoration: none;
+    background-position: 0 -39px;
+    color: white;
+}
+
+.ico_card_follow:active {
+    background-position: 0 -77px;
+}
+
+/*发私信按钮*/
+.ico_card_letter {
+    background-position: -155px 0;
+    color: #999;
+    text-align: center;
+    width: 55px;
+}
+
+.ico_card_letter:hover {
+    text-decoration: none;
+    background-position: -155px -39px;
+    color: #999;
+}
+
+.ico_card_letter:active {
+    color: #999;
+    background-position: -155px -77px;
+}
+
+.ico_card_has {
+    text-indent: 22px;
+    background-position: -77px 0;
+    color: #999;
+}
+
+.ico_card_mutual {
+    text-indent: 22px;
+    background-position: -213px 0;
+    color: #999;
+}
+
+.ico_card_has:hover,
+.ico_card_mutual:hover {
+    text-decoration: none;
+    color: #999;
+    background-position: -77px -39px;
+}
+
+.ico_card_has:active,
+.ico_card_mutual:active {
+    color: #999;
+    background-position: -77px -77px;
+}
+
+/*头像名片弹出层*/
+
+.popup_card {
+    width: 320px;
+    _border: 1px solid #ccc;
+    _background-color: #fff;
+    /*border-top: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 0 1px 2px #d6d6d6;
+    -webkit-box-shadow: 0 1px 2px #d6d6d6;
+    box-shadow: 0 1px 2px #d6d6d6;*/
+}
+
+.p_name_info .avatar {
+    width: auto;
+    position: relative;
+    float: left;
+    margin: 0 14px 0 9px;
+    _display: inline;
+}
+
+/* 尖角 .p_name_info .p_arrow {
+    position: absolute;
+    left: 27px;
+    bottom: -1px;
+    font-family: "SimSun";
+    font-size: 14px;
+    height: 11px;
+    overflow: hidden;
+    display: block;
+    color: #fff;
+}*/
+
+.p_name_info h4 {
+    line-height: 18px;
+    overflow: hidden;
+    padding-right: 8px;
+    word-wrap: break-word;
+}
+
+.p_name_info h4 img {
+    vertical-align: top;
+}
+
+.p_name_info {
+    min-height: 62px;
+    padding-bottom: 7px;
+    overflow: hidden;
+    background: url(http://s.yytcdn.com/images/common/widget/usercard/popup_card_bg.png) no-repeat -320px bottom;
+    _background: url(http://s.yytcdn.com/images/common/widget/usercard/popup_card.png) repeat-x 0 bottom;
+    _padding-top: 7px;
+    _overflow: hidden;
+    _zoom: 1;
+}
+
+.p_name_roun {
+    background: url(http://s.yytcdn.com/images/common/widget/usercard/popup_card_bg.png) no-repeat -320px 0;
+    width: 320px;
+    height: 7px;
+    overflow: hidden;
+    display: block;
+    _height: 0;
+    _background: none;
+    _overflow: hidden;
+}
+
+.p_remarks {
+    display: inline-block;
+}
+
+.p_gender {
+    margin: 4px 0 1px 0;
+    height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+}
+
+.p_userdata {
+}
+
+.p_userdata li {
+    float: left;
+    width: 76px;
+}
+
+.p_userdata li a {
+    color: #690;
+    padding-right: 3px;
+}
+
+.p_userdata li a:hover {
+    color: #390;
+}
+
+.p_userinfo {
+    padding: 0 15px 20px;
+    min-height: 10px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.p_card_btn {
+    height: 30px;
+    /*padding: 30px 12px 10px 12px;*/
+    padding: 0 12px 10px;
+    overflow: hidden;
+    color: #666;
+}
+
+.p_conbg {
+    padding-top: 10px;
+    min-height: 10px;
+    background: url(http://s.yytcdn.com/images/common/widget/usercard/popup_card_bg.png) no-repeat left bottom;
+    _background: none;
+}
+
+.popup_card_arrow {
+    width: 22px;
+    height: 12px;
+    position: absolute;
+    overflow: hidden;
+    display: block;
+    z-index: 2;
+}
+
+.popup_card_arrow .arrow1,
+.popup_card_arrow .arrow2 {
+    font-family: "SimSun";
+    font-size: 21px;
+    line-height: 1.5;
+    height: 15px;
+    overflow: hidden;
+    display: block;
+    color: #e1e1e1;
+    font-weight: bold;
+    margin-top: -5px;
+    position: relative;
+}
+
+.popup_card_arrow .arrow2 {
+    color: #fafafa;
+    margin-top: -14px;
+}
+
+.p_left .popup_card_arrow {
+    right: 30px;
+}
+
+.p_right .popup_card_arrow {
+    left: 30px;
+}
+
+.p_top .popup_card_arrow {
+    bottom: -6px;
+    _bottom: -11px;
+}
+
+.p_bottom .popup_card_arrow {
+    top: -9px;
+}
+
+.p_top .popup_card_arrow .arrow1,
+.p_top .popup_card_arrow .arrow2 {
+    margin-top: -12px;
+    height: 24px;
+}
+
+.p_top .popup_card_arrow .arrow2 {
+    margin-top: -26px;
+    color: white;
+}
+
+.p_loading {
+    padding: 20px 0;
+    text-align: center;
+}
+
+/*荣誉*/
+.p_honour {
+    height: 30px;
+    margin: 20px 12px 0 12px;
+    overflow: hidden;
+}
+
+.p_honour a {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+.p_honour img {
+    display: block;
+}
+
+/*正在关注*/
+.p_are {
+    height: 60px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.p_are_left {
+    width: 60px;
+    float: left;
+    margin: 0 10px 0 15px;
+    text-align: center;
+}
+
+.p_are_left em {
+    font: 30px Arial;
+    display: block;
+    color: #666;
+}
+
+.p_are_left strong {
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    color: #999;
+}
+
+.p_are_attleft, .p_are_attright {
+    width: 20px;
+    height: 30px;
+    display: block;
+    float: left;
+}
+
+.p_are_attleft {
+    background-position: -7px -208px;
+}
+
+.p_are_attleft:hover {
+    background-position: -7px -238px;
+}
+
+.p_are_attright {
+    background-position: -7px -268px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.p_are_attright:hover {
+    background-position: -7px -298px;
+}
+
+.p_are_att {
+    width: 245px;
+    float: left;
+    overflow: hidden;
+}
+
+.p_are_att li {
+    float: left;
+    margin: 0 3px;
+}
+
+/*发私信*/
+
+.p_letter_arr {
+    float: left;
+    margin-right: 15px;
+}
+
+.p_letter_right {
+    float: left;
+    width: 290px;
+}
+
+.p_letter span a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 165px;
+}
+
+/*.p_letter .com_area {
+    width: 277px;
+    height: 100px;
+    margin-top: 5px;
+}*/
+
+#usercardBox,
+.usercard_box {
+    position: absolute;
+    z-index: 9999;
+}
+
+.avatar .user_online {
+    position: absolute;
+    width: 16px;
+    height: 12px;
+    right: 1px;
+    bottom: 1px;
+    background: url(http://s.yytcdn.com/images/common/widget/usercard/user_online.png) no-repeat left bottom;
+}
+
+/*由于新版而增加的样式start*/
+.pd_20 {
+    padding: 20px;
+    overflow: hidden;
+}
+
+/*私信弹层  发送按钮重置*/
+.p_letter_right .ico_save_btn {
+    float: right;
+    margin-top: 15px;
+}
+
+/*发私信*/
+.p_letter {
+    padding: 8px;
+    font-size: 12px;
+    font-family: "宋体";
+    overflow: hidden;
+}
+
+.p_letter_arr {
+    float: left;
+    margin-right: 15px;
+
+}
+
+.p_letter_right {
+    float: left;
+    width: 310px;
+}
+
+.p_letter .inputWarn {
+    color: #cccccc;
+}
+
+.p_letter .inputWarn .number {
+    font-family: "Tahoma";
+    color: #666666;
+    font-weight: bold;
+}
+
+.p_letter .com_area {
+    width: 378px;
+    height: 78px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.p_letter .ico_ct_release {
+    float: right;
+}
+
+/*-- ico图标
+------------------------------------------------------------------------------------------*/
+/*.ico_close,*/
+.ico_save_btn, .ico_ccd_btn,
+.ico_are_attleft, .ico_are_attright {
+    background: url(http://s.yytcdn.com/images/common/widget/mbox/ico_p_common.png) no-repeat;
+    display: block;
+}
+
+/*确定、取消按钮*/
+.ico_ccd_btn {
+    background-position: -167px 0;
+    width: 60px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    color: #666;
+}
+
+.ico_ccd_btn:hover {
+    background-position: -167px -27px;
+    color: #690;
+}
+
+.ico_ccd_btn:active {
+    background-position: -167px -54px;
+    color: #390;
+}
+
+.ico_save_btn {
+    background-position: -230px 0;
+    width: 70px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    float: right;
+}
+
+.ico_save_btn:hover {
+    background-position: -230px -27px;
+}
+
+.ico_save_btn:active {
+    background-position: -230px -54px;
+}
+
+/*勋章*/
+
+.p_card_btn .medals {
+    height: 30px;
+    width: 280px;
+    overflow: hidden;
+    float: left;
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 0;
+    *word-spacing: -1px;
+}
+
+.p_card_btn a, .p_card_btn a i {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+.p_card_btn .medals a {
+    margin-right: -2px;
+}
+
+.p_card_btn .left,
+.p_card_btn .right {
+    width: 12px;
+    height: 23px;
+    margin-top: 2px;
+}
+
+.p_card_btn .right {
+    float: none;
+}
+
+.p_card_btn .left i,
+.p_card_btn .right i {
+    width: 8px;
+    height: 16px;
+    margin-top: 3px;
+    margin-left: 2px;
+    background: url("/v2/images/modules/usercard/medal.png") no-repeat 0 0;
+}
+
+.p_card_btn .right i {
+    background-position: -23px 0;
+}
+
+.p_card_btn .left:hover,
+.p_card_btn .right:hover {
+    background: url("/v2/images/modules/usercard/medal.png") no-repeat -38px -1px;
+}
+
+.p_card_btn .left:hover i {
+    background-position: 0 -15px;
+}
+
+.p_card_btn .right:hover i {
+    background-position: -23px -15px;
+}

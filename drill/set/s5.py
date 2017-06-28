@@ -35,9 +35,7 @@ headers = {'Connection': 'keep-alive'}
 resp = requests.get("http://www.swsindex.com/downloadfiles.aspx?swindexcode=SwClass&type=530&columnid=8892",
     cookies=headers)
 
-print resp.cookies
-
-headers['Cookie'] = 'set-cookie'
+headers['Cookie'] = resp.headers['Set-Cookie']
 headers['Upgrade-Insecure-Requests'] = '1'
 headers['Accept'] = 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
 headers['Accept-Encoding'] = 'gzip, deflate'
@@ -45,7 +43,7 @@ headers['User-Agent'] = 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/201
 headers['Referer'] = 'http://www.swsindex.com/downloadfiles.aspx?swindexcode=SwClass&type=530&columnid=8892'
 
 resp = requests.get("http://www.swsindex.com/downloadfiles.aspx?swindexcode=SwClass&type=530&columnid=8892",
-    cookies=headers)
+    headers=headers)
 
 with open("SwClass.xls", "wb") as code:
 	code.write(resp.content)

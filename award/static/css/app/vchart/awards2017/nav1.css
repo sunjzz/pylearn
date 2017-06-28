@@ -1,0 +1,545 @@
+.topbarbox {
+    background: #030303;
+    height: 67px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    min-width: 1200px;
+}
+
+.topbar-main {
+    margin: 0 200px;
+}
+
+.topbarbox .logo {
+    background: url(/v2/images/app/vchart/awards2017/wap/logo.png) no-repeat;
+    width: 92px;
+    height: 43px;
+    display: inline-block;
+    font-size: 0;
+    margin-top: 12px;
+}
+
+.wap_header .mo-header, .wap_headerimg .headimg {
+    width: 51px;
+    height: 51px;
+    display: inline-block;
+    margin: 7px 23px 0 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.login-box .wap_login_btn, .login-box .wap_regisger_btn, .login-box .wap_logout_btn {
+    height: 67px;
+    line-height: 67px;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.login-box .wap_login_btn:hover, .login-box .wap_regisger_btn:hover, .login-box .wap_logout_btn:hover {
+    color: #ddc301;
+}
+
+.banner {
+    background: url('/v2/images/app/vchart/awards2017/index/banner8.jpg') no-repeat center 50%;
+    height: 670px;
+    margin-top: 67px;
+}
+
+.banner-main, .video-main, .year-main {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hold-line {
+    position: absolute;
+    color: #fff;
+    top: 522px;
+    left: 50%;
+    margin-left: 7px;
+    background: url(/v2/images/app/vchart/awards2017/index/banner-line.png) no-repeat;
+    height: 4px;
+    width: 34px;
+}
+
+.hold-box .hold-time {
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    color: #fff;
+    top: 490px;
+    left: 50%;
+
+    margin-left: -24px;
+}
+
+.share-box {
+    padding: 596px 0 0 925px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.shareicon .J_sharelink {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    position: relative;
+    margin-right: 14px;
+}
+
+.wechat .ecode-img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 30px;
+    left: -33px;
+    display: none;
+    z-index: 5;
+}
+
+.wechat:hover .ecode-img {
+    display: block;
+}
+
+.friend .fecode-img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 30px;
+    left: -38px;
+    display: none;
+    z-index: 5;
+}
+
+.friend:hover .fecode-img {
+    display: block;
+}
+
+.shareicon .wechat {
+    background: url('/v2/images/app/vchart/awards2017/index/wechat.png') no-repeat;
+}
+
+.shareicon .wechat:hover {
+    background: url('/v2/images/app/vchart/awards2017/index/wechat-hover.png') no-repeat;
+}
+
+.shareicon .friend {
+    background: url('/v2/images/app/vchart/awards2017/index/friend.png') no-repeat;
+}
+
+.shareicon .friend:hover {
+    background: url('/v2/images/app/vchart/awards2017/index/friend-hover.png') no-repeat;
+}
+
+.shareicon .qq {
+    background: url('/v2/images/app/vchart/awards2017/index/qq.png') no-repeat;
+}
+
+.shareicon .qq:hover {
+    background: url('/v2/images/app/vchart/awards2017/index/qq-hover.png') no-repeat;
+}
+
+.shareicon .qqzone {
+    background: url('/v2/images/app/vchart/awards2017/index/qqzone.png') no-repeat;
+}
+
+.shareicon .qqzone:hover {
+    background: url('/v2/images/app/vchart/awards2017/index/qqzone-hover.png') no-repeat;
+}
+
+.shareicon .sina {
+    background: url('/v2/images/app/vchart/awards2017/index/sina.png') no-repeat;
+}
+
+.shareicon .sina:hover {
+    background: url('/v2/images/app/vchart/awards2017/index/sina-hover.png') no-repeat;
+}
+
+.shareicon .paste {
+    background: url('/v2/images/app/vchart/awards2017/index/paste.png') no-repeat;
+}
+
+.shareicon .paste:hover {
+    background: url('/v2/images/app/vchart/awards2017/index/paste-hover.png') no-repeat;
+}
+
+.navbox {
+    background: url(/v2/images/app/vchart/awards2017/index/navbg1.png) no-repeat center 50%;
+    height: 149px;
+    margin-top: -1px;
+}
+
+.navbox .nav-main {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav-main .navlink {
+    position: absolute;
+    left: 170px;
+    top: -29px;
+}
+
+.navbox2 .navlink {
+    top: -29px;
+}
+
+.navlink .navli {
+    margin: 18px 74px 0 0;
+}
+
+.navli .nav1 {
+    font-size: 0;
+    background: url('/v2/images/app/vchart/awards2017/index/index.png') no-repeat;
+    width: 60px;
+    height: 50px;
+    display: inline-block;
+}
+
+.navli .nav2 {
+    font-size: 0;
+    background: url('/v2/images/app/vchart/awards2017/index/news.png') no-repeat;
+    width: 58px;
+    height: 50px;
+    display: inline-block;
+}
+
+.navli .nav3 {
+    font-size: 0;
+    background: url('/v2/images/app/vchart/awards2017/index/year.png') no-repeat;
+    width: 61px;
+    height: 50px;
+    display: inline-block;
+}
+
+.navli .nav4 {
+    font-size: 0;
+    background: url('/v2/images/app/vchart/awards2017/index/about-title.png') no-repeat;
+    width: 116px;
+    height: 55px;
+    display: inline-block;
+}
+
+.navli .nav5 {
+    font-size: 0;
+    background: url('/v2/images/app/vchart/awards2017/index/activity.png') no-repeat;
+    width: 94px;
+    height: 50px;
+    display: inline-block;
+}
+
+.navli .nav6 {
+    font-size: 0;
+    background: url('/v2/images/app/vchart/awards2017/index/piao.png') no-repeat;
+    width: 116px;
+    height: 50px;
+    display: inline-block;
+}
+
+.navli .nav7 {
+    font-size: 0;
+    background: url('/v2/images/app/vchart/awards2017/index/rtitle1.png') no-repeat;
+    width: 114px;
+    height: 50px;
+    display: inline-block;
+}
+
+.navli .nav1-hover {
+    font-size: 0;
+    background: url('/v2/images/app/vchart/awards2017/index/indexhover.png') no-repeat;
+    width: 60px;
+    height: 50px;
+    display: inline-block;
+}
+
+.navli .nav2-hover {
+    font-size: 0;
+    background: url('/v2/images/app/vchart/awards2017/index/newshover.png') no-repeat;
+    width: 61px;
+    height: 50px;
+    display: inline-block;
+}
+
+.navli .nav3-hover {
+    font-size: 0;
+    background: url('/v2/images/app/vchart/awards2017/index/yearhover.png') no-repeat;
+    width: 60px;
+    height: 50px;
+    display: inline-block;
+}
+
+.navli .nav4-hover {
+    font-size: 0;
+    background: url('/v2/images/app/vchart/awards2017/index/title2-hover.png') no-repeat;
+    width: 116px;
+    height: 50px;
+    display: inline-block;
+}
+
+.navli .nav5-hover {
+    font-size: 0;
+    background: url('/v2/images/app/vchart/awards2017/index/activity-hover.png') no-repeat;
+    width: 93px;
+    height: 51px;
+    display: inline-block;
+}
+
+.navli .nav6-hover {
+    font-size: 0;
+    background: url('/v2/images/app/vchart/awards2017/index/piaohover.png') no-repeat;
+    width: 116px;
+    height: 50px;
+    display: inline-block;
+}
+
+.navli .nav7-hover {
+    font-size: 0;
+    background: url('/v2/images/app/vchart/awards2017/index/rtitle1-hover.png') no-repeat;
+    width: 114px;
+    height: 50px;
+    display: inline-block;
+}
+
+.friend-main {
+    width: 1132px;
+    margin: 0 auto;
+}
+
+.t1-title {
+    font-size: 0;
+    background: url('/v2/images/app/vchart/awards2017/index/rtitle.png') no-repeat;
+    height: 140px;
+}
+
+.friendlink {
+    background: url(/v2/images/app/vchart/awards2017/index/cover.png) repeat;
+    padding: 150px 0 90px;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tc {
+    text-align: center;
+}
+
+.tr {
+    text-align: right;
+}
+
+.friendli {
+    float: left;
+}
+
+.friendli1 {
+    width: 187px;
+}
+
+.friendli2 {
+    margin: 0 160px 0 145px;
+    width: 463px;
+}
+
+.friendli3 {
+    width: 177px;
+}
+
+.friendli .starlink {
+    background: url('/v2/images/app/vchart/awards2017/index/starimg.png') no-repeat;
+    height: 106px;
+    display: block;
+    margin-left: 4px;
+}
+
+.friendli .t1-title {
+    background: url('/v2/images/app/vchart/awards2017/index/db-title.png') no-repeat;
+    height: 40px;
+    display: block;
+    font-size: 0;
+    margin-bottom: 40px;
+}
+
+.friendli .t2-title {
+    background: url('/v2/images/app/vchart/awards2017/index/rtitle.png') no-repeat;
+    height: 40px;
+    display: block;
+    font-size: 0;
+    margin: 0 0 40px 150px;
+}
+
+.friendli .t3-title {
+    background: url('/v2/images/app/vchart/awards2017/index/ttitle.png') no-repeat;
+    height: 40px;
+    display: block;
+    font-size: 0;
+    margin-bottom: 40px;
+}
+
+.mvlink {
+    background: url('/v2/images/app/vchart/awards2017/index/mv.png') no-repeat;
+    width: 125px;
+    height: 106px;
+    display: block;
+    margin: 0 184px 80px -7px;
+}
+
+.pcapp {
+    background: url('/v2/images/app/vchart/awards2017/index/mapp.png') no-repeat;
+    width: 116px;
+    height: 106px;
+    display: block;
+    margin-bottom: 80px;
+    margin-left: -7px;
+}
+
+.zhuzhan {
+    background: url('/v2/images/app/vchart/awards2017/index/zhuzhan.png') no-repeat;
+    width: 131px;
+    height: 47px;
+    display: block;
+    margin: 0 184px 80px -7px;
+}
+
+.baidulink {
+    background: url('/v2/images/app/vchart/awards2017/index/baidu.png') no-repeat;
+    width: 154px;
+    height: 48px;
+    display: block;
+    margin-left: -26px;
+}
+
+.billboard {
+    background: url('/v2/images/app/vchart/awards2017/index/bill.png') no-repeat;
+    height: 90px;
+    display: block;
+    margin-bottom: 80px;
+    margin-left: -20px;
+}
+
+.gaon {
+    background: url('/v2/images/app/vchart/awards2017/index/gaon.png') no-repeat;
+    height: 90px;
+    display: block;
+    margin-left: -20px;
+}
+
+.rightcode {
+    background: url('/v2/images/app/vchart/awards2017/index/charge.png') no-repeat;
+    width: 134px;
+    height: 157px;
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 470px;
+    z-index: 10;
+}
+
+.votegroup {
+    background: url(/v2/images/app/vchart/awards2017/index/smallnav1.png) no-repeat;
+    height: 72px;
+}
+
+.group-main {
+    margin-left: 150px;
+}
+
+.group-main ul {
+    width: 636px;
+    margin: 0 auto;
+}
+
+.group-box .groupli {
+    position: relative;
+}
+
+.groupli a {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.groupli .old {
+    font-size: 0;
+    background: url(/v2/images/app/vchart/awards2017/index/c1.png) no-repeat;
+    width: 204px;
+    height: 29px;
+    display: inline-block;
+    top: 7px;
+}
+
+.groupli .oldhover {
+    font-size: 0;
+    background: url(/v2/images/app/vchart/awards2017/index/c1-hover.png) no-repeat;
+    width: 204px;
+    height: 29px;
+    display: inline-block;
+}
+
+.groupli .new {
+    font-size: 0;
+    background: url(/v2/images/app/vchart/awards2017/index/c2.png) no-repeat;
+    width: 231px;
+    height: 27px;
+    display: inline-block;
+    top: 7px;
+}
+
+.groupli .newhover {
+    font-size: 0;
+    background: url(/v2/images/app/vchart/awards2017/index/c2-hover.png) no-repeat;
+    width: 231px;
+    height: 27px;
+    display: inline-block;
+}
+
+.tabSeatNav {
+    width: 344px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.tabSeatNav h3 {
+    text-align: center;
+    padding-top: 70px;
+}
+
+.corplink {
+    background: #000;
+}
+
+.corp-main {
+    width: 1152px;
+    margin: 0 auto;
+}
+
+.corp-main .corptitle {
+    background: url(/v2/images/app/vchart/awards2017/index/corptitle.png) no-repeat;
+    width: 112px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 43px;
+    font-size: 0;
+}
+
+.corpul {
+    margin-left: -10px;
+}
+
+.corpul .corpli {
+    margin: 0 10px 20px 0;
+    width: 156px;
+    height: 90px;
+    float: left;
+}
+
+.corpli .corpa, .corpli .corpimg {
+    width: 156px;
+    height: 90px;
+}

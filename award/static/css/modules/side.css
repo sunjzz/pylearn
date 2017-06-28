@@ -1,0 +1,99 @@
+/*-- 全站右列 通用   .side  简写为  .sd_
+------------------------------------------------------------------------------------------*/
+/*title*/
+.sd_title {
+    padding-bottom: 5px;
+    color: #666;
+    overflow: hidden;
+    border-bottom: 1px #d1d1d1 solid;
+    _zoom: 1;
+}
+
+/*热门话题*/
+.sd_topic {
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.sd_topic .list {
+    width: 300px;
+    padding: 3px 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+}
+
+/*收录这首MV的悦单*/
+.sd_record {
+    margin-top: 20px;
+}
+
+.sd_record li {
+    padding-bottom: 20px;
+    overflow: hidden;
+    _zoom: 1;
+}
+
+.sd_record .pic {
+    float: left;
+    width: 110px;
+    height: 110px;
+    margin-right: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.sd_record .title {
+    font-size: 14px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.sd_record .name {
+    padding: 10px 0 5px;
+    overflow: hidden;
+}
+
+.sd_record .name img {
+    width: 24px;
+    height: 24px;
+}
+
+.sd_record .num {
+    color: #999;
+}
+
+.sd_record .ellipsis {
+    float: left;
+    padding: 8px 0 0 5px;
+    width: 146px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+/*视频列表*/
+
+/*-- 右列合作广告尺寸 300宽 -*/
+.ad_w300 {
+    width: 300px;
+    margin: 20px 0;
+}
+
+.ad_w300 img {
+    width: 300px;
+    display: block;
+}
+
+.ad_w610 {
+    margin: 10px 20px;
+    width: 610px;
+}
+
+.ad_w610 .img {
+    width: 610px;
+    display: block;
+}

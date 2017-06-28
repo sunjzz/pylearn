@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* $Id: defaults.css,v 1.5 2007/10/02 12:10:40 dries Exp $ */
+
+/*
+** HTML elements
+*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    /*width:980px;*/
+    margin: 0 auto;
+}
+
+fieldset {
+    margin-bottom: 1em;
+    padding: .5em;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    height: 1px;
+    border: 1px solid gray;
+}
+
+img {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left; /* LTR */
+    padding-right: 1em; /* LTR */
+    border-bottom: 3px solid #ccc;
+}
+
+/*
+** Markup free clearing
+** Details: http://www.positioniseverything.net/easyclearing.html
+*/
+.clear-block:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/*.clear-block {*/
+/*display: inline-block;*/
+/*}*/
+
+/* Hides from IE-mac \*/
+* html .clear-block {
+    height: 1%;
+}
+
+.clear-block {
+    display: block;
+}
+
+/* End hide from IE-mac */
+.common-left {
+    width: 700px;
+    float: left;
+}
+
+.common-right {
+    width: 224px;
+    float: right;
+}
+
+.common-form {
+    background-color: #FAFAFA;
+    border: 1px solid #EEEEEE;
+    padding: 20px;
+}
+
+.common-title {
+    font-size: 14px;
+    font-weight: bold;
+    height: 22px;
+    line-height: 22px;
+    padding: 10px 0;
+}
+
+.common-bigtitle {
+    height: 60px;
+    line-height: 60px;
+    font-family: SimHei;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.common-submit {
+    cursor: pointer;
+    background: url(/styles/default/common/btnBg.gif) 0px -140px repeat-x;
+    border: 1px solid #527F2F;
+    color: #fff;
+    padding: 0px 8px 3px 5px;
+    height: 22px;
+}
+
+.common-submit:hover {
+    background: url(/styles/default/images/bg_x.gif) 0px -100px repeat-x;
+    border: 1px solid #555;
+}

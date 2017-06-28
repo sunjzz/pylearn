@@ -1,0 +1,282 @@
+@charset "utf-8";
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.m_wrap {
+    text-align: center;
+}
+
+.width90 {
+    width: 90%;
+    max-width: 429px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.mr_b25 {
+    margin-bottom: 25px;
+}
+
+.mr_b15 {
+    margin-bottom: 15px;
+}
+
+.m_header {
+    position: relative;
+    height: 44px;
+    width: 100%;
+    background-color: #2a2a2a;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 44px;
+}
+
+.m_header_close, .m_header_refresh, .m_input, .m_reset_btn {
+    background: url("http://s.yytcdn.com/v2/images/app/mobile/login/ico_m_login.png") no-repeat scroll 0 0;
+    background-size: 22px 330px;
+}
+
+.m_header_close, .m_header_refresh {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+
+}
+
+.m_header_close {
+    left: 9px;
+    top: 11px;
+    /*display: none;*/
+}
+
+.m_header_close:active {
+    background-position: 0 -28px;
+}
+
+.m_header_refresh {
+    right: 9px;
+    top: 11px;
+    background-position: 0 -56px;
+}
+
+.m_header_refresh:active {
+    background-position: 0 -84px;
+}
+
+.m_input_wrap {
+    position: relative;
+}
+
+.m_input {
+    background-color: #ffffff;
+    width: 100%;
+    /*max-width: 429px;*/
+    height: 32px;
+    border: 2px solid #d3d3d3;
+    color: #bcbab8;
+    border-radius: 15px;
+    padding: 0 6px 0 32px;
+    line-height: normal;
+    vertical-align: middle;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.m_input:focus {
+    color: #333333;
+    border-color: #33e1a7;
+}
+
+.m_reset_btn {
+    background-position: 0 -224px;
+    height: 22px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 22px;
+}
+
+.m_reset_btn:active {
+    background-position: 0 -252px;
+}
+
+.m_name {
+    background-position: 4px -109px;
+}
+
+.m_name:focus {
+    background-position: 4px -137px;
+}
+
+.m_pwd {
+    background-position: 4px -165px;
+}
+
+.m_pwd:focus {
+    background-position: 4px -193px;
+}
+
+.m_phone_wrap {
+    width: 60%;
+    float: left;
+    margin-right: 5%;
+}
+
+.m_phone {
+    background-position: 4px -277px;
+}
+
+.m_phone:focus {
+    background-position: 4px -305px;
+}
+
+.m_button {
+    width: 89%;
+    max-width: 425px;
+    border-radius: 20px;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 6px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    -webkit-appearance: none;
+    outline: none
+}
+
+.m_button:hover {
+    color: #fff;
+}
+
+.m_submit {
+    background-color: #33e1a7;
+}
+
+.m_button_plain {
+    border: 2px solid #dcdcdc;
+    line-height: 36px;
+    color: #7c7b79;
+}
+
+.m_button_plain:hover {
+    color: #7c7b79;
+}
+
+.m_button_plain:active {
+    color: #33e1a7;
+    border-color: #33e1a7;
+}
+
+.m_disabled {
+    background-color: #E0E0E0;
+}
+
+.get_code {
+    height: 30px;
+    line-height: 26px;
+    width: 35%;
+    font-size: 12px;
+    color: #A9A9A9;
+}
+
+.get_code:hover {
+    color: #A9A9A9;
+}
+
+.get_code:active {
+    color: #33e1a7;
+}
+
+.m_label {
+    display: inline-block;
+    max-width: 425px;
+    text-align: left;
+    width: 89%;
+    font-size: 14px;
+    color: #7c7b79;
+    padding: 19px 0;
+}
+
+.findpw {
+    float: right;
+    color: #7c7b79;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.external div.ex-wrap {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+.ex-title {
+    position: relative;
+    margin-top: 100px;
+    font-size: 14px;
+    color: #a7a7a7;
+    line-height: 20px;
+    height: 20px;
+    text-align: center;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.ex-title span {
+    position: relative;
+    top: 10px;
+    background-color: #f5f5f5;
+    padding: 0 3px;
+}
+
+.ex-href {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.ex-href div {
+    padding-top: 33px;
+    width: 50%;
+    text-align: center;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.ex-href a {
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+}
+
+a.ex-sina {
+    background: url(/v2/images/mobile/login/ex-sina.png) no-repeat;
+    background-size: cover;
+}
+
+a.ex-qq {
+    background: url(/v2/images/mobile/login/ex-qq.png) no-repeat;
+    background-size: cover;
+}

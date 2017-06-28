@@ -1,0 +1,746 @@
+/*-- topbar 全站通用页头
+------------------------------------------------------------------------------------------*/
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    z-index: 299;
+    background: url('/images/topbar/topbar_bg.png') repeat-x;
+    _position: absolute;
+    font-size: 12px;
+    min-width: 1200px;
+}
+
+.topbar a,
+.topbar a:hover {
+    text-decoration: none;
+}
+
+.topbar b {
+    width: 7px;
+    height: 4px;
+    cursor: pointer;
+    margin: 19px 0 0 3px;
+    font-size: 0;
+    background: url('/images/topbar/topbar_sprite2.png') no-repeat -223px -18px;
+}
+
+/*圆角*/
+.topbar .fillet {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-bottom-left-radius: 3px;
+    -moz-border-bottom-right-radius: 3px;
+}
+
+/*下拉菜单*/
+.topbar .dropdownmenu {
+    position: absolute;
+    top: 41px;
+    left: 0;
+    width: 80px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    background: #161616;
+    z-index: 299;
+    -webkit-transition: opacity .25s ease .1s;
+    -moz-transition: opacity .25s ease .1s;
+    -o-transition: opacity .25s ease .1s;
+    -ms-transition: opacity .25s ease .1s;
+    transition: opacity .25s ease .1s;
+    background: rgba(22, 22, 22, 0.8);
+}
+
+.topbar .dropdownmenu li {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height .25s ease .1s;
+    -moz-transition: height .25s ease .1s;
+    -o-transition: height .25s ease .1s;
+    -ms-transition: height .25s ease .1s;
+    transition: height .25s ease .1s;
+}
+
+.topbar .dropdownmenu a {
+    display: block;
+    width: 71px;
+    height: 33px;
+    line-height: 33px;
+    color: #ccc;
+    padding-left: 9px;
+}
+
+.topbar .dropdownmenu a:hover {
+    color: #fff;
+    background: #5a840a;
+}
+
+.topbar .top_game a {
+    height: auto;
+    width: auto;
+    line-height: normal;
+    padding-left: 0;
+    text-align: center;
+}
+
+.topbar .top_game a:hover {
+    color: #99cc66;
+    background: none;
+}
+
+.topbar .top_game {
+    cursor: auto;
+    width: 852px;
+    left: -400px;
+}
+
+.topbar .notification .dropdownmenu a:hover {
+    background: transparent;
+    color: #cf9;
+}
+
+/*显示下拉菜单事件*/
+.topbar .hoverhandler {
+    position: relative;
+    cursor: pointer;
+}
+
+.topbar .hoverhandler:hover,
+.topbar .hoverhandler.hover {
+    background-color: #050505;
+}
+
+.topbar .hoverhandler:hover .dropdownmenu,
+.topbar .hoverhandler.hover .dropdownmenu {
+    opacity: 1;
+    height: auto;
+}
+
+.topbar .hoverhandler:hover .dropdownmenu li,
+.topbar .hoverhandler.hover .dropdownmenu li {
+    height: 33px;
+}
+
+.top_game ul,
+.top_game ul {
+    width: 540px;
+    overflow: hidden;
+    margin-left: 49px;
+    height: 238px;
+    float: left;
+    _display: inline;
+}
+
+.topbar .hoverhandler:hover .top_game li,
+.topbar .hoverhandler.hover .top_game li {
+    height: auto;
+    float: left;
+    margin: 12px 31px 12px 0;
+    height: 95px;
+}
+
+.topbar .hoverhandler:hover .top_game img,
+.topbar .hoverhandler.hover .top_game img {
+    vertical-align: top;
+    margin-bottom: 4px;
+}
+
+.topbar .hoverhandler .top_game .big-icon img {
+    border: 3px solid #cfcfcf;
+}
+
+/* 2013-12-25 新添游戏各项 开始*/
+
+/* .topbar .hoverhandler .top_game div 修改为.topbar .hoverhandler .top_game .big-icon */
+.topbar .hoverhandler .top_game .big-icon,
+.topbar .hoverhandler .top_game .big-icon {
+    margin-top: 50px;
+    margin-right: 18px;
+    float: right;
+}
+
+.topbar .hoverhandler .top_game .hand-btn,
+.topbar .hoverhandler .top_game .page-btn {
+    display: inline-block;
+    width: 112px;
+    height: 51px;
+    margin-bottom: 18px;
+    background: url("/images/topbar/nav-icons.png") no-repeat;
+}
+
+.topbar .hoverhandler .top_game .hand-btn {
+    margin-right: 7px;
+    background-position: 0 -38px;
+}
+
+.topbar .hoverhandler .top_game .page-btn {
+    background-position: -115px -38px;
+}
+
+.topbar .hoverhandler .top_game .hand-btn:hover {
+    background-position: 0 -89px;
+}
+
+.topbar .hoverhandler .top_game .page-btn:hover {
+    background-position: -115px -89px;
+}
+
+.topbar .hoverhandler .top_game .hand-btn:active {
+    background-position: 0 -140px;
+}
+
+.topbar .hoverhandler .top_game .page-btn:active {
+    background-position: -115px -140px;
+}
+
+.topbar .hoverhandler .top_game .small-icon {
+    float: left;
+    width: 580px;
+    height: 238px;
+    position: relative;
+}
+
+.topbar .top_game a.prev-game-nav,
+.topbar .top_game a.next-game-nav {
+    position: absolute;
+    top: 40%;
+    width: 36px;
+    height: 36px;
+    background: url("/images/topbar/nav-icons.png") no-repeat;
+}
+
+.topbar .top_game a.prev-game-nav:hover {
+    background-position: -115px 0;
+}
+
+.topbar .top_game a.next-game-nav:hover {
+    background-position: -152px 0;
+}
+
+.topbar .top_game a.prev-game-nav {
+    left: 0;
+    background-position: 0 0;
+}
+
+.topbar .top_game a.next-game-nav {
+    right: 0;
+    background-position: -36px 0;
+}
+
+/* 2013-12-25 新添游戏各项 结束*/
+
+/*topbar*/
+.topbar .content {
+    max-width: 1560px;
+    min-width: 960px;
+    height: 41px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 299;
+}
+
+.topbar .logo {
+    display: block;
+    width: 242px;
+    height: 49px;
+    margin: 0px 0px 0px -51px;
+    text-indent: -999em;
+    background: url('/images/topbar/20160802_logo.png') no-repeat;
+}
+
+.topbar .menus {
+    position: relative;
+    z-index: 299;
+}
+
+.topbar .menu {
+    float: left;
+}
+
+.topbar .new {
+    position: absolute;
+    top: 3px;
+    left: 44px;
+    width: 24px;
+    height: 17px;
+    background: url('/images/topbar/topbar-new.png') no-repeat;
+}
+
+.topbar .menu:hover b,
+.topbar .menu.hover b,
+.topbar .user:hover b,
+.topbar .user.hover b {
+    background-position: -231px -18px;
+}
+
+.topbar .link {
+    display: block;
+    padding: 0 12px 0 13px;
+    line-height: 41px;
+    color: #ccc;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.topbar .link:hover {
+    color: #cf9;
+    background-color: #050505;
+}
+
+.topbar .shopgif {
+    background: url('/images/modules/topbar/shop.gif') no-repeat;
+    width: 60px;
+    height: 40px;
+}
+
+.topbar .shopgif:hover {
+    background: url('/images/modules/topbar/shop_hover.gif') no-repeat;
+    width: 60px;
+    height: 40px;
+}
+
+.topbar .current,
+.topbar .dropdownmenu .current {
+    color: #cf9;
+}
+
+/*userinfo*/
+.topbar .userinfo {
+    position: relative;
+    z-index: 299;
+    width: 146px;
+}
+
+.topbar .user .link {
+    width: 80px;
+    padding-left: 18px;
+}
+
+.topbar .user .username {
+    max-width: 70px;
+    overflow: hidden;
+}
+
+.topbar .user .dropdownmenu {
+    width: 110px;
+}
+
+.topbar .user .dropdownmenu a {
+    width: 101px;
+}
+
+.topbar .notification {
+    position: relative;
+    height: 41px;
+    padding: 0 9px 0 10px;
+    cursor: pointer;
+}
+
+.topbar .notification:hover,
+.topbar .notification.hover {
+    background: #050505;
+}
+
+.topbar .notification .messenger {
+    display: block;
+    width: 17px;
+    height: 14px;
+    margin-top: 15px;
+    text-indent: -999em;
+    background: url('/images/topbar/topbar_sprite2.png') no-repeat -253px -1px;
+}
+
+.topbar .notification .messenger:hover {
+    background-position: -271px -1px;
+}
+
+.topbar .notification .number {
+    position: absolute;
+    top: 11px;
+    left: 20px;
+    width: 10px;
+    height: 10px;
+    background: url('/images/topbar/topbar_sprite2.png') no-repeat -239px 0;
+}
+
+.topbar .userinfo .msg_close_li {
+    position: absolute;
+    top: 45px;
+    right: 41px;
+    width: 9px;
+    height: 8px;
+    z-index: 999;
+}
+
+.topbar .userinfo .msg_close {
+    display: block;
+    width: 9px;
+    height: 8px;
+    background: url('/images/topbar/topbar_sprite2.png') no-repeat -239px -16px;
+}
+
+.topbar .userinfo .msg_close:hover {
+    background-position: -249px -16px;
+}
+
+.topbar .notification .dropdownmenu {
+    width: 110px;
+}
+
+.topbar .notification .dropdownmenu a {
+    display: inline;
+    width: 89px;
+}
+
+.topbar .top_new {
+    position: absolute;
+    width: 25px;
+    height: 18px;
+    top: 2px;
+    right: 0px;
+    background: url('/images/topbar/topbar-new.png') no-repeat;
+}
+
+.topbar .small_new {
+    width: 25px;
+    height: 18px;
+    position: absolute;
+    top: 28px;
+    right: 2px;
+    background: url('/images/topbar/topbar-new.png') no-repeat;
+}
+
+/*login*/
+.login {
+    width: 81px;
+    height: 41px;
+    line-height: 41px;
+}
+
+.login a {
+    color: #ccc;
+}
+
+.login a:hover {
+    color: #cf9;
+}
+
+.login .loginBtn {
+    padding-right: 15px;
+    margin-right: 11px;
+    border-right: 1px solid #666;
+}
+
+/*search*/
+.searchBox {
+    height: 41px;
+}
+
+.topbar .search {
+    position: relative;
+    z-index: 299;
+    width: 223px;
+    height: 29px;
+    margin: 7px auto 0;
+}
+
+.topbar .left_park_side,
+.topbar .right_park_side {
+    position: absolute;
+    z-index: 291;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 29px;
+    background: url('/images/topbar/topbar_sprite2.png') no-repeat;
+}
+
+.topbar .right_park_side {
+    left: auto;
+    right: 0;
+    background-position: -208px 0;
+}
+
+.topbar .searchbody {
+    position: absolute;
+    z-index: 291;
+    top: 0;
+    left: 15px;
+    width: 193px;
+    height: 29px;
+    background: url('/images/topbar/topbar_sprite2.png') no-repeat -15px 0;
+}
+
+.topbar .search.focus .left_park_side {
+    background: url('/images/topbar/topbar_sprite2.png') no-repeat 0 -29px;
+}
+
+.topbar .search.focus .right_park_side {
+    background: url('/images/topbar/topbar_sprite2.png') no-repeat -208px -29px;
+}
+
+.topbar .search.focus .searchbody {
+    background: url('/images/topbar/topbar_sprite2.png') no-repeat -15px -29px;
+}
+
+.topbar .search input {
+    margin-top: 7px;
+    width: 178px;
+    color: #898989;
+    background-color: transparent;
+}
+
+.topbar .search button {
+    position: absolute;
+    z-index: 291;
+    top: 6px;
+    right: 13px;
+    width: 16px;
+    height: 17px;
+    text-indent: -999em;
+    cursor: pointer;
+    border: 0 none;
+    background: url('/images/topbar/topbar_sprite2.png') no-repeat -223px -1px;
+}
+
+.topbar .border {
+    width: 1px;
+    height: 16px;
+    margin: 13px 13px 0;
+    font-size: 0;
+    line-height: 0;
+    background: url('/images/topbar/topbar_sprite2.png') no-repeat -223px -22px;
+}
+
+/*autoComplete*/
+.topbar .autocomplete {
+    position: absolute;
+    top: -5px;
+    left: -4px;
+    z-index: 290;
+    width: 104%;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: #161616;
+    background: rgba(22, 22, 22, 0.8);
+    overflow: hidden;
+}
+
+.topbar .autocompletehide {
+    height: 0px;
+}
+
+.topbar .autocomplete a {
+    display: block;
+    color: #ccc;
+}
+
+.topbar .autocomplete strong {
+    color: #cf9;
+    margin: 0 5px;
+    font-weight: normal;
+}
+
+.topbar .autocomplete em {
+    color: #cf9;
+    font-weight: normal;
+}
+
+.topbar .autocomplete .last {
+    margin-bottom: 5px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    -moz-border-bottom-left-radius: 3px;
+    -moz-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+}
+
+.topbar .autocomplete a:hover,
+.topbar .autocomplete .active a {
+    color: #fff;
+    background-color: #4d4d4d;
+}
+
+.topbar .autocomplete .h30 {
+    height: 30px;
+    overflow: hidden;
+}
+
+.topbar .autocomplete .h39 {
+    height: 39px;
+    background: #0b0b0b;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    -moz-border-top-left-radius: 3px;
+    -moz-border-top-right-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+}
+
+.topbar .autocomplete .l26 {
+    line-height: 26px;
+}
+
+.topbar .autocomplete .h57 {
+    height: 57px;
+    overflow: hidden;
+}
+
+.topbar .autocomplete .t25 {
+    text-indent: 25px;
+}
+
+.topbar .autocomplete .t9 {
+    text-indent: 9px;
+}
+
+.topbar .autocomplete .dotted {
+    font-size: 0;
+    line-height: 0;
+    border-bottom: 1px dotted #7f7f7f;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+
+.topbar .autocomplete .avatar {
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin: 3px 11px 0 29px;
+    _display: inline;
+}
+
+.topbar .autocomplete .title {
+    color: #fff;
+    overflow: hidden;
+    height: 27px;
+}
+
+.topbar .autocomplete .head {
+    padding-left: 21px;
+    overflow: hidden;
+    background: url('/images/topbar/search_ico.png') no-repeat;
+}
+
+.topbar .autocomplete .video {
+    background-position: 7px 8px;
+}
+
+.topbar .autocomplete .fans {
+    background-position: 9px -25px;
+}
+
+.topbar .autocomplete .firend {
+    background-position: 7px -55px;
+}
+
+.topbar .autocomplete .pl {
+    background-position: 9px -83px;
+}
+
+.topbar .autocomplete .other {
+    background-position: 9px -172px;
+}
+
+.iframeshim {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 288;
+    opacity: 1;
+    background: black;
+    filter: alpha(opacity=0);
+    _position: absolute;
+}
+
+.topbar .new-tian {
+    position: absolute;
+    top: 3px;
+    left: 27px;
+    width: 24px;
+    height: 17px;
+    background: url('/images/topbar/topbar-new.png') no-repeat;
+}
+
+.topbar .arrow {
+    width: 0;
+    height: 0;
+    float: left;
+    border-top: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #fff;
+    margin: 15px 0 0 5px;
+}
+
+.topbar .link:hover .arrow {
+    border-left-color: #cf9;
+}
+
+/*音悦商城 nav css3动画 ---strat*/
+.overimg {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    /*box-shadow: 0 0 10px #FFF;*/
+}
+
+.light {
+    position: absolute;
+    left: -90px;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    background-image: -moz-linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    background-image: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    transform: skewx(-25deg);
+    -o-transform: skewx(-25deg);
+    -moz-transform: skewx(-25deg);
+    -webkit-transform: skewx(-25deg);
+}
+
+.overimg .light {
+    left: 65px;
+    -moz-transition: 3s;
+    -o-transition: 3s;
+    -webkit-transition: 3s;
+    transition: 3s;
+    animation: mymove 3s infinite;
+    -webkit-animation: mymove 3s infinite;
+}
+
+@keyframes mymove {
+    from {
+        left: -90px;
+    }
+    to {
+        left: 90px;
+    }
+}
+
+.txtsc {
+    cursor: pointer;
+    width: 90px;
+    height: 100%;
+    /*background-color: #040404;*/
+    /*color: #fff;*/
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    /*font-size: 13px;*/
+}
+
+.txtsc:hover {
+    background-color: #050505;
+    color: #bad795;
+}
+
+/*音悦商城 nav css3动画 ---end*/

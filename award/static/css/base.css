@@ -1,0 +1,977 @@
+@charset "utf-8";
+body {
+    background-color: #efefef;
+}
+
+/*-- 音悦台全站公共样式
+ -------------------------------------------------------*/
+
+/*-- 页面布局 --*/
+.wrap, .area {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.wrap {
+    background-color: #fff;
+    min-height: 600px;
+    overflow: hidden;
+
+}
+
+.main {
+    float: left;
+    width: 650px;
+    overflow: hidden;
+}
+
+.side {
+    float: right;
+    width: 300px;
+    padding: 0 20px;
+}
+
+.left {
+    width: 260px;
+    float: left;
+}
+
+.right {
+    width: 740px;
+    float: right;
+}
+
+/*-- 颜色 --*/
+.c_f {
+    color: #fff;
+}
+
+.c_c {
+    color: #ccc;
+}
+
+.c_3 {
+    color: #333;
+}
+
+.c_6 {
+    color: #666;
+}
+
+.c_690 {
+    color: #690;
+}
+
+.c_9 {
+    color: #999;
+}
+
+.c_996 {
+    color: #996;
+}
+
+.c_cf9 {
+    color: #cf9;
+}
+
+.c_c00, .input_w label.c_c00 {
+    color: #C00;
+}
+
+.constantia {
+    font-family: constantia;
+}
+
+/*-- margin 、padding 值 --*/
+
+.pd_lr5 {
+    padding: 0 5px;
+}
+
+.pd_l10 {
+    padding-left: 10px;
+}
+
+.pd_t10 {
+    padding-top: 10px;
+}
+
+.pd_r10 {
+    padding-right: 10px;
+}
+
+.pd_lr20 {
+    padding: 0 20px;
+}
+
+.pd_r20 {
+    padding-right: 20px;
+}
+
+.pd_t41 {
+    padding-top: 41px;
+}
+
+.pd_tb10 {
+    padding: 10px 0;
+}
+
+.pd_b10 {
+    padding-bottom: 10px;
+}
+
+.pd_b20 {
+    padding-bottom: 20px;
+}
+
+.mr_t5 {
+    margin-top: 5px;
+}
+
+.mr_t10 {
+    margin-top: 10px;
+}
+
+.mr_t20 {
+    margin-top: 20px;
+}
+
+.mr_lr10 {
+    margin: 0 10px;
+}
+
+.mr_r10 {
+    margin-right: 10px;
+}
+
+/*头像*/
+
+.avatar {
+    display: inline-block;
+    padding: 1px;
+}
+
+a.avatar:hover {
+    padding: 0;
+    border: 1px solid #9c6;
+}
+
+.avatar img {
+    vertical-align: top;
+}
+
+/*-- 更多 --*/
+.more {
+    padding: 0 2px;
+    color: #666;
+    font-family: simsun;
+}
+
+.more:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #690;
+}
+
+.constantia {
+    font-family: constantia;
+}
+
+/* loading */
+.load {
+    padding: 20px 0;
+    height: 24px;
+    line-height: 24px;
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+}
+
+.ico_load {
+    height: 24px;
+    padding-left: 30px;
+    display: inline-block;
+    background: url("/images/base/ico/load24.gif") no-repeat;
+}
+
+.ico_loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -23px 0 0 -23px;
+    width: 46px;
+    height: 46px;
+    display: inline-block;
+    background: url("/images/base/ico/loading46.gif") no-repeat;
+}
+
+.ico_load24 {
+    background: url("/images/base/ico/load24.gif") no-repeat 50% 50%;
+}
+
+.ico_load46 {
+    background: url("/images/base/ico/loading46.gif") no-repeat 50% 50%;
+}
+
+/* Start 4个方向尖角 */
+.arrow_top, .arrow_bottom, .arrow_left, .arrow_right {
+    width: 16px;
+    height: 12px;
+    position: absolute;
+    overflow: hidden;
+    display: block;
+}
+
+.arrow_top {
+    left: 48px;
+    top: -10px;
+}
+
+/*
+
+:root .arrow_top {
+    top: -12px;
+}
+*/
+
+.arrow_bottom {
+    left: 48px;
+    bottom: -12px;
+}
+
+.arrow_left {
+    left: -16px;
+    top: 12px;
+    height: 20px;
+}
+
+.arrow_right {
+    right: -16px;
+    top: 12px;
+    height: 20px;
+}
+
+.arrow_top1, .arrow_top2,
+.arrow_bottom1, .arrow_bottom2,
+.arrow_left1, .arrow_left2,
+.arrow_right1, .arrow_right2 {
+    font-family: "SimSun";
+    font-size: 16px;
+    height: 12px;
+    overflow: hidden;
+    display: block;
+    color: #ccc;
+    *font-size: 16px;
+}
+
+.arrow_top1, .arrow_top2 {
+}
+
+.arrow_top2 {
+    color: #fcfef6;
+    height: 10px;
+    margin-top: -10px;
+}
+
+.arrow_bottom1, .arrow_bottom2 {
+    margin-top: -10px;
+    height: 20px;
+}
+
+.arrow_bottom2 {
+    margin-top: -22px;
+    color: #fcfef6;
+}
+
+.arrow_left1, .arrow_left2 {
+    margin-left: 4px;
+    margin-top: -10px;
+    font-size: 26px;
+    height: 30px;
+}
+
+.arrow_left2 {
+    color: #fcfef6;
+    margin-left: 6px;
+    margin-top: -30px;
+}
+
+.arrow_right1, .arrow_right2 {
+    margin-left: -14px;
+    margin-top: -10px;
+    font-size: 26px;
+    height: 30px;
+}
+
+.arrow_right2 {
+    color: #fcfef6;
+    margin-left: -16px;
+    margin-top: -30px;
+}
+
+/* textarea 、input 公共 */
+.com_area_box {
+    position: relative;
+}
+
+.com_area {
+    width: 97.6%;
+    height: 66px;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 18px;
+    border: 1px solid #c1c1c1;
+    overflow-y: auto;
+    font-family: arial;
+    word-wrap: break-word;
+    background-color: #fff;
+    color: #333;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    -moz-transition: border-color 0.2s ease, background-color 0.2s ease;
+    -webkit-transition: border-color 0.2s ease, background-color 0.2s ease;
+    -o-transition: border-color 0.2s ease, background-color 0.2s ease;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.com_area:focus, .com_area_focus {
+    background-color: #fdfbef;
+    color: #333;
+    border: 1px solid #693;
+}
+
+.com_text {
+    width: 190px;
+    height: 18px;
+    line-height: 18px;
+    /*line-height: 26 px\9;
+    display: block;*/
+    padding: 4px 5px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    background: #fff;
+    vertical-align: middle;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -moz-transition: background-color 0.2s ease;
+    -webkit-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+
+}
+
+.com_text:focus,
+.com_text_focus {
+    background-color: #fdfbf0;
+    color: #333;
+}
+
+.err_input {
+    -webkit-animation: error .2s 3;
+    -moz-animation: error .2s 3;
+    animation: error .2s 3;
+    background: #ffcccc;
+}
+
+.input_text {
+    display: inline-block;
+    padding: 0 5px;
+    width: 190px;
+    height: 26px;
+    border: 1px solid #ccc;
+    color: #333;
+    line-height: 26px;
+    background: #fff;
+    -moz-topleft: 2px;
+    -webkit-radius: 2px;
+    border-radius: 2px;
+    vertical-align: middle;
+    -moz-transition: background-color 0.2s ease;
+    -webkit-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+}
+
+.input_text:focus {
+    color: #333;
+    background-color: #fdfbf0;
+}
+
+/* End 4个方向尖角 */
+/* 下拉菜单模拟*/
+.select_area {
+    /*width: 200px;*/
+    position: relative;
+    z-index: 2;
+}
+
+.g_select,
+.g_select_l,
+.g_select_r {
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    display: inline-block;
+    background: url("/images/base/ico/ico_but_0819.png");
+}
+
+.g_select {
+    width: 100%;
+    position: relative;
+    background-repeat: repeat-x;
+    background-position: 0 -323px;
+}
+
+.g_select:hover {
+    background-position: 0 -351px;
+}
+
+.g_select .con {
+    padding: 0 36px 0 10px;
+}
+
+.g_select_l {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    background-position: 0 -296px;
+}
+
+.g_select:hover .g_select_l {
+    background-position: -7px -296px;
+}
+
+.g_select_r {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 26px;
+    background-position: -15px -296px;
+}
+
+.g_select:hover .g_select_r {
+    background-position: -46px -296px;
+}
+
+.select_area_down {
+    position: absolute;
+    left: 0;
+    top: 26px;
+    width: 99%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 299;
+    overflow: hidden;
+}
+
+.select_area li a {
+    width: 100%;
+    color: #666;
+    line-height: 26px;
+    padding: 1px 10px;
+    display: block;
+}
+
+.select_area li a:hover {
+    color: #333;
+    padding: 0 10px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+/* End下拉菜单模拟*/
+/*模拟的radio checkbox   开始*/
+.radio, .radio_checked, .checkbox, .checkbox_checked, .check_gray {
+    float: left;
+    background: url("/images/base/ico/simulate.png") no-repeat 0 0;
+    width: 14px;
+    height: 14px;
+    margin: 0 10px 0 0 \9;
+    margin: 3px 10px 0 0;
+    _margin-right: 5px;
+}
+
+.radio_checked {
+    background-position: -20px 0;
+}
+
+.checkbox, .checkbox_checked, .check_gray {
+    cursor: pointer;
+    background-position: -40px 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    margin-top: 0 \9;
+    _margin-top: 3px;
+}
+
+.check_gray {
+    background-position: -62px -16px;
+    cursor: default;
+}
+
+.checkbox_checked,
+.checkbox.checkbox_checked:hover {
+    background-position: -62px 0;
+}
+
+.checkbox:hover {
+    background-position: -40px -16px;
+}
+
+/*模拟的radio checkbox   结束*/
+/*-- ico图标
+-----------------------------------------*/
+.ico_line {
+    width: 2px;
+    height: 10px;
+    margin: 0 8px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.ico20_rise,
+.ico20_decline,
+.ico_close,
+.ico20_exchange,
+.ico20_v_unfold, /*展开箭头*/
+.ico20_comma_l,
+.ico20_comma_r {
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -9999em;
+    background: url("/images/base/ico/ico20_1113.png") no-repeat;
+    z-index: 10;
+}
+
+.ico_close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+    height: 18px;
+    background-position: 0 -620px;
+}
+
+.ico_close:hover {
+    background-position: 0 -640px;
+}
+
+.ico20_rise,
+.ico20_decline {
+    width: 9px;
+    height: 7px;
+    background-position: 0 -66px;
+}
+
+.ico20_decline {
+    background-position: 0 -86px;
+}
+
+.ico20_exchange {
+    height: 20px;
+    line-height: 18px;
+    padding: 0 5px 0 23px;
+    color: #666;
+    text-indent: 0;
+    background-position: 0 -140px;
+}
+
+.ico20_exchange:hover {
+    color: #fff;
+    background-color: #690;
+    background-position: 0 -160px;
+}
+
+.ico20_v_unfold {
+    width: 20px;
+    height: 20px;
+    margin-top: 19px;
+    background-position: 0 -800px;
+}
+
+.ico20_v_unfold:hover {
+    background-position: 0 -820px;
+}
+
+.ico20_v_collapse {
+    background-position: 0 -839px;
+}
+
+.ico20_v_collapse:hover {
+    background-position: 0 -859px;
+}
+
+.ico20_comma_l,
+.ico20_comma_r {
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    background-position: 2px -97px;
+}
+
+.ico20_comma_r {
+    background-position: 0px -116px;
+}
+
+/*通用按钮样式*/
+.ico_but_group, /* 常用点击 通用按钮*/
+.ico_but_group span,
+.ico_but_group1, /* 常用点击 通用按钮*/
+.ico_but_group1 span,
+.ico_but_gray, /*默认 @他 、发站内信 通用按钮*/
+.ico_but_green, /*默认 关注他 通用按钮*/
+.ico_but_gray span,
+.ico_but_green span,
+.ico_ct_release, /*发布、提交按钮*/
+.ico_not_release,
+.ico_ct_cancel {
+    display: inline-block;
+    vertical-align: middle;
+    background: url("/images/base/ico/ico_but_1028.png") no-repeat;
+}
+
+.ico_but_group,
+.ico_but_group1 {
+    position: relative;
+    padding: 0 10px 0 15px;
+    width: 56px;
+    height: 27px;
+    line-height: 24px;
+    color: #999;
+    text-align: center;
+}
+
+.ico_but_group {
+    background-position: 0 -586px;
+}
+
+.ico_but_group:hover {
+    background-position: 0 -615px;
+}
+
+.ico_but_group:active {
+    background-position: 0 -644px;
+}
+
+.ico_but_group span {
+    position: absolute;
+    right: -5px;
+    top: 0;
+    width: 5px;
+    height: 27px;
+    overflow: hidden;
+    background-position: right -586px;
+}
+
+.ico_but_group:hover span {
+    background-position: right -615px;
+}
+
+.ico_but_group:active span {
+    background-position: right -644px;
+}
+
+.ico_but_group1 {
+    color: #fff;
+    background-position: 0 -674px;
+}
+
+.ico_but_group1:hover {
+    color: #fff;
+    background-position: 0 -703px;
+}
+
+.ico_but_group1:active {
+    background-position: 0 -731px;
+}
+
+.ico_but_group1 span {
+    position: absolute;
+    right: -5px;
+    top: 0;
+    width: 5px;
+    height: 27px;
+    overflow: hidden;
+    background-position: right -674px;
+}
+
+.ico_but_group1:hover span {
+    background-position: right -703px;
+}
+
+.ico_but_group1:active span {
+    background-position: right -731px;
+}
+
+.ico_but_gray,
+.ico_but_green {
+    position: relative;
+    padding: 0 10px 0 15px;
+    width: 48px;
+    height: 33px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.ico_but_gray span,
+.ico_but_green span {
+    position: absolute;
+    right: -5px;
+    top: 0;
+    width: 5px;
+    height: 32px;
+    overflow: hidden;
+}
+
+.ico_but_gray {
+    color: #666;
+    background-position: 0 0;
+}
+
+.ico_but_gray span {
+    background-position: right 0;
+}
+
+.ico_but_gray:hover {
+    background-position: 0 -37px;
+}
+
+.ico_but_gray:hover span {
+    background-position: right -37px;
+}
+
+.ico_but_gray:active {
+    background-position: 0 -74px;
+}
+
+.ico_but_gray:active span {
+    background-position: right -74px;
+}
+
+.ico_but_green {
+    color: #fff;
+    background-position: 0 -111px;
+}
+
+.ico_but_green span {
+    background-position: right -111px;
+}
+
+.ico_but_green:hover {
+    color: #fff;
+    background-position: 0 -148px;
+}
+
+.ico_but_green:hover span {
+    background-position: right -148px;
+}
+
+.ico_but_green:active {
+    background-position: 0 -185px;
+}
+
+.ico_but_green:active span {
+    background-position: right -185px;
+}
+
+.ico_ct_release, /*发布、提交按钮*/
+.ico_not_release,
+.ico_ct_cancel {
+    width: 55px;
+    height: 27px;
+    line-height: 20px;
+    color: #999;
+    text-align: center;
+    overflow: hidden;
+    padding: 0 0 3px 0;
+    vertical-align: middle;
+    margin-left: 10px;
+    padding-bottom: 0 \9;
+}
+
+.ico_not_release {
+    color: #ccc;
+    cursor: default;
+    background-position: 0 -380px;
+}
+
+.ico_ct_release {
+    color: #fff;
+    cursor: pointer;
+    background-position: 0 -410px;
+}
+
+.ico_ct_release:hover {
+    color: #fff;
+    background-position: 0 -440px;
+}
+
+.ico_ct_release:active {
+    background-position: 0 -470px;
+}
+
+.ico_ct_cancel {
+    cursor: pointer;
+    background-position: 0 -498px;
+}
+
+.ico_ct_cancel:hover {
+    color: #999;
+    background-position: 0 -527px;
+}
+
+.ico_ct_cancel:active {
+    color: #999;
+    background-position: 0 -556px;
+}
+
+.v_share_link {
+    width: 106px;
+    height: 21px;
+    margin-top: 6px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.v_share_link a {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 1px 1px 0 0;
+    background: url('/images/app/video/share2.png') no-repeat 2px 1px;
+}
+
+.v_share_link a:hover {
+    background-position: -20px 0;
+}
+
+.v_share_link .renren17 {
+    background-position: 1px -39px;
+}
+
+.v_share_link .renren17:hover {
+    background-position: -20px -40px;
+}
+
+.v_share_link .weibo17 {
+    background-position: 1px -19px;
+}
+
+.v_share_link .weibo17:hover {
+    background-position: -20px -20px;
+}
+
+.v_share_link .qzone17 {
+    background-position: 1px -59px;
+}
+
+.v_share_link .qzone17:hover {
+    background-position: -20px -60px;
+}
+
+.v_share_link .tencent17 {
+    background-position: 1px -79px;
+}
+
+.v_share_link .tencent17:hover {
+    background-position: -20px -80px;
+}
+
+.v_share_link .qq17 {
+    background-position: 1px -99px;
+}
+
+.v_share_link .qq17:hover {
+    background-position: -20px -100px;
+}
+
+.v_share_link .weixin17 {
+    background: url('/images/app/video/weixin1.png') no-repeat 0 0;
+}
+
+.v_share_link .weixin17:hover {
+    background-position: 0 -21px;
+}
+
+.v_share_link .pengyou17 {
+    background-position: 1px -119px;
+}
+
+.v_share_link .pengyou17:hover {
+    background-position: -20px -120px;
+}
+
+.v_share_link .huaban17 {
+    background-position: 1px -139px;
+}
+
+.v_share_link .huaban17:hover {
+    background-position: -20px -140px;
+}
+
+.v_share_link .sohu17 {
+    background-position: 1px -159px;
+}
+
+.v_share_link .sohu17:hover {
+    background-position: -20px -160px;
+}
+
+.v_share_link .unicon17 {
+    background-position: 1px -179px;
+}
+
+.v_share_link .unicon17:hover {
+    background-position: -20px -180px;
+}
+
+/* vip icon 等级 */
+.txt_vip_levels, .txt_vip_levels:hover {
+    color: #C00 !important;
+}
+
+.ico_vip_levels {
+    display: inline-block;
+    width: 21px;
+    height: 15px;
+    background-position: -1px -9px;
+    vertical-align: middle;
+}
+
+.ico_vip_levels_1, .ico_vip_levels_01 {
+    background-image: url("/images/base/ico/vipicon-v1.gif?t=02");
+}
+
+.ico_vip_levels_2, .ico_vip_levels_02 {
+    background-image: url("/images/base/ico/vipicon-v2.gif?t=02");
+}
+
+.ico_vip_levels_3, .ico_vip_levels_03 {
+    background-image: url("/images/base/ico/vipicon-v3.gif?t=02");
+}
+
+.ico_vip_levels_4, .ico_vip_levels_04 {
+    background-image: url("/images/base/ico/vipicon-v4.gif?t=02");
+}
+
+.ico_vip_levels_5, .ico_vip_levels_05 {
+    background-image: url("/images/base/ico/vipicon-v5.gif?t=02");
+}
+
+.ico_vip_levels_year {
+    background-image: url("/images/base/ico/vipicon-year.gif?t=02");
+}

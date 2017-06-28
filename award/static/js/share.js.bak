@@ -1,0 +1,103 @@
+    <script src="//res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type='text/javascript'>
+        (function () {
+            //shareTitle表示在朋友圈内显示时展现的图片,需替换为相应的的头图
+            var imgUrl = "https://creditcard.cmbc.com.cn/wsv2/award/images/share_logo.png";
+            //lineLink表示链接地址,需替换为相应的链接
+            var lineLink = "http://qq.tinyspace.cn/index.html";
+            var descContent = "民生信用卡616耍大牌，616部iPhone就等你来！";
+            //shareTitle表示在朋友圈内显示时内容的描述,需替换为相应的描述
+            var shareTitle = "民生信用卡12周年疯狂庆典"
+            var appid = "";
+
+            var WxJssdk = {
+                initData: null,
+                init: function (initData) {
+                    var link = location.href;
+                    if (link.indexOf("#") > 0) {
+                        link = link.split('#')[0];
+                    }
+                    var url = 'http://qq.tinyspace.cn/share-token?url=' + encodeURIComponent(link) + '&callback=WxJssdk.callback';
+                    this.get(url);
+                },
+                get: function (url) {
+                    var script = document.createElement("script");
+                    script.src = url;
+                    script.onload = function () {
+                    }
+                    document.getElementsByTagName("head")[0].appendChild(script);
+                },
+                callback: function (data) {
+                    var flag_debug = false;//(location.href.indexOf("test")!==-1);
+
+                    wx.config({
+                        debug: flag_debug,
+                        appId: data.appId,
+                        timestamp: data.timestamp,
+                        nonceStr: data.nonceStr,
+                        signature: data.signature,
+                        jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareQZone']
+                    });
+                    wx.ready(function () {
+                        WxJssdk.shareTimeline();
+                        WxJssdk.shareAppMessage();
+                        WxJssdk.shareQQ();
+                        WxJssdk.shareQZone();
+                    });
+                },
+                //分享到朋友圈
+                shareTimeline: function () {
+                    wx.onMenuShareTimeline({
+                        title: shareTitle,
+                        link: lineLink,
+                        imgUrl: imgUrl,
+                        success: function () {
+
+                        },
+                        cancel: function () {
+
+                        }
+                    });
+                },
+                //分享给好友
+                shareAppMessage: function () {
+                    wx.onMenuShareAppMessage({
+                        title: shareTitle,
+                        link: lineLink,
+                        imgUrl: imgUrl,
+                        desc: descContent,
+                        success: function () {
+
+                        },
+                        cancel: function () {
+
+                        }
+                    });
+                },
+                //分享到QQ
+                shareQQ: function () {
+                    wx.onMenuShareQQ({
+                        title: shareTitle,
+                        link: lineLink,
+                        imgUrl: imgUrl,
+                        desc: descContent,
+                        success: function () {
+                        }
+                    });
+                },
+                //分享到QQ空间
+                shareQZone: function () {
+                    wx.onMenuShareQZone({
+                        title: shareTitle,
+                        link: lineLink,
+                        imgUrl: imgUrl,
+                        desc: descContent,
+                        success: function () {
+                        }
+                    });
+                }
+            };
+            WxJssdk.init();
+            window.WxJssdk = WxJssdk;
+        })();
+    </script>

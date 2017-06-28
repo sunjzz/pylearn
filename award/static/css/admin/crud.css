@@ -1,0 +1,79 @@
+@charset "utf-8";
+tr.odd .crudform-item, tr.even .crudform-item {
+    margin-top: 0;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+.crudform-item {
+    padding: 10px 0;
+    overflow: hidden;
+    border-right: 1px dotted #c7c7c7;
+    border-top: 1px solid #d3e7f4;
+}
+
+.crudform-item input.error, .crudform textarea.error, .crudform select.error {
+    border: 2px solid red;
+}
+
+.crudform-item .description {
+    font-size: 0.85em;
+}
+
+.crudform-item label {
+    display: block;
+    font-weight: bold;
+    float: left;
+    width: 120px;
+    color: #144464;
+
+}
+
+.crudform-item label.option {
+    display: inline;
+    float: none;
+    font-weight: normal;
+}
+
+.crudform-checkboxes, .crudform-radios {
+    margin: 1em 0;
+}
+
+.crudform-checkboxes .crudform-item, .crudform-radios .crudform {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+
+.wwFormTable {
+}
+
+.label {
+}
+
+.errorLabel {
+    color: red;
+}
+
+.errorMessage {
+    font-weight: bold;
+    color: red;
+}
+
+.checkboxLabel {
+}
+
+.checkboxErrorLabel {
+    color: red;
+}
+
+.required {
+    color: red;
+}
+
+.wwgrp {
+    display: inline;
+}
+
+.wwctrl {
+    display: inline;
+}

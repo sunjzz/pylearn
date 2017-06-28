@@ -1,0 +1,67 @@
+.pc-push-container {
+    width: 175px;
+    height: 371px;
+    position: fixed;
+    left: 0;
+    bottom: 200px;
+    z-index: 297;
+    _position: absolute;
+}
+
+#__pcpush_tips {
+    z-index: 9998;
+}
+
+.pc-push-icons {
+    background: url("/images/modules/pcpusher/pcpush-icons.png?t=01") no-repeat;
+}
+
+.pc-push-closer {
+    position: absolute;
+    background-position: -1px -399px;
+    width: 22px;
+    height: 22px;
+    right: 2px;
+    top: 6px;
+}
+
+.pc-push-info {
+    background-position: 0 -20px;
+    width: 175px;
+    height: 131px;
+}
+
+.pc-push-function {
+    background-position: -1px -153px;
+    width: 144px;
+    height: 168px;
+    margin: 72px auto 0;
+    position: relative;
+}
+
+.pc-push-function-inner {
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    top: 20px;
+    left: 8px;
+    position: absolute;
+    z-index: 297;
+}
+
+.pc-push-baby, .pc-push-baby {
+    position: absolute;
+    top: 129px;
+    left: 42px;
+    width: 95px;
+    height: 75px;
+    background: url("/images/modules/pcpusher/pcpush-icons.png?t=01") no-repeat;
+}
+
+.pc-push-baby-pleased {
+    background-position: -97px -322px;
+}
+
+.pc-push-baby-handclap {
+    background-position: -1px -322px;
+}

@@ -1,0 +1,168 @@
+/*-- ��ҳ��� ( CHT 2013/05/23 )    .page_group
+------------------------------------------------------------------------------------------*/
+.page_group {
+    position: relative;
+    margin: 30px 0;
+    height: 36px;
+    text-align: center;
+    clear: both;
+    overflow: hidden;
+}
+
+.page_left {
+    text-align: left;
+}
+
+.page_right {
+    text-align: right;
+}
+
+.page_pre,
+.page_next {
+    display: inline-block;
+    line-height: 100px;
+    overflow: hidden;
+    vertical-align: bottom;
+    background: url("/images/base/ico/ico_page.png") no-repeat;
+}
+
+.page_pre {
+    width: 70px;
+    height: 26px;
+    margin-right: 3px;
+    background-position: 0 -58px;
+}
+
+.page_pre:hover {
+    background-position: 0 -87px;
+}
+
+.page_pre:active {
+    background-position: 0 -116px;
+}
+
+.page_next {
+    width: 73px;
+    height: 36px;
+    vertical-align: bottom;
+    background-position: 0 -145px;
+}
+
+.page_next:hover {
+    background-position: 0 -184px;
+}
+
+.page_next:active {
+    background-position: 0 -223px;
+}
+
+.page_num,
+.page_cur {
+    padding: 0 9px;
+    margin-right: 3px;
+    height: 24px;
+    line-height: 24px;
+    color: #666;
+    text-align: center;
+    display: inline-block;
+    border: 1px #dadada solid;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+.page_num:hover {
+    color: #fff;
+    border: 1px #86b63e solid;
+    text-decoration: none;
+    background: url("/images/base/ico/ico_page.png") repeat-x;
+}
+
+.page_num:active {
+    background-position: 0 -29px;
+}
+
+.page_cur {
+    border: none;
+    padding: 1px 10px;
+    font-weight: 700;
+    color: #690;
+    background: none;
+}
+
+.page_ellipsis {
+    padding: 0 8px;
+    height: 26px;
+    line-height: 20px;
+    color: #666;
+    text-align: center;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.page_total {
+    padding-left: 10px;
+    color: #999;
+    vertical-align: bottom;
+}
+
+/* page style */
+/* jsp��̬�������ʽ */
+.pagetype {
+    height: 40px;
+}
+
+.page-nav {
+    font-size: 12px;
+    height: 26px;
+    text-align: center;
+    margin: 0 auto;
+    clear: both;
+}
+
+.page-nav a,
+.page-nav span,
+.page-nav a:visited {
+    *font-family: simsun;
+    _font-family: Arial;
+    display: inline-block;
+    height: 17px;
+    line-height: 17px;
+    padding: 2px 6px;
+    overflow: hidden;
+    outline: 0;
+    vertical-align: bottom;
+}
+
+.page-nav a,
+.page-nav a:visited {
+    border: 1px solid #ccc;
+    color: #333333;
+    text-decoration: none;
+    -webkit-transition: none;
+}
+
+.page-nav a:hover {
+    border: 2px solid #690;
+    text-decoration: none;
+    padding: 1px 5px;
+    color: #390;
+}
+
+.page-nav span {
+    border: 1px solid #690;
+    background: #9C3;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.page-nav span.separator {
+    background-color: #FFFFFF;
+    border: 0 none;
+    color: #DDDDDD;
+    font-weight: normal;
+    margin: 0 2px;
+    padding: 2px 6px;
+}

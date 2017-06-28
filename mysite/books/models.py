@@ -27,6 +27,8 @@ class Author(models.Model):
     first_name = models.CharField(max_length=30, verbose_name=u'名字')
     last_name = models.CharField(max_length=40, verbose_name=u'姓氏')
     email = models.EmailField()
+    headshot = models.ImageField(upload_to='author_headshots')
+    last_accessed = models.DateTimeField()
 
     def __str__(self):
         return u'%s %s' % (self.first_name, self.last_name)

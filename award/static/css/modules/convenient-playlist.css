@@ -1,0 +1,796 @@
+.convenient-icons {
+    background-image: url("/v2/images/modules/convenient-playlist/convenient-v3.png");
+    background-repeat: no-repeat;
+}
+
+.convenient-tip {
+    background: url("/v2/images/modules/convenient-playlist/convenient-tip-bg-v2.png");
+    width: 250px;
+    height: 148px;
+    right: 55px;
+    top: 130px;
+    z-index: 500;
+    position: fixed;
+    _position: absolute;
+}
+
+.convenient-tip a {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    background-position: -25px -109px;
+    left: 193px;
+    top: 17px;
+}
+
+.convenient-container {
+    position: fixed;
+    _position: absolute;
+    right: 0;
+    top: 150px;
+    width: 50px;
+    height: 140px;
+    z-index: 500;
+    overflow: hidden;
+}
+
+.convenient-iframe {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.convenient-mini {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #690;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    text-align: center;
+}
+
+.convenient-mini-inner {
+    display: block;
+    padding: 10px 8px;
+    width: 34px;
+}
+
+.convenient-app {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 287px;
+}
+
+.convenient-mini-total {
+    width: 50px;
+    display: none;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #a5d179;
+    background: #628f0a;
+    border-top-left-radius: 5px;
+}
+
+.convenient-mini-name {
+    width: 16px;
+    height: 79px;
+    display: inline-block;
+    background-position: -169px -2px;
+}
+
+.convenient-mini-empty {
+    display: block;
+    width: 34px;
+    height: 34px;
+    background-position: -74px -73px;
+    margin-top: 5px;
+}
+
+.convenient-mini-list {
+    display: block;
+    width: 34px;
+    height: 34px;
+    background-position: -38px -73px;
+    margin-top: 5px;
+}
+
+.convenient-mini-pause {
+    display: block;
+    width: 34px;
+    height: 34px;
+    background-position: -110px -73px;
+    margin-top: 5px;
+}
+
+.convenient-mini-play {
+    display: block;
+    width: 34px;
+    height: 34px;
+    background-position: -2px -73px;
+    margin-top: 5px;
+}
+
+.convenient-app-empty {
+    background-position: -201px -2px;
+    width: 243px;
+    height: 70px;
+    margin: 25px auto 10px;
+}
+
+.convenient-app-fetching {
+    text-align: center;
+    border-bottom: #d8d9da solid 1px;
+    padding: 25px 5px 5px;
+    background: url("/v2/images/modules/convenient-playlist/loading.gif") no-repeat center top;
+    display: none;
+}
+
+.convenient-app-title {
+    height: 40px;
+    background: #6d9e0c;
+    border-top-left-radius: 5px;
+}
+
+.convenient-app-title h3 {
+    float: left;
+    width: 70px;
+    height: 17px;
+    background-position: -89px -2px;
+    margin: 12px 0 0 15px;
+    overflow: hidden;
+    text-indent: -999em;
+}
+
+.convenient-app-title a {
+    float: right;
+    width: 22px;
+    height: 40px;
+    background: #628f0a;
+}
+
+.convenient-app-title a i {
+    cursor: pointer;
+    display: inline-block;
+    width: 8px;
+    height: 13px;
+    margin: 14px 0 0 8px;
+    background-position: -29px -56px;
+}
+
+.convenient-app-title span {
+    float: right;
+    margin-right: 12px;
+    line-height: 40px;
+    color: #a5d179;
+}
+
+.convenient-app-title span strong {
+    font-weight: normal;
+}
+
+.convenient-app-content {
+    background: #fbfff4;
+    border-left: #d8d9da solid 1px;
+    border-right: #d8d9da solid 1px;
+    height: 420px;
+    overflow: hidden;
+}
+
+.convenient-basic {
+    padding: 7px 10px 7px 15px;
+}
+
+.convenient-basic, .convenient-rich {
+    border-bottom: #f4f7ef solid 1px;
+}
+
+.convenient-rich {
+    display: none;
+    position: relative;
+    _zoom: 1;
+}
+
+.convenient-app-content li span, .convenient-app-content li a {
+    overflow: hidden;
+}
+
+.convenient-basic .convenient-song-name {
+    float: left;
+    width: 170px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.convenient-basic .convenient-singer {
+    display: inline;
+    float: left;
+    width: 70px;
+    white-space: nowrap;
+    margin-left: 10px;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.convenient-basic .convenient-singer a {
+    color: #666;
+}
+
+.convenient-rich .convenient-icon {
+    position: relative;
+    float: left;
+    background: #FFF;
+    width: 126px;
+    height: 71px;
+    padding: 3px;
+}
+
+.convenient-rich .convenient-icon i {
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+    background-position: -32px -4px;
+    display: none;
+}
+
+.convenient-rich-item-ctn {
+    display: block;
+    padding: 7px 10px 7px 15px;
+}
+
+.convenient-rich-item-ctn:hover .convenient-icon i {
+    display: block;
+}
+
+.convenient-rich .convenient-icon img {
+    width: 126px;
+    height: auto;
+}
+
+.convenient-rich .convenient-info {
+    float: left;
+    width: 102px;
+    margin-left: 14px;
+}
+
+.convenient-rich .convenient-song-name {
+    display: block;
+    height: 36px;
+    line-height: 1.6;
+    text-overflow: ellipsis;
+}
+
+.convenient-rich .convenient-singer {
+    display: block;
+    white-space: nowrap;
+    margin-top: 5px;
+    height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.convenient-rich a.convenient-item-operator {
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+}
+
+.convenient-rich a.convenient-delete {
+    width: 11px;
+    height: 11px;
+    right: 11px;
+    background-position: -15px -2px;
+}
+
+.convenient-rich a.convenient-delete:hover {
+    background-position: -2px -2px;
+}
+
+.convenient-app-content li.current-playlist-item .convenient-rich {
+    border-bottom: #f4f7ef solid 1px;
+}
+
+.convenient-app-content li.current-playlist-item .convenient-rich .convenient-icon {
+    border: #CCC solid 1px;
+}
+
+.convenient-app-content li.current-playlist-item .convenient-rich .convenient-song-name {
+    color: #690;
+}
+
+.convenient-app-content li.current-playlist-item .convenient-rich .convenient-singer {
+    color: #999;
+}
+
+.convenient-app-content li.current-playlist-item .convenient-rich .convenient-singer span {
+    color: #333;
+}
+
+.convenient-app-content li.hover-playlist-item .convenient-rich-item-ctn .convenient-icon i {
+    display: block;
+}
+
+.convenient-app-content li.hover-playlist-item .convenient-rich {
+    background: #eaf1db;
+    border-bottom: #f4f7ef solid 1px;
+}
+
+.convenient-app-content li.hover-playlist-item .convenient-rich .convenient-icon {
+    border: #679a02 solid 1px;
+}
+
+.convenient-app-content li.hover-playlist-item .convenient-rich .convenient-song-name {
+    color: #390;
+    text-decoration: underline;
+}
+
+.convenient-app-content li.hover-playlist-item .convenient-rich .convenient-singer {
+    color: #999;
+}
+
+.convenient-app-content li.hover-playlist-item .convenient-rich .convenient-singer span {
+    color: #690;
+    text-decoration: underline;
+}
+
+.convenient-app-operator {
+    position: relative;
+    height: 38px;
+    background: #78af0a;
+    border-bottom-left-radius: 5px;
+}
+
+.convenient-app-status {
+    float: left;
+    width: 99px;
+    height: 38px;
+    background: #6ba002;
+    border-bottom-left-radius: 5px;
+}
+
+.convenient-app-status i {
+    display: block;
+    width: 23px;
+    height: 27px;
+    margin: 6px 0 0 39px;
+}
+
+.convenient-app-status-play i {
+    background-position: -2px -15px;
+}
+
+.convenient-app-status-pause i {
+    background-position: -2px -44px;
+}
+
+.convenient-app-status:hover {
+    background: #690;
+}
+
+.convenient-app-operator p {
+    line-height: 38px;
+    text-align: right;
+}
+
+.convenient-app-operator p a, .convenient-app-operator p span {
+    color: #cffda1;
+    margin-right: 20px;
+}
+
+.convenient-app-operator p span {
+    margin-right: 40px;
+}
+
+.convenient-app-operator p a:hover {
+    color: #cffda1;
+    text-decoration: underline;
+}
+
+.index_focus_pre, .index_focus_next {
+    display: none;
+}
+
+.convenient-save-dialog-container {
+    position: absolute;
+    width: 210px;
+    height: 88px;
+    overflow: hidden;
+    right: 15px;
+    top: -90px;
+}
+
+.convenient-save-dialog {
+    background-position: -201px -96px;
+    width: 210px;
+    height: 88px;
+    position: absolute;
+    left: 0;
+    top: -88px;
+}
+
+.convenient-save-dialog label {
+    float: left;
+    height: 21px;
+    line-height: 21px;
+    color: #666;
+    margin: 11px 0 0 13px;
+}
+
+.convenient-save-dialog div {
+    float: left;
+    margin-top: 11px;
+    width: 120px;
+    height: 21px;
+    border: #afadad solid 1px;
+    background: #fbfff4;
+}
+
+.convenient-save-dialog div input {
+    height: 16px;
+    line-height: 16px;
+    color: #ccc;
+    border: 0;
+    width: 112px;
+    margin: 2px 4px;
+    background: #fbfff4;
+}
+
+.convenient-save-dialog p {
+    text-align: center;
+    margin-top: 7px;
+}
+
+.convenient-save-dialog p a {
+    display: inline-block;
+    margin: 0 5px;
+    width: 44px;
+    height: 21px;
+    line-height: 21px;
+}
+
+.convenient-save-dialog p a:hover {
+    text-decoration: underline;
+}
+
+.convenient-save-dialog a.convenient-save-positive {
+    background-position: -201px -73px;
+    color: #FFF;
+}
+
+.convenient-save-dialog a.convenient-save-negative {
+    background-position: -247px -73px;
+    color: #666;
+}
+
+.convenient-save-dialog a.convenient-save-positive:hover {
+    background-position: -293px -73px;
+    color: #FFF;
+}
+
+.convenient-save-dialog a.convenient-save-negative:hover {
+    background-position: -339px -73px;
+    color: #666;
+}
+
+/* 滚动条 */
+.convenient-app-content .disable {
+    display: none;
+}
+
+.convenient-app-content .scrollbar {
+    width: 8px;
+}
+
+.convenient-app-content .scrollbar .track {
+    position: relative;
+    background-color: #d2d2d2;
+    z-index: 2;
+    top: 5px;
+    right: 2px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.convenient-app-content .scrollbar .thumb {
+    position: absolute;
+    width: 8px;
+    background: #9C6;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.convenient-app-content .viewport {
+    position: relative;
+    height: 410px;
+    top: 5px;
+    overflow: hidden;
+}
+
+.convenient-app-content .overview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.noSelect {
+    user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+/* 快捷悦单播放页 */
+.convenient-player-fix-distance {
+    height: 41px;
+}
+
+.convenient-player-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 800px;
+}
+
+.convenient-player-item {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1000px;
+    height: 644px;
+}
+
+.convenient-player-item-init {
+    margin: -322px 0 0 -500px;
+}
+
+.convenient-player {
+    height: 563px;
+    overflow: hidden;
+    box-shadow: #000 0 0 30px;
+    background: url("/v2/images/file/test1.jpg") no-repeat center center;
+}
+
+.conveninet-play-info {
+    display: none;
+    margin: 0 auto;
+    line-height: 22px;
+    padding: 12px 0 0 7px;
+    color: #CCC;
+}
+
+.conveninet-play-info .J_convenient_info_item {
+    display: none;
+}
+
+.conveninet-play-info .J_convenient_info_song {
+    color: #CCC;
+}
+
+.conveninet-play-info .J_convenient_info_song:hover {
+    color: #CF9;
+}
+
+.conveninet-play-info .v_share {
+    width: auto;
+    display: none;
+}
+
+/* 播放控制区域controllbar */
+/*
+.mvs-control-bar {
+    background: url("/v2/images/app/video/playlist/list_bg.png") no-repeat 0 0;
+    bottom: 0;
+    height: 162px;
+    left: 50%;
+    margin-left: -500px;
+    padding: 22px 9px 0;
+    position: absolute;
+    width: 1000px;
+    z-index: 50;
+}
+.mvs-control-bar-title {
+    position: relative;
+    background: url(/v2/images/base/ico/ico20_1113.png) no-repeat 0 -576px;
+    padding-left: 25px;
+    margin: 0 0 12px 15px;
+    height: 26px;
+    z-index: 60;
+}
+.mvs-control-bar-title-txt {
+    color: #ccc;
+    line-height: 26px;
+    font-size: 17px;
+    font-weight: normal;
+}
+.mvs-control-bar-title-count {
+    font-size: 13px;
+    color: #FFF;
+    line-height: 26px;
+}
+.mvs-control-bar-title-count i {
+    font-style: normal;
+}
+
+.mvs-control-bar-title .ico_close {
+    top: -2px;
+    right: 8px;
+}
+
+.mvs-control-bar-button {
+    display: block;
+}
+
+.mvs-control-bar-content {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 5px;
+    z-index: 60;
+}
+
+.mvs-control-bar-box {
+    width: 920px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 98px;
+    position: relative;
+}
+
+.mvs-control-bar-slider {
+    width: 920px;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+.mvs-control-bar-item {
+    float: left;
+    width: 160px;
+    margin: 0 8px;
+    background: #FFF;
+    padding: 4px;
+}
+.mvs-control-bar-item-box {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 90px;
+}
+.mvs-control-bar-item-information {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("/v2/images/app/main/index_play_bg.png") repeat-x left bottom;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+}
+.mvs-control-bar-item-information span {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 10px;
+    line-height: 16px;
+}
+.mvs-control-bar-item-information .mvs-control-bar-item-song {
+    margin-top: 55px;
+    color: #FFF;
+}
+
+.mvs-control-bar-item .icon-play {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -30px 0 0 -30px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    overflow: hidden;
+    background: url("/v2/images/base/ico/ico_play_718.png") no-repeat 0 -60px;
+    _background: url("/v2/images/base/ico/ico_play8_718.gif") no-repeat 0 -60px;
+}
+.mvs-control-bar-item:hover {
+    background: #CF9;
+}
+.mvs-control-bar-item:hover .icon-play {
+    display: block;
+}
+.mvs-control-bar-item-current {
+    background: #690;
+}
+
+.mvs-control-bar-iframe-overlay {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    z-index: 55;
+    left: 0;
+    top: 0;
+}
+*/
+
+/* 添加按钮 */
+.J_add_convenient_container {
+    position: relative;
+}
+
+.J_add_convenient_container .J_add_convenient {
+    display: none;
+    right: 2px;
+    bottom: 2px;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: url("/v2/images/modules/convenient-playlist/convenient-v3.png") no-repeat -2px -109px;
+    cursor: pointer;
+    z-index: 500;
+}
+
+.J_add_convenient_container .J_add_convenient:hover {
+    transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+
+    transition-property: transform;
+    -moz-transition-property: transform;
+    -webkit-transition-property: transform;
+    -o-transition-property: transform;
+
+    transition-duration: 600ms;
+    -moz-transition-duration: 600ms;
+    -webkit-transition-duration: 600ms;
+    -o-transition-duration: 600ms;
+}
+
+.J_add_convenient_container .J_add_convenient_active {
+    display: none;
+}
+
+:root .J_add_convenient_container .J_add_convenient_active {
+    display: block;
+    opacity: 0;
+    transform: scale(3, 3);
+    -ms-transform: scale(3, 3);
+    -moz-transform: scale(3, 3);
+    -webkit-transform: scale(3, 3);
+    -o-transform: scale(3, 3);
+
+    transition-property: transform opacity;
+    -moz-transition-property: transform opacity;
+    -webkit-transition-property: transform opacity;
+    -o-transition-property: transform opacity;
+
+    transition-duration: 200ms;
+    -moz-transition-duration: 200ms;
+    -webkit-transition-duration: 200ms;
+    -o-transition-duration: 200ms;
+}

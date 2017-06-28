@@ -1,0 +1,398 @@
+/*-- mv 视频列表左右翻页 、
+------------------------------------------------------------------------------------------*/
+
+/*视频列表左右翻页*/
+
+.mv_cont {
+    position: relative;
+    margin: 0 auto;
+    /*padding: 10px 60px;*/
+}
+
+.mv_cont .title {
+    font-size: 18px;
+    color: #666;
+    font-family: \5fae\8f6f\96c5\9ed1;
+}
+
+.mvbox {
+    width: 902px;
+    padding: 3px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 94px;
+    position: relative;
+}
+
+.mvbox_list {
+    width: 1000px;
+}
+
+/*.mv_cont .mv_pic {*/
+/*padding-right: 18px;*/
+/*}*/
+
+/*单个模块通用列表*/
+.mv_1x2 {
+    float: left;
+    position: relative;
+    width: 226px;
+    margin-right: 22px;
+}
+
+.mv2_1x2 {
+    float: left;
+    position: relative;
+    width: 166px;
+    margin-right: 18px;
+}
+
+.mv_pic {
+    float: left;
+    padding: 2px;
+    position: relative;
+    margin: 0 0 19px 0;
+    background-color: #fff;
+}
+
+.mv_pic .pic {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.mv_hover {
+    z-index: 100;
+}
+
+.mv_pic img {
+    vertical-align: top;
+}
+
+.mv_hover:hover .mv_pic_info,
+.mv_hover:hover .play_pic2 {
+    /*    box-shadow: 0 0 2px #690;
+        -webkit-box-shadow: 0 0 2px #690;
+        -moz-box-shadow: 0 0 2px #690;
+        border: 1px #b4c88b solid;*/
+    display: block;
+}
+
+/*.mv_hover:hover .shadow,*/
+.mv_hover:hover.shadow {
+    box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+    -moz-box-shadow: 0 0 0 0;
+}
+
+.shadow {
+    /*padding: 2px;*/
+    display: block;
+    /*overflow: hidden;*/
+    border: 1px #e8e8e8 solid;
+}
+
+.shadow:hover {
+    box-shadow: 0 0 3px #690;
+    -webkit-box-shadow: 0 0 3px #690;
+    -moz-box-shadow: 0 0 3px #690;
+    border: 1px #b4c88b solid;
+
+}
+
+.ico_play {
+    display: none;
+}
+
+/*.shadow:hover .ico_play,*/
+.avatar:hover .ico_play,
+.mv_pic .pic:hover .ico_play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -40px 0 0 -30px;
+    width: 60px;
+    height: 60px;
+    display: block;
+    cursor: pointer;
+    line-height: 1000px;
+    overflow: hidden;
+    background: url("/v2/images/base/ico/ico_play_718.png") 0 0 no-repeat;
+    _background: url("/v2/images/base/ico/ico_play8_718.gif") 0 0 no-repeat;
+}
+
+.play_name {
+    width: 100%;
+    height: 124px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    cursor: pointer;
+    background: url("/v2/images/app/main/index_play_bg.png") repeat-x left bottom;
+    _background: none;
+}
+
+.mr_t75 {
+    margin-top: 75px;
+}
+
+.mr_t80 {
+    margin-top: 80px;
+}
+
+.mr_t100 {
+    margin-top: 100px;
+}
+
+.play_name p,
+.play_name .text {
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /*width: 200px;*/
+    width: 90%;
+    display: block;
+}
+
+.play_pic6:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.play_pic6 .pic {
+    width: 160px;
+    height: 90px;
+}
+
+.mv_pic .play_pic6:hover .ico_play {
+    margin-top: -33px;
+    height: 50px;
+    background-position: 0 -60px;
+    _background-position: 0 -60px;
+}
+
+.play_pic6 .play_name {
+    height: 118px;
+}
+
+.mv_pic .play_pic7:hover .ico_play {
+    height: 46px;
+    margin-top: -23px;
+    background-position: 0 -60px;
+    _background-position: 0 -60px;
+}
+
+/*120*67MV 列表*/
+.mv_box {
+    width: 760px;
+    overflow: hidden;
+}
+
+.mv_list {
+    width: 103%;
+}
+
+.mv_list .list {
+    float: left;
+    margin-right: 20px;
+    padding-bottom: 20px;
+}
+
+.mv_list .mv_pic {
+    margin: 0;
+}
+
+.mv_list .pic {
+    border: 3px solid #ccc;
+    padding: 3px;
+}
+
+.mv_list .pic:hover,
+.mv_list_cur .pic,
+.mv_list_cur .pic:hover {
+    border: 3px solid #690;
+}
+
+.mv_list .title a {
+    width: 130px;
+    padding: 5px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #690;
+    font-weight: 700;
+    display: block;
+}
+
+.mv_list .title a:hover {
+    color: #390;
+}
+
+.mv_list .name a {
+    width: 96px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*1080P 超清 高清标志*/
+.shIco, .shdIco, .hdIco {
+    clear: both;
+    background: url('/v2/images/base/mv/ico_hd27.png') no-repeat 0 0;
+    width: 27px;
+    height: 14px;
+    text-indent: -999px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    _top: 3px;
+    _left: -3px;
+}
+
+.hdIco {
+    background: url('/v2/images/base/mv/ico_gq27.png') no-repeat 0 0;
+}
+
+.shIco {
+    background: url('/v2/images/base/mv/ico_sh.png') no-repeat 0 0;
+}
+
+.ico_mv_check {
+    display: none;
+    position: absolute;
+    top: 41px;
+    left: -3px;
+    width: 38px;
+    height: 36px;
+    z-index: 2;
+    text-indent: -999em;
+    overflow: hidden;
+    background: url(/v2/images/base/mv/mvselect.png) no-repeat;
+    _background: url(/v2/images/base/mv/mvselect_png8.png) no-repeat;
+}
+
+.mv_list_cur .ico_mv_check {
+    display: block;
+}
+
+/*.mv_list_cur :hover,
+.mv_list_cur a:hover,*/
+.mv_list_del .pic,
+.mv_list_del .pic:hover {
+    border-color: #c00;
+}
+
+.mv_list_del .ico_mv_check {
+    background: url(/v2/images/base/mv/mvdelete.png) no-repeat;
+    _background: url("/v2/images/base/mv/mvdelete_png8.png") no-repeat;
+}
+
+/* End 视频列表 */
+
+/*-- 右列  （右列side简写为sd）
+------------------------------------------------------------------------------------------*/
+/*个人信息*/
+.sd_user {
+    padding: 10px 0 0 10px;
+    overflow: hidden;
+    *zoom: 1;
+}
+
+.sd_user .avatar, .interper_user .avatar {
+    float: left;
+    margin-right: 10px;
+    _display: inline
+}
+
+.interper_user .ico_att_but, .interper_user .ico_has_btn2 {
+    float: left;
+}
+
+.sd_user_name {
+    overflow: hidden;
+}
+
+.sd_user_h30 {
+    height: 22px;
+    white-space: nowrap;
+}
+
+.sd_user_name .pd_lf0 {
+    padding-left: 0
+}
+
+.sd_user_name li {
+    float: left;
+    padding-right: 4px;
+}
+
+.sd_user_name li a {
+    display: block;
+    cursor: pointer;
+}
+
+.sd_user_name li em {
+    float: left;
+    padding-right: 3px;
+    display: block;
+    overflow: hidden;
+    color: #ccc;
+}
+
+.sd_user_name li a:hover {
+    text-decoration: none;
+    _text-decoration: underline;
+}
+
+.sd_user_name li span {
+    padding-left: 8px;
+    display: block;
+    color: #999;
+}
+
+.sd_user_name li a:hover em, .sd_user_name li a:hover span {
+    text-decoration: none;
+}
+
+.sd_user_name li strong {
+    /*display: block;*/
+    color: #690;
+}
+
+.sd_user_name li a:hover strong {
+    text-decoration: underline;
+    color: #690;
+}
+
+.user_medal {
+    padding-top: 10px;
+}
+
+.user_info {
+    word-wrap: break-word;
+    overflow: hidden;
+    padding: 10px 0;
+    clear: both;
+}
+
+.user_button {
+    padding-right: 5px;
+}
+
+.user_button a {
+    margin-right: 15px;
+    _display: inline;
+}
+
+.sd_user_info {
+    padding: 5px 0 3px;
+}
+
+.sd_user_info em {
+    padding: 0 5px;
+}

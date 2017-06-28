@@ -1,0 +1,521 @@
+body {
+    font-family: 'Microsoft Yahei';
+    background: #060606;
+}
+
+.footer {
+    background: #030303;
+}
+
+.yellow {
+    color: #fee100;
+}
+
+.omit {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.award .navlink .navli {
+    margin: 18px 110px 0 0;
+}
+
+.lottery-title {
+    font-size: 0;
+    background: url(/v2/images/app/vchart/awards2017/index/lottery-title.png) no-repeat;
+    width: 155px;
+    height: 48px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.lotteryInfo {
+    width: 1151px;
+    margin: 0 auto;
+    font: 400 14px "Microsoft YaHei";
+}
+
+.lotteryImg, .rule {
+    margin-top: 82px;
+}
+
+.lotteryImg {
+    width: 615px;
+    float: left;
+}
+
+.rule, .rule .record {
+    float: right;
+}
+
+.lottery-img {
+    width: 196px;
+    height: 196px
+}
+
+.rule .dynamic {
+
+}
+
+.reward-title {
+    font: bold 16px/20px 'Microsoft Yahei';
+    color: #fff;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.dynamic_box {
+    background: url(/v2/images/app/vchart/awards2017/index/recordcover.png) no-repeat;
+    width: 452px;
+    height: 397px;
+    overflow: hidden
+}
+
+.reward-box {
+    width: 452px;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+}
+
+.rewardlist {
+    height: 320px;
+    width: 412px;
+    position: absolute;
+    top: 20px;
+    left: 28px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.dynamic_box li {
+    color: #fff;
+    position: relative;
+}
+
+.reward-time {
+    font-size: 14px;
+    color: #ffffff;
+    float: right;
+    display: block;
+    line-height: 30px;
+}
+
+.dynamic_box li .user {
+    color: #fff;
+    line-height: 30px;
+    float: left;
+}
+
+.record, .lottery-li {
+}
+
+.lottery-li {
+    width: 196px;
+    height: 196px;
+    margin: 0 8px 8px 0;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn-hover {
+    background: url(/v2/images/app/vchart/awards2017/index/lottery-btn.png) no-repeat;
+    width: 196px;
+    height: 196px;
+}
+
+.lottery-li div {
+    position: absolute;
+}
+
+.lottery-info-box {
+    margin-top: 20px;
+}
+
+.lottery-info-box p {
+    color: #fff;
+}
+
+.lottery-info-box span, .lottery-info-box a, .record {
+    color: #ffcc06;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes flipOutY {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        opacity: 0;
+    }
+}
+
+@keyframes flipOutY {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        opacity: 0;
+    }
+}
+
+.flipOutY {
+    -webkit-animation-duration: .75s;
+    animation-duration: .75s;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipOutY;
+    animation-name: flipOutY;
+}
+
+@keyframes flipInY {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.flipInY {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInY;
+    animation-name: flipInY;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.ct_release .com_area {
+    box-sizing: initial;
+}
+
+.userinfo-box {
+    background: url(/v2/images/app/vchart/awards2017/index/infocover.png) no-repeat;
+    width: 451px;
+    height: 198px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.userbox {
+    padding: 20px;
+    position: relative;
+}
+
+.userdetail .userimg {
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.userlottery {
+    margin-left: 12px;
+    position: relative;
+}
+
+.userlottery .username {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 8px;
+    display: block;
+    line-height: 25px;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.userlottery .curfen {
+    font-size: 12px;
+    color: #a4a4a4;
+    display: block;
+    line-height: 22px;
+}
+
+.userlottery .leftnum {
+    font-size: 14px;
+    color: #fff;
+}
+
+.leftnum .lnum {
+    color: #fee100;
+}
+
+.mylottery {
+    position: absolute;
+    right: 20px;
+    top: 39px;
+    color: #fff;
+    font: 14px/30px 'Microsoft Yahei';
+    padding: 0 12px;
+    display: inline-block;
+    border: 1px solid #fff;
+}
+
+.mylottery:hover {
+    border: 1px solid #fee100;
+    color: #fee100;
+}
+
+.verify-box {
+    color: #fff;
+    font-size: 16px;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.verify-box .reg-vip2, .verify-box .bind-phone {
+    border: 1px solid #d8d8d8;
+    padding: 0 55px;
+    line-height: 43px;
+    height: 43px;
+    display: block;
+    color: #fff;
+}
+
+.verify-box .reg-vip2:hover, .verify-box .bind-phone:hover {
+    border: 1px solid #fee100;
+    color: #fee100;
+}
+
+.verify-box .bind-phone {
+    margin-right: 0;
+}
+
+.info1, .info2 {
+    margin: 0 20px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.detail-main {
+    width: 1151px;
+    margin: 0 auto;
+}
+
+.detail-title {
+    background: url(/v2/images/app/vchart/awards2017/index/atitle.png) no-repeat;
+    width: 123px;
+    height: 47px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    font-size: 0;
+    margin-top: 164px;
+}
+
+.detail-main .dp {
+    color: #a4a4a4;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.lott-title {
+    font: bold 26px/100px 'Microsoft Yahei';
+    height: 100px;
+    color: #000;
+    border-bottom: 1px solid #d8d8d8;
+    font-style: italic;
+    margin: 0 20px;
+    width: 460px;
+    text-align: center;
+}
+
+.dialog .J_close {
+    background: url(/v2/images/app/vchart/awards2017/index/close.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    top: 15px;
+    right: 15px;
+}
+
+.lottery-box {
+    position: relative;
+}
+
+.lotterylist {
+    padding: 25px 50px 20px 40px;
+    height: 430px;
+}
+
+.scrollY {
+    overflow-y: scroll;
+}
+
+.lottery-reward {
+    font: 14px/30px 'Microsoft Yahei';
+    color: #bfa900;
+}
+
+.lottery-reward .lottget {
+    color: #666;
+}
+
+.lottery-time {
+    color: #999;
+    font: 14px/30px 'Microsoft Yahei';
+}
+
+.vip-dialog .extra-tips {
+    font: 16px/190px 'Microsoft Yahei';
+    height: 190px;
+    color: #666666;
+    width: 550px;
+    text-align: center;
+}
+
+.vip-dialog .regvip {
+    width: 550px;
+    height: 90px;
+    display: block;
+    background: #fee100;
+    font: 22px/90px 'Microsoft Yahei';
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+}
+
+.vip-dialog .regvip:hover {
+    background: #c0aa00;
+}
+
+.bindphone {
+    font: 19px/160px 'Microsoft Yahei';
+    width: 550px;
+    height: 160px;
+    text-align: center;
+    color: #666;
+}
+
+.bindphone .gobind {
+    color: #bfa900;
+    text-decoration: underline;
+}
+
+.bindphone .gobind:hover {
+    color: #fee100;
+}
+
+.login-btn {
+    background: #fee100;
+    width: 200px;
+    height: 46px;
+    font: bold 16px/46px 'Microsoft Yahei';
+    color: #000;
+    display: block;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: -23px;
+}
+
+.login-btn:hover {
+    background: #bfa900;
+    color: #000;
+}
+
+.reward-dialog .J_close {
+    display: none;
+}
+
+.reward-dialog .rewardclose {
+    background: url(/v2/images/app/vchart/awards2017/index/close.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: absolute;
+    right: 12px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.tabSeat {
+    margin: 0 auto 40px auto;
+    height: 30px;
+    border-bottom: solid 2px #3d3d3d;
+}
+
+.tabSeat ul {
+    font-size: 18px;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.tabSeat ul li {
+    width: 20%;
+    text-align: left;
+    float: left;
+}
+
+.tabSeat ul li a {
+    color: #fff;
+    line-height: 30px;
+    display: inline-block;
+    font-style: italic;
+}
+
+.tabSeat ul li a.hover {
+    color: #fee100;
+    border-bottom: solid 1px #fee100;
+}
+
+.bgMain {
+    margin-top: 60px;
+}
+
+.tabSeatNav {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width: 344px;
+}

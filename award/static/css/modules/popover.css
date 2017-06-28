@@ -1,0 +1,35 @@
+.popover {
+    position: absolute;
+    padding: 8px;
+    width: 430px;
+    background: white;
+    z-index: 20;
+    -webkit-box-shadow: 0 1px 15px #000;
+    -moz-box-shadow: 0 1px 15px #000;
+    -ms-box-shadow: 0 1px 15px #000;
+    box-shadow: 0 1px 15px #000;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.popover .arrow {
+    position: absolute;
+    left: 36px;
+    top: -16px;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+    border-width: 10px;
+    border-color: transparent transparent #fff transparent;
+    border-style: solid;
+    font-family: arial;
+}
+
+.popover_top .arrow {
+    left: 36px;
+    bottom: -16px;
+    top: auto;
+    border-color: #fff transparent transparent transparent;
+}

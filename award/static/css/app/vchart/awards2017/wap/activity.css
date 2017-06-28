@@ -1,0 +1,497 @@
+body {
+    font-family: 'Microsoft Yahei';
+    background: #060606;
+}
+
+.footer {
+    background: #030303;
+}
+
+.yellow {
+    color: #fee100;
+}
+
+.vchart {
+    margin: 0 auto;
+    width: 16rem;
+    background: #030303;
+    overflow: hidden;
+}
+
+.omit {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.award .navlink .navli {
+    margin: 18px 110px 0 0;
+}
+
+.lottery-title {
+    font-size: 0;
+    background: url(/v2/images/app/vchart/awards2017/index/lottery-title.png) no-repeat;
+    width: 155px;
+    height: 48px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.lottery-img {
+    width: 4.906666rem;
+    height: 4.90666rem;
+}
+
+.rule .dynamic {
+
+}
+
+.reward-title {
+    font: bold 16px/20px 'Microsoft Yahei';
+    color: #fff;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.dynamic_box {
+    background: url(/v2/images/app/vchart/awards2017/index/recordcover.png) no-repeat;
+    width: 452px;
+    height: 397px;
+    overflow: hidden
+}
+
+.reward-box {
+    width: 452px;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+}
+
+.rewardlist {
+    height: 320px;
+    width: 412px;
+    position: absolute;
+    top: 20px;
+    left: 28px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.dynamic_box li {
+    color: #fff;
+    position: relative;
+}
+
+.reward-time {
+    font-size: 14px;
+    color: #ffffff;
+    float: right;
+    display: block;
+    line-height: 30px;
+}
+
+.dynamic_box li .user {
+    color: #fff;
+    line-height: 30px;
+    float: left;
+}
+
+.record, .lottery-li {
+}
+
+.lottery-li {
+    width: 4.906666rem;
+    height: 4.90666rem;
+    margin: 0 0.21333rem 0.21333rem 0;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn-hover {
+    background: url(/v2/images/app/vchart/awards2017/index/lottery-btn.png) no-repeat;
+    width: 196px;
+    height: 196px;
+}
+
+.lottery-li div {
+    position: absolute;
+}
+
+.lottery-info-box {
+    margin-top: 20px;
+}
+
+.lottery-info-box p {
+    color: #fff;
+}
+
+.lottery-info-box span, .lottery-info-box a, .record {
+    color: #ffcc06;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes flipOutY {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        opacity: 0;
+    }
+}
+
+@keyframes flipOutY {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        opacity: 0;
+    }
+}
+
+.flipOutY {
+    -webkit-animation-duration: .75s;
+    animation-duration: .75s;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipOutY;
+    animation-name: flipOutY;
+}
+
+@keyframes flipInY {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.flipInY {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInY;
+    animation-name: flipInY;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.ct_release .com_area {
+    box-sizing: initial;
+}
+
+.userinfo-box {
+    background: url(/v2/images/app/vchart/awards2017/index/infocover.png) no-repeat;
+    margin: 0 0.42666rem;
+    width: 14.29333rem;
+    height: 4.906666rem;
+    padding: 0.42666rem;
+    background-size: cover;
+    position: relative;
+}
+
+.userbox {
+    position: relative;
+}
+
+.userdetail .userimg {
+    width: 2.56rem;
+    height: 2.56rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.userlottery {
+    margin-left: 0.512rem;
+    position: relative;
+}
+
+.userlottery .username {
+    font-size: 0.554666rem;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    line-height: 1rem;
+}
+
+.userlottery .curfen {
+    font-size: 0.4266rem;
+    color: #a4a4a4;
+    display: block;
+    line-height: 0.64rem;
+}
+
+.userlottery .leftnum {
+    font-size: 0.512rem;
+    color: #fff;
+}
+
+.leftnum .lnum {
+    color: #fee100;
+}
+
+.verify-box {
+    color: #fff;
+    font-size: 0.5546666rem;
+    margin-top: 0.5rem;
+}
+
+.verify-box .reg-vip2, .verify-box .mylottery {
+    border: 1px solid #d8d8d8;
+    width: 6.784rem;
+    text-align: center;
+    line-height: 1.45066rem;
+    height: 1.45066rem;
+    display: block;
+    color: #fff;
+}
+
+.verify-box .bind-phone {
+    margin-right: 0;
+}
+
+.info1, .info2 {
+    margin: 0 20px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.detail-main {
+    width: 15.14666rem;
+    margin: 0 auto;
+}
+
+.detail-title {
+    background: url(/v2/images/app/vchart/awards2017/index/atitle.png) no-repeat;
+    width: 2.624rem;
+    height: 1.00266rem;
+    background-size: cover;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    font-size: 0;
+}
+
+.detail-main .dp {
+    color: #a4a4a4;
+    font-size: 0.512rem;
+    line-height: 0.64rem;
+}
+
+.lott-title {
+    font: bold 26px/100px 'Microsoft Yahei';
+    height: 100px;
+    color: #000;
+    border-bottom: 1px solid #d8d8d8;
+    font-style: italic;
+    margin: 0 20px;
+    width: 460px;
+    text-align: center;
+}
+
+.dialog .J_close {
+    background: url(/v2/images/app/vchart/awards2017/index/close.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    top: 15px;
+    right: 15px;
+}
+
+.lottery-box {
+    position: relative;
+    margin: 1.2rem 0.21333rem 1.664rem 0.426666rem;
+    width: 15.36rem;
+}
+
+.scrollY {
+    overflow-y: scroll;
+}
+
+.lottery-reward {
+    font-size: 0.512rem;
+    line-height: 1.2rem;
+    color: #bfa900;
+}
+
+.lottery-reward .lottget {
+    color: #666;
+}
+
+.lotterylist {
+    padding: 0 0.64rem;
+    margin-top: 1.8rem;
+    height: 13rem;
+    overflow-y: scroll;
+}
+
+.lottery-time {
+    color: #999;
+    font-size: 0.512rem;
+    line-height: 1.2rem;
+}
+
+.vip-dialog .extra-tips {
+    font: 16px/190px 'Microsoft Yahei';
+    height: 190px;
+    color: #666666;
+    width: 550px;
+    text-align: center;
+}
+
+.vip-dialog .regvip {
+    width: 550px;
+    height: 90px;
+    display: block;
+    background: #fee100;
+    font: 22px/90px 'Microsoft Yahei';
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+}
+
+.vip-dialog .regvip:hover {
+    background: #c0aa00;
+}
+
+.bindphone {
+    font: 19px/160px 'Microsoft Yahei';
+    width: 550px;
+    height: 160px;
+    text-align: center;
+    color: #666;
+}
+
+.bindphone .gobind {
+    color: #bfa900;
+    text-decoration: underline;
+}
+
+.bindphone .gobind:hover {
+    color: #fee100;
+}
+
+.login-btn {
+    background: #fee100;
+    width: 6.8266666rem;
+    font-size: 0.554666rem;
+    font-weight: bold;
+    height: 1.493333rem;
+    line-height: 1.493333rem;
+    color: #000;
+    display: block;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -3.4133333rem;
+    margin-top: -0.7466665rem;
+}
+
+.login-btn:hover {
+    background: #bfa900;
+    color: #000;
+}
+
+.reward-dialog {
+    margin-left: -6.933333rem;
+    margin-top: -8.10665rem;
+}
+
+.reward-dialog .J_close {
+    display: none;
+}
+
+.reward-dialog .rewardclose {
+    background: url(/v2/images/app/vchart/awards2017/wap/close.png) no-repeat;
+    width: 0.64rem;
+    height: 0.64rem;
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    right: 0.512rem;
+    top: 0.512rem;
+    cursor: pointer;
+}
+
+.tabSeat {
+    margin: 0 auto 40px auto;
+    height: 30px;
+    border-bottom: solid 2px #3d3d3d;
+}
+
+.tabSeat ul {
+    font-size: 18px;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.tabSeat ul li {
+    width: 20%;
+    text-align: left;
+    float: left;
+}
+
+.tabSeat ul li a {
+    color: #fff;
+    line-height: 30px;
+    display: inline-block;
+    font-style: italic;
+}
+
+.tabSeat ul li a.hover {
+    color: #fee100;
+    border-bottom: solid 1px #fee100;
+}
+
+.bgMain {
+    margin-top: 60px;
+}
+
+.tabSeatNav {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width: 344px;
+}

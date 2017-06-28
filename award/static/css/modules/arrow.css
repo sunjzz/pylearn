@@ -1,0 +1,121 @@
+/*-- 各种左右箭头的样式
+------------------------------------------------------------------------------------------*/
+
+/*引用首页样式*/
+.index_focus_pre,
+.index_focus_next {
+    /*display: none;*/
+    position: absolute;
+    top: 50%;
+    margin-top: -36px;
+    width: 72px;
+    height: 72px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 10;
+    background: url(/v2/images/base/ico/ico_sliding_910.png) no-repeat;
+    _display: block;
+}
+
+.index_focus:hover .index_focus_pre,
+.index_focus:hover .index_focus_next {
+    display: block;
+}
+
+.index_focus_pre {
+    left: 30px;
+    background-position: 0 0;
+}
+
+.index_focus_pre:hover {
+    background-position: 0 -144px;
+}
+
+.index_focus_next {
+    right: 30px;
+    background-position: 0 -72px;
+}
+
+.index_focus_next:hover {
+    background-position: 0 -216px;
+}
+
+/*End 引用首页样式*/
+.group_pre1,
+.group_next1,
+.group_pre2,
+.group_next2,
+.group_pre3,
+.group_next3 {
+    position: absolute;
+    top: 50%;
+    margin-top: -33px;
+    width: 60px;
+    height: 66px;
+    display: none;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 200;
+    background: url(/v2/images/base/ico/ico_sliding_910.png) no-repeat;
+}
+
+.group_pre1 {
+    left: 0;
+    background-position: 0 -300px;
+    display: none;
+}
+
+.group_pre1:hover {
+    background-position: 0 -366px;
+}
+
+.group_next1 {
+    right: 0;
+    background-position: -60px -300px;
+}
+
+.group_next1:hover {
+    background-position: -60px -366px;
+}
+
+.group_pre2 {
+    left: 0;
+    width: 40px;
+    background-position: 0 -432px;
+}
+
+.group_pre2:hover {
+    background-position: 0 -498px;
+}
+
+.group_next2 {
+    right: 0;
+    width: 40px;
+    background-position: -80px -432px;
+}
+
+.group_next2:hover {
+    background-position: -80px -498px;
+}
+
+.group_pre3 {
+    left: 0;
+    width: 40px;
+    background-position: 0 -565px;
+}
+
+.group_pre3:hover {
+    background-position: 0 -632px;
+}
+
+.group_next3 {
+    right: 0;
+    width: 40px;
+    background-position: -80px -565px;
+}
+
+.group_next3:hover {
+    background-position: -80px -632px;
+}

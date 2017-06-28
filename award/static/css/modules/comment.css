@@ -1,0 +1,438 @@
+/* 评论组件  .comment 简写为 .ct_
+ -------------------------------------------------------*/
+.comment_list {
+    position: relative;
+    min-height: 46px;
+    _height: 46px;
+}
+
+.comment {
+    padding: 13px 20px 0;
+    overflow: hidden;
+}
+
+.ct_title {
+    padding-bottom: 15px;
+    color: #666;
+    display: block;
+    overflow: hidden;
+}
+
+.ct_release {
+    position: relative;
+    padding: 10px 10px 10px 70px;
+    background-color: #f8f8f8;
+    /*overflow: hidden;*/
+    _zoom: 1;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.ct_release .avatar {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.ct_release .com_area {
+    width: 97.6%;
+    height: 48px;
+}
+
+.ct_release .com_login {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 97.6%;
+    height: 48px;
+    border-radius: 3px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 48px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.ct_release .arrow {
+    position: absolute;
+    right: 5px;
+    top: -15px;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+    border-width: 8px;
+    border-color: #fff #fff #f8f8f8 #fff;
+    border-style: solid;
+    font-family: arial;
+    display: none;
+}
+
+.ct_content .arrow {
+    display: block;
+}
+
+.ct_share {
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    padding-top: 10px;
+    overflow: hidden;
+    _zoom: 1;
+}
+
+.ct_share .share {
+    _padding-top: 5px;
+}
+
+/*.ct_share input {
+vertical-align: -2px;
+*vertical-align: -4px;
+}*/
+
+.ct_share .ver {
+    padding-left: 10px;
+}
+
+.ct_share .ver img {
+    vertical-align: middle;
+    margin: 0 3px;
+}
+
+.ct_share .com_text {
+    width: 40px;
+    padding: 2px 3px;
+}
+
+.ct_tab {
+    padding: 15px 0 30px;
+    overflow: hidden;
+}
+
+.ct_tab a {
+    width: 38px;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #999;
+    display: inline-block;
+}
+
+.ct_tab a:hover {
+    color: #690;
+    text-decoration: none;
+}
+
+.ct_tab .cur {
+    color: #690;
+    border-bottom: 2px #690 solid;
+}
+
+.ct_box {
+    overflow: hidden;
+}
+
+.ct_list {
+    position: relative;
+    padding-left: 70px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    _zoom: 1;
+}
+
+.ct_list .avatar {
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+.ct_content {
+    padding-bottom: 10px;
+    border-bottom: 1px #efefef solid;
+}
+
+.ct_content .name {
+    margin-right: 5px;
+}
+
+.ct_info {
+    padding-top: 5px;
+    line-height: 22px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.ct_oper {
+    padding-top: 6px;
+    overflow: hidden;
+    _zoom: 1;
+}
+
+.ct_list .ct_report {
+    display: none;
+    color: #999;
+    _display: block;
+}
+
+.ct_list:hover .ct_report {
+    display: block;
+}
+
+.ct_report:hover {
+    color: #690;
+}
+
+.ct_support {
+}
+
+.ct_support .ico_ct_sina {
+    margin: -5px 3px 0 0;
+    vertical-align: middle;
+    *margin-top: 0;
+}
+
+.ct_oper .name {
+    margin-right: 5px;
+}
+
+.ct_oper .line {
+    padding: 0 8px;
+    color: #ccc;
+    font-family: arial;
+}
+
+.ct_content .ct_release {
+    padding: 10px;
+    margin: 12px 0;
+}
+
+.ct_reply {
+    position: relative;
+    margin-top: 15px;
+    padding: 5px 10px 10px 50px;
+    background-color: #f9f9f9;
+    border: 1px #eee solid;
+    line-height: 22px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    word-wrap: break-word;
+    min-height: 35px;
+    height: 100%;
+    _height: 35px;
+
+}
+
+/*
+.ct_reply_list {
+    padding-left: 50px;
+    overflow: hidden;
+}
+
+.ct_reply ul {
+    margin-bottom: -10px;
+}
+
+.ct_reply_list li {
+    position: relative;
+    margin: 0 -10px 5px -50px;
+    padding: 0 10px 10px 50px;
+    */
+/*border-bottom: 1px #eee solid;*//*
+
+    word-wrap: break-word;
+    color: #666;
+    overflow: hidden;
+    _zoom: 1;
+}
+*/
+
+.ct_reply .avatar {
+    left: 10px;
+    top: 10px;
+}
+
+/*.ct_reply .reply {
+    padding-top: 5px;
+    overflow: hidden;
+}*/
+
+.ct_reply .arrow_top1 {
+    color: #eee;
+}
+
+.ct_reply .arrow_top2 {
+    color: #f9f9f9;
+}
+
+/*举报弹层*/
+.p_report {
+
+}
+
+.p_content {
+    padding: 10px;
+}
+
+.p_report .select_area {
+    width: 190px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+.select_area .select_area_down {
+    display: none;
+}
+
+.p_report .num {
+    position: absolute;
+    right: 0;
+    top: -27px;
+}
+
+.p_report .com_area {
+    width: 96%;
+    height: 120px;
+}
+
+.p_report .submit {
+    padding-top: 10px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.p_report_info {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 34px;
+}
+
+/*-- ico图标
+-----------------------------------------*/
+/*.ico_ct_support,*/
+.ico_ct_voice {
+    display: inline-block;
+    background: url("/v2/images/modules/comment/ico_comment.png") no-repeat;
+}
+
+/*
+.ico_ct_support {
+    padding: 0 5px 0 15px;
+    width: 12px;
+    height: 17px;
+    line-height: 16px;
+    color: #690;
+    background-position: 1px -121px;
+}
+
+.ico_ct_support:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #690;
+    background-position: 1px -138px;
+}
+*/
+
+/*.ico_ct_reply {
+    color: #690;
+    padding: 0 2px;
+    height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+}*/
+
+.ico_ct_voice {
+    width: 18px;
+    height: 20px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 5px 0 0 10px;
+    background-position: 0 -159px;
+}
+
+.ico_ct_voice:hover {
+    background-position: 0 -181px;
+}
+
+/*同步  ico*/
+.ico_ct_suc,
+.ico_ct_sina_gray,
+.ico_ct_qq_gray,
+.ico_ct_renren_gray,
+.ico_ct_sina,
+.ico_ct_qq,
+.ico_ct_renren,
+.ico_ct_yyt {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    line-height: 50px;
+    overflow: hidden;
+    vertical-align: top;
+    margin: 6px 5px 0 0;
+    background: url("/images/modules/comment/comment_share.png") no-repeat;
+    *margin: 0 5px 0 0;
+}
+
+.ico_ct_suc {
+    display: none;
+    position: absolute;
+    right: -5px;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    background-position: -157px -32px;
+}
+
+.ico_ct_cur .ico_ct_suc {
+    display: block;
+}
+
+.ico_ct_sina_gray {
+    background-position: 0 -26px;
+}
+
+.ico_ct_qq_gray {
+    background-position: -26px -26px;
+}
+
+.ico_ct_renren_gray {
+    background-position: -78px -26px;
+}
+
+.ico_ct_sina {
+    background-position: 0 0;
+}
+
+.ico_ct_qq {
+    background-position: -26px 0;
+}
+
+.ico_ct_renren {
+    background-position: -78px 0;
+}
+
+.ico_ct_yyt {
+    background-position: -156px 0;
+}
+
+.err_input {
+    animation: 0.2s ease 0s normal none 3 error;
+    background: none repeat scroll 0 0 #FFCCCC;
+}
+
+/* @悦友 */
+.ct_share .ct_at i {
+    background: url("/images/modules/comment/ico_comment.png") no-repeat -1px -203px;
+    float: left;
+    height: 16px;
+    margin: 7px 2px 0 0;
+    width: 16px;
+}
+
+.ct_share .ct_at {
+    margin-left: 6px;
+}
