@@ -20,7 +20,7 @@ def wash(file_name):
     return xml_list
 
 
-wash('result2')
+wash('new')
 
 
 def pretty(xml_list):
@@ -29,7 +29,7 @@ def pretty(xml_list):
         print(reparsed.toprettyxml(indent="\t"))
 
 
-pretty(wash('result'))
+pretty(wash('new'))
 
 with open('result', 'r') as f:
     str = f.read()
