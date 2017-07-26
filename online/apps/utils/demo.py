@@ -1,7 +1,7 @@
 # _*_ coding: utf-8 _*_
 # @Author ZhengZhong,Jiang
 # @DataTime 2017/4/12 0012 上午 10:25
-
+from setuptools import setup
 def demo1():
     a = 'demo1'
     return a
