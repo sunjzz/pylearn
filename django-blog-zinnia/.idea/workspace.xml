@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="545e3780-5afb-403f-a024-c6bd7b7cf201" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.coveragerc" afterPath="$PROJECT_DIR$/.coveragerc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.github/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/.github/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE.md" afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.github/PULL_REQUEST_TEMPLATE.md" afterPath="$PROJECT_DIR$/.github/PULL_REQUEST_TEMPLATE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.landscape.yml" afterPath="$PROJECT_DIR$/.landscape.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.tx/config" afterPath="$PROJECT_DIR$/.tx/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AUTHORS" afterPath="$PROJECT_DIR$/AUTHORS" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CHANGELOG" afterPath="$PROJECT_DIR$/CHANGELOG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MANIFEST.in" afterPath="$PROJECT_DIR$/MANIFEST.in" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rst" afterPath="$PROJECT_DIR$/README.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buildout.cfg" afterPath="$PROJECT_DIR$/buildout.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/__init__.py" afterPath="$PROJECT_DIR$/demo/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/settings.py" afterPath="$PROJECT_DIR$/demo/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/urls.py" afterPath="$PROJECT_DIR$/demo/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/Makefile" afterPath="$PROJECT_DIR$/docs/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/conf.py" afterPath="$PROJECT_DIR$/docs/conf.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/coverage/.gitignore" afterPath="$PROJECT_DIR$/docs/coverage/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/development/buildout.rst" afterPath="$PROJECT_DIR$/docs/development/buildout.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/development/contribution.rst" afterPath="$PROJECT_DIR$/docs/development/contribution.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/development/tests.rst" afterPath="$PROJECT_DIR$/docs/development/tests.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/extensions/__init__.py" afterPath="$PROJECT_DIR$/docs/extensions/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/extensions/settings.py" afterPath="$PROJECT_DIR$/docs/extensions/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/extensions/zinnia_docs.py" afterPath="$PROJECT_DIR$/docs/extensions/zinnia_docs.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/getting-started/configuration.rst" afterPath="$PROJECT_DIR$/docs/getting-started/configuration.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/getting-started/install.rst" afterPath="$PROJECT_DIR$/docs/getting-started/install.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/getting-started/overview.rst" afterPath="$PROJECT_DIR$/docs/getting-started/overview.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/getting-started/upgrading.rst" afterPath="$PROJECT_DIR$/docs/getting-started/upgrading.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/how-to/customize_look_and_feel.rst" afterPath="$PROJECT_DIR$/docs/how-to/customize_look_and_feel.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/how-to/extending_entry_model.rst" afterPath="$PROJECT_DIR$/docs/how-to/extending_entry_model.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/how-to/rewriting_entry_url.rst" afterPath="$PROJECT_DIR$/docs/how-to/rewriting_entry_url.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index.rst" afterPath="$PROJECT_DIR$/docs/index.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/notes/changelog.rst" afterPath="$PROJECT_DIR$/docs/notes/changelog.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/notes/compatibility.rst" afterPath="$PROJECT_DIR$/docs/notes/compatibility.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/notes/faq.rst" afterPath="$PROJECT_DIR$/docs/notes/faq.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/notes/thanks.rst" afterPath="$PROJECT_DIR$/docs/notes/thanks.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/ref/api/zinnia.admin.rst" afterPath="$PROJECT_DIR$/docs/ref/api/zinnia.admin.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/ref/api/zinnia.models.rst" afterPath="$PROJECT_DIR$/docs/ref/api/zinnia.models.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/ref/api/zinnia.models_bases.rst" afterPath="$PROJECT_DIR$/docs/ref/api/zinnia.models_bases.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/ref/api/zinnia.rst" afterPath="$PROJECT_DIR$/docs/ref/api/zinnia.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/ref/api/zinnia.spam_checker.backends.rst" afterPath="$PROJECT_DIR$/docs/ref/api/zinnia.spam_checker.backends.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/ref/api/zinnia.spam_checker.rst" afterPath="$PROJECT_DIR$/docs/ref/api/zinnia.spam_checker.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/ref/api/zinnia.url_shortener.backends.rst" afterPath="$PROJECT_DIR$/docs/ref/api/zinnia.url_shortener.backends.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/ref/api/zinnia.url_shortener.rst" afterPath="$PROJECT_DIR$/docs/ref/api/zinnia.url_shortener.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/ref/api/zinnia.urls.rst" afterPath="$PROJECT_DIR$/docs/ref/api/zinnia.urls.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/ref/api/zinnia.views.mixins.rst" afterPath="$PROJECT_DIR$/docs/ref/api/zinnia.views.mixins.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/ref/api/zinnia.views.rst" afterPath="$PROJECT_DIR$/docs/ref/api/zinnia.views.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/ref/api/zinnia.xmlrpc.rst" afterPath="$PROJECT_DIR$/docs/ref/api/zinnia.xmlrpc.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/ref/settings.rst" afterPath="$PROJECT_DIR$/docs/ref/settings.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/ref/templatetags.rst" afterPath="$PROJECT_DIR$/docs/ref/templatetags.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/requirements.txt" afterPath="$PROJECT_DIR$/docs/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/topics/channels.rst" afterPath="$PROJECT_DIR$/docs/topics/channels.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/topics/ecosystem.rst" afterPath="$PROJECT_DIR$/docs/topics/ecosystem.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/topics/permissions.rst" afterPath="$PROJECT_DIR$/docs/topics/permissions.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/topics/search_engines.rst" afterPath="$PROJECT_DIR$/docs/topics/search_engines.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/topics/spam_checker.rst" afterPath="$PROJECT_DIR$/docs/topics/spam_checker.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/topics/url_shortener.rst" afterPath="$PROJECT_DIR$/docs/topics/url_shortener.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.cfg" afterPath="$PROJECT_DIR$/setup.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/travis.cfg" afterPath="$PROJECT_DIR$/travis.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/versions.cfg" afterPath="$PROJECT_DIR$/versions.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/__init__.py" afterPath="$PROJECT_DIR$/zinnia/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/admin/__init__.py" afterPath="$PROJECT_DIR$/zinnia/admin/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/admin/category.py" afterPath="$PROJECT_DIR$/zinnia/admin/category.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/admin/entry.py" afterPath="$PROJECT_DIR$/zinnia/admin/entry.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/admin/fields.py" afterPath="$PROJECT_DIR$/zinnia/admin/fields.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/admin/filters.py" afterPath="$PROJECT_DIR$/zinnia/admin/filters.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/admin/forms.py" afterPath="$PROJECT_DIR$/zinnia/admin/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/admin/widgets.py" afterPath="$PROJECT_DIR$/zinnia/admin/widgets.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/apps.py" afterPath="$PROJECT_DIR$/zinnia/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/breadcrumbs.py" afterPath="$PROJECT_DIR$/zinnia/breadcrumbs.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/calendar.py" afterPath="$PROJECT_DIR$/zinnia/calendar.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/comparison.py" afterPath="$PROJECT_DIR$/zinnia/comparison.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/context.py" afterPath="$PROJECT_DIR$/zinnia/context.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/context_processors.py" afterPath="$PROJECT_DIR$/zinnia/context_processors.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/feeds.py" afterPath="$PROJECT_DIR$/zinnia/feeds.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/fixtures/helloworld.json" afterPath="$PROJECT_DIR$/zinnia/fixtures/helloworld.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/flags.py" afterPath="$PROJECT_DIR$/zinnia/flags.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/bg/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/bg/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/ca/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/ca/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/cs/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/cs/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/de/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/de/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/es/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/es/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/eu/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/eu/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/fa_IR/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/fa_IR/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/fi_FI/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/fi_FI/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/fr/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/fr/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/he/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/he/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/hr_HR/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/hr_HR/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/hu/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/hu/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/is/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/is/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/it/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/it/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/lt/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/lt/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/nl/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/nl/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/pl/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/pl/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/pt_BR/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/pt_BR/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/ru/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/ru/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/sk/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/sk/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/sl/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/sl/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/sv/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/sv/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/tr/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/tr/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/uk_UA/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/uk_UA/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/locale/zh_Hans/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/zinnia/locale/zh_Hans/LC_MESSAGES/django.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/management/__init__.py" afterPath="$PROJECT_DIR$/zinnia/management/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/management/commands/__init__.py" afterPath="$PROJECT_DIR$/zinnia/management/commands/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/management/commands/count_discussions.py" afterPath="$PROJECT_DIR$/zinnia/management/commands/count_discussions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/management/commands/spam_cleanup.py" afterPath="$PROJECT_DIR$/zinnia/management/commands/spam_cleanup.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/managers.py" afterPath="$PROJECT_DIR$/zinnia/managers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/markups.py" afterPath="$PROJECT_DIR$/zinnia/markups.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/zinnia/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/migrations/0002_lead_paragraph_and_image_caption.py" afterPath="$PROJECT_DIR$/zinnia/migrations/0002_lead_paragraph_and_image_caption.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/migrations/0003_publication_date.py" afterPath="$PROJECT_DIR$/zinnia/migrations/0003_publication_date.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/migrations/0004_on_delete_arg.py" afterPath="$PROJECT_DIR$/zinnia/migrations/0004_on_delete_arg.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/migrations/__init__.py" afterPath="$PROJECT_DIR$/zinnia/migrations/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/models/__init__.py" afterPath="$PROJECT_DIR$/zinnia/models/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/models/author.py" afterPath="$PROJECT_DIR$/zinnia/models/author.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/models/category.py" afterPath="$PROJECT_DIR$/zinnia/models/category.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/models/entry.py" afterPath="$PROJECT_DIR$/zinnia/models/entry.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/models_bases/__init__.py" afterPath="$PROJECT_DIR$/zinnia/models_bases/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/models_bases/entry.py" afterPath="$PROJECT_DIR$/zinnia/models_bases/entry.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/moderator.py" afterPath="$PROJECT_DIR$/zinnia/moderator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/ping.py" afterPath="$PROJECT_DIR$/zinnia/ping.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/preview.py" afterPath="$PROJECT_DIR$/zinnia/preview.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/search.py" afterPath="$PROJECT_DIR$/zinnia/search.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/settings.py" afterPath="$PROJECT_DIR$/zinnia/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/signals.py" afterPath="$PROJECT_DIR$/zinnia/signals.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/sitemaps.py" afterPath="$PROJECT_DIR$/zinnia/sitemaps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/spam_checker/__init__.py" afterPath="$PROJECT_DIR$/zinnia/spam_checker/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/spam_checker/backends/__init__.py" afterPath="$PROJECT_DIR$/zinnia/spam_checker/backends/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/spam_checker/backends/all_is_spam.py" afterPath="$PROJECT_DIR$/zinnia/spam_checker/backends/all_is_spam.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/spam_checker/backends/long_enough.py" afterPath="$PROJECT_DIR$/zinnia/spam_checker/backends/long_enough.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/admin/dashboard/css/dashboard.css" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/admin/dashboard/css/dashboard.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/admin/dashboard/js/masonry.pkgd.js" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/admin/dashboard/js/masonry.pkgd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/admin/dashboard/sass/dashboard.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/admin/dashboard/sass/dashboard.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/admin/select2/css/select2.css" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/admin/select2/css/select2.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/admin/select2/js/select2.js" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/admin/select2/js/select2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/css/ie.css" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/css/ie.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/css/print.css" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/css/print.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/css/screen.css" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/css/screen.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/js/jquery.flexslider.js" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/js/jquery.flexslider.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/js/jquery.js" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/js/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/config/_base.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/config/_base.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/config/_solarized.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/config/_solarized.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/ie.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/ie.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/mixins/_alert-box.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/mixins/_alert-box.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/mixins/_breakpoint.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/mixins/_breakpoint.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/mixins/_delimited-list.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/mixins/_delimited-list.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/mixins/_icons.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/mixins/_icons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/mixins/_link-colors.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/mixins/_link-colors.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/mixins/_slider-buttons.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/mixins/_slider-buttons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/mixins/_tag-cloud.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/mixins/_tag-cloud.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_archives.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_archives.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_breadcrumbs.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_breadcrumbs.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_entry.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_entry.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_feeds.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_feeds.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_footer.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_footer.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_forms.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_forms.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_header.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_header.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_interactions.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_interactions.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_layouts.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_layouts.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_linkbacks.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_linkbacks.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_page.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_page.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_paginator.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_paginator.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_reset.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_reset.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_sidebar.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_sidebar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_slider.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_slider.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_themes.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/partials/_themes.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/print.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/print.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/screen.scss" afterPath="$PROJECT_DIR$/zinnia/static/zinnia/theme/sass/screen.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates.py" afterPath="$PROJECT_DIR$/zinnia/templates.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/400.html" afterPath="$PROJECT_DIR$/zinnia/templates/400.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/403.html" afterPath="$PROJECT_DIR$/zinnia/templates/403.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/404.html" afterPath="$PROJECT_DIR$/zinnia/templates/404.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/500.html" afterPath="$PROJECT_DIR$/zinnia/templates/500.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/admin/zinnia/app_index.html" afterPath="$PROJECT_DIR$/zinnia/templates/admin/zinnia/app_index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/admin/zinnia/widgets/_content_stats.html" afterPath="$PROJECT_DIR$/zinnia/templates/admin/zinnia/widgets/_content_stats.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/admin/zinnia/widgets/_draft_entries.html" afterPath="$PROJECT_DIR$/zinnia/templates/admin/zinnia/widgets/_draft_entries.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/admin/zinnia/widgets/_recent_comments.html" afterPath="$PROJECT_DIR$/zinnia/templates/admin/zinnia/widgets/_recent_comments.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/admin/zinnia/widgets/_recent_linkbacks.html" afterPath="$PROJECT_DIR$/zinnia/templates/admin/zinnia/widgets/_recent_linkbacks.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/admin/zinnia/widgets/base.html" afterPath="$PROJECT_DIR$/zinnia/templates/admin/zinnia/widgets/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/admin/zinnia/widgets/content_stats.html" afterPath="$PROJECT_DIR$/zinnia/templates/admin/zinnia/widgets/content_stats.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/admin/zinnia/widgets/draft_entries.html" afterPath="$PROJECT_DIR$/zinnia/templates/admin/zinnia/widgets/draft_entries.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/admin/zinnia/widgets/quickpost.html" afterPath="$PROJECT_DIR$/zinnia/templates/admin/zinnia/widgets/quickpost.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/admin/zinnia/widgets/recent_comments.html" afterPath="$PROJECT_DIR$/zinnia/templates/admin/zinnia/widgets/recent_comments.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/admin/zinnia/widgets/recent_linkbacks.html" afterPath="$PROJECT_DIR$/zinnia/templates/admin/zinnia/widgets/recent_linkbacks.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/comments/zinnia/entry/email/authors.txt" afterPath="$PROJECT_DIR$/zinnia/templates/comments/zinnia/entry/email/authors.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/comments/zinnia/entry/email/notification.txt" afterPath="$PROJECT_DIR$/zinnia/templates/comments/zinnia/entry/email/notification.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/comments/zinnia/entry/email/reply.txt" afterPath="$PROJECT_DIR$/zinnia/templates/comments/zinnia/entry/email/reply.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/comments/zinnia/entry/form.html" afterPath="$PROJECT_DIR$/zinnia/templates/comments/zinnia/entry/form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/comments/zinnia/entry/posted.html" afterPath="$PROJECT_DIR$/zinnia/templates/comments/zinnia/entry/posted.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/comments/zinnia_entry_preview.html" afterPath="$PROJECT_DIR$/zinnia/templates/comments/zinnia_entry_preview.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/feeds/comment_description.html" afterPath="$PROJECT_DIR$/zinnia/templates/feeds/comment_description.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/feeds/comment_title.html" afterPath="$PROJECT_DIR$/zinnia/templates/feeds/comment_title.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/feeds/discussion_description.html" afterPath="$PROJECT_DIR$/zinnia/templates/feeds/discussion_description.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/feeds/discussion_title.html" afterPath="$PROJECT_DIR$/zinnia/templates/feeds/discussion_title.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/feeds/entry_description.html" afterPath="$PROJECT_DIR$/zinnia/templates/feeds/entry_description.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/feeds/entry_title.html" afterPath="$PROJECT_DIR$/zinnia/templates/feeds/entry_title.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/feeds/pingback_description.html" afterPath="$PROJECT_DIR$/zinnia/templates/feeds/pingback_description.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/feeds/pingback_title.html" afterPath="$PROJECT_DIR$/zinnia/templates/feeds/pingback_title.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/feeds/trackback_description.html" afterPath="$PROJECT_DIR$/zinnia/templates/feeds/trackback_description.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/feeds/trackback_title.html" afterPath="$PROJECT_DIR$/zinnia/templates/feeds/trackback_title.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/_entry_detail.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/_entry_detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/_entry_detail_base.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/_entry_detail_base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/author_list.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/author_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/base.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/category_list.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/category_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/entry_archive.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/entry_archive.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/entry_archive_day.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/entry_archive_day.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/entry_archive_month.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/entry_archive_month.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/entry_archive_today.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/entry_archive_today.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/entry_archive_week.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/entry_archive_week.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/entry_archive_year.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/entry_archive_year.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/entry_detail.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/entry_detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/entry_detail_base.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/entry_detail_base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/entry_list.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/entry_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/entry_search.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/entry_search.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/entry_trackback.xml" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/entry_trackback.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/humans.txt" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/humans.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/login.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/opensearch.xml" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/opensearch.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/password.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/password.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/rsd.xml" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/rsd.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/sitemap.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/sitemap.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/skeleton.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/skeleton.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tag_list.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tag_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/authors.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/authors.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/breadcrumbs.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/breadcrumbs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/categories.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/categories.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/categories_tree.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/categories_tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/comments_recent.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/comments_recent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/dummy.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/dummy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/entries_archives.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/entries_archives.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/entries_archives_link.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/entries_archives_link.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/entries_archives_tree.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/entries_archives_tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/entries_calendar.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/entries_calendar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/entries_draft.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/entries_draft.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/entries_featured.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/entries_featured.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/entries_popular.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/entries_popular.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/entries_random.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/entries_random.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/entries_recent.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/entries_recent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/entries_similar.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/entries_similar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/entries_slider.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/entries_slider.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/linkbacks_recent.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/linkbacks_recent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/pagination.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/pagination.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/search_form.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/search_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/statistics.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/statistics.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/tag_cloud.html" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/tags/tag_cloud.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templates/zinnia/wlwmanifest.xml" afterPath="$PROJECT_DIR$/zinnia/templates/zinnia/wlwmanifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templatetags/__init__.py" afterPath="$PROJECT_DIR$/zinnia/templatetags/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/templatetags/zinnia.py" afterPath="$PROJECT_DIR$/zinnia/templatetags/zinnia.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/__init__.py" afterPath="$PROJECT_DIR$/zinnia/tests/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/implementations/__init__.py" afterPath="$PROJECT_DIR$/zinnia/tests/implementations/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/implementations/custom_spam_checker.py" afterPath="$PROJECT_DIR$/zinnia/tests/implementations/custom_spam_checker.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/implementations/custom_url_shortener.py" afterPath="$PROJECT_DIR$/zinnia/tests/implementations/custom_url_shortener.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/implementations/mysql.py" afterPath="$PROJECT_DIR$/zinnia/tests/implementations/mysql.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/implementations/postgres.py" afterPath="$PROJECT_DIR$/zinnia/tests/implementations/postgres.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/implementations/settings.py" afterPath="$PROJECT_DIR$/zinnia/tests/implementations/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/implementations/sqlite.py" afterPath="$PROJECT_DIR$/zinnia/tests/implementations/sqlite.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/implementations/urls/__init__.py" afterPath="$PROJECT_DIR$/zinnia/tests/implementations/urls/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/implementations/urls/custom_detail_views.py" afterPath="$PROJECT_DIR$/zinnia/tests/implementations/urls/custom_detail_views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/implementations/urls/default.py" afterPath="$PROJECT_DIR$/zinnia/tests/implementations/urls/default.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/implementations/urls/poor.py" afterPath="$PROJECT_DIR$/zinnia/tests/implementations/urls/poor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_admin.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_admin_fields.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_admin_fields.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_admin_filters.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_admin_filters.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_admin_forms.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_admin_forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_admin_widgets.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_admin_widgets.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_author.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_author.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_category.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_category.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_comments.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_comments.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_comparison.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_comparison.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_context.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_context.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_entry.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_entry.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_feeds.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_feeds.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_flags.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_flags.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_long_enough.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_long_enough.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_managers.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_managers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_markups.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_markups.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_metaweblog.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_metaweblog.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_mixins.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_mixins.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_models_bases.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_models_bases.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_moderator.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_moderator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_ping.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_ping.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_pingback.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_pingback.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_preview.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_preview.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_signals.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_signals.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_sitemaps.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_sitemaps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_spam_checker.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_spam_checker.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_templates.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_templates.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_templatetags.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_templatetags.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_translated_urls.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_translated_urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_url_shortener.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_url_shortener.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/test_views.py" afterPath="$PROJECT_DIR$/zinnia/tests/test_views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/tests/utils.py" afterPath="$PROJECT_DIR$/zinnia/tests/utils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/url_shortener/__init__.py" afterPath="$PROJECT_DIR$/zinnia/url_shortener/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/url_shortener/backends/__init__.py" afterPath="$PROJECT_DIR$/zinnia/url_shortener/backends/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/url_shortener/backends/default.py" afterPath="$PROJECT_DIR$/zinnia/url_shortener/backends/default.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/urls/__init__.py" afterPath="$PROJECT_DIR$/zinnia/urls/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/urls/archives.py" afterPath="$PROJECT_DIR$/zinnia/urls/archives.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/urls/authors.py" afterPath="$PROJECT_DIR$/zinnia/urls/authors.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/urls/capabilities.py" afterPath="$PROJECT_DIR$/zinnia/urls/capabilities.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/urls/categories.py" afterPath="$PROJECT_DIR$/zinnia/urls/categories.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/urls/comments.py" afterPath="$PROJECT_DIR$/zinnia/urls/comments.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/urls/entries.py" afterPath="$PROJECT_DIR$/zinnia/urls/entries.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/urls/feeds.py" afterPath="$PROJECT_DIR$/zinnia/urls/feeds.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/urls/quick_entry.py" afterPath="$PROJECT_DIR$/zinnia/urls/quick_entry.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/urls/random.py" afterPath="$PROJECT_DIR$/zinnia/urls/random.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/urls/search.py" afterPath="$PROJECT_DIR$/zinnia/urls/search.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/urls/shortlink.py" afterPath="$PROJECT_DIR$/zinnia/urls/shortlink.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/urls/sitemap.py" afterPath="$PROJECT_DIR$/zinnia/urls/sitemap.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/urls/tags.py" afterPath="$PROJECT_DIR$/zinnia/urls/tags.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/urls/trackback.py" afterPath="$PROJECT_DIR$/zinnia/urls/trackback.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/__init__.py" afterPath="$PROJECT_DIR$/zinnia/views/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/archives.py" afterPath="$PROJECT_DIR$/zinnia/views/archives.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/authors.py" afterPath="$PROJECT_DIR$/zinnia/views/authors.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/capabilities.py" afterPath="$PROJECT_DIR$/zinnia/views/capabilities.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/categories.py" afterPath="$PROJECT_DIR$/zinnia/views/categories.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/channels.py" afterPath="$PROJECT_DIR$/zinnia/views/channels.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/comments.py" afterPath="$PROJECT_DIR$/zinnia/views/comments.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/entries.py" afterPath="$PROJECT_DIR$/zinnia/views/entries.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/mixins/__init__.py" afterPath="$PROJECT_DIR$/zinnia/views/mixins/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/mixins/archives.py" afterPath="$PROJECT_DIR$/zinnia/views/mixins/archives.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/mixins/callable_queryset.py" afterPath="$PROJECT_DIR$/zinnia/views/mixins/callable_queryset.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/mixins/entry_cache.py" afterPath="$PROJECT_DIR$/zinnia/views/mixins/entry_cache.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/mixins/entry_preview.py" afterPath="$PROJECT_DIR$/zinnia/views/mixins/entry_preview.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/mixins/entry_protection.py" afterPath="$PROJECT_DIR$/zinnia/views/mixins/entry_protection.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/mixins/prefetch_related.py" afterPath="$PROJECT_DIR$/zinnia/views/mixins/prefetch_related.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/mixins/templates.py" afterPath="$PROJECT_DIR$/zinnia/views/mixins/templates.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/quick_entry.py" afterPath="$PROJECT_DIR$/zinnia/views/quick_entry.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/random.py" afterPath="$PROJECT_DIR$/zinnia/views/random.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/search.py" afterPath="$PROJECT_DIR$/zinnia/views/search.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/shortlink.py" afterPath="$PROJECT_DIR$/zinnia/views/shortlink.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/sitemap.py" afterPath="$PROJECT_DIR$/zinnia/views/sitemap.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/tags.py" afterPath="$PROJECT_DIR$/zinnia/views/tags.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/views/trackback.py" afterPath="$PROJECT_DIR$/zinnia/views/trackback.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/xmlrpc/__init__.py" afterPath="$PROJECT_DIR$/zinnia/xmlrpc/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/xmlrpc/metaweblog.py" afterPath="$PROJECT_DIR$/zinnia/xmlrpc/metaweblog.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zinnia/xmlrpc/pingback.py" afterPath="$PROJECT_DIR$/zinnia/xmlrpc/pingback.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="preview.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zinnia/preview.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2199">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding>
+                <element signature="e#25#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zinnia/search.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-420">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding>
+                <element signature="e#58#88#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sitemaps.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zinnia/sitemaps.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2451">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="templates.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zinnia/templates.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-57">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding>
+                <element signature="e#34#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="categories.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zinnia/urls/categories.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding>
+                <element signature="e#37#69#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="categories.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zinnia/views/categories.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1233">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding>
+                <element signature="e#34#68#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entry.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zinnia/models_bases/entry.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="861">
+              <caret line="107" column="52" lean-forward="false" selection-start-line="107" selection-start-column="52" selection-end-line="107" selection-end-column="52" />
+              <folding>
+                <element signature="e#35#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zinnia/admin/category.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+              <folding>
+                <element signature="e#31#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ZINNIA_PING_DIRECTORIES</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/zinnia/settings.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django-blog-zinnia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django-blog-zinnia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django-blog-zinnia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django-blog-zinnia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zinnia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Django server.django-blog-zinnia">
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="django-blog-zinnia" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="django-blog-zinnia" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="django-blog-zinnia" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="django-blog-zinnia" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="django-blog-zinnia" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="django-blog-zinnia" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="django-blog-zinnia" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="django-blog-zinnia" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="django-blog-zinnia" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="django-blog-zinnia" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Django server.django-blog-zinnia" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="545e3780-5afb-403f-a024-c6bd7b7cf201" name="Default" comment="" />
+      <created>1500969916815</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1500969916815</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60883796" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/zinnia/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/bdist.win32/egg/zinnia/flags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#41#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/templates/400.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-99">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#22#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/breadcrumbs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1149">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#35#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/calendar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#33#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/comparison.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#34#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/context.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-141">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/context_processors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/flags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#31#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/managers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1380">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/markups.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#130#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/feeds.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-420">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/moderator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1239">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#35#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/ping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1113">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#33#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/preview.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2199">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="47" lean-forward="true" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+          <folding>
+            <element signature="e#25#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/signals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-294">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#32#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-420">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#58#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/sitemaps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2451">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/urls/archives.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-567">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/urls/authors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/urls/capabilities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#39#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/templates.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/urls/categories.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#37#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/url_shortener/backends/default.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/models/author.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/models/category.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-693">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/views/categories.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1233">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#34#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/fixtures/helloworld.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/models_bases/entry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="107" column="52" lean-forward="false" selection-start-line="107" selection-start-column="52" selection-end-line="107" selection-end-column="52" />
+          <folding>
+            <element signature="e#35#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zinnia/admin/category.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <element signature="e#31#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
