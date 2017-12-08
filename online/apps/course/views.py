@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+k# -*- coding: utf-8 -*-
 
 from django.shortcuts import render, HttpResponse
 from django.views.generic.base import View

@@ -190,11 +190,12 @@
                 },
                 success: function(data) {
                     if(data.status == 'fail'){
-                        if(data.msg == '用户未登录'){
-                            window.location.href="/login/";
-                        }else{
-                            alert(data.msg)
-                        }
+                        alert(data.msg)
+{#                        if(data.msg == '用户未登录'){#}
+{#                            window.location.href="/login/";#}
+{#                        }else{#}
+{#                            alert(data.msg)#}
+{#                        }#}
 
                     }else if(data.status == 'success'){
                         window.location.reload();//刷新当前页面.

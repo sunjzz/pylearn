@@ -20,7 +20,7 @@ def csvToxml(fname):
                 e = Element(tag)
                 e.text = text
                 eRow.append(e)
-    return root
+    return ElementTree(root)
 
 
 # def pretty(e, level=0):

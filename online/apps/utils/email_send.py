@@ -18,7 +18,6 @@ def send_register_email(email, send_type="register"):
     email_title = ""
     email_body = ""
 
-
     if send_type == 'register':
         email_title = u"注册激活链接"
         email_body = u"请点击下面链接激活账号：http://127.0.0.1:8000/active/{0}".format(random_str)
@@ -36,7 +35,6 @@ def send_register_email(email, send_type="register"):
     send_status = send_mail(email_title, email_body, EMAIL_FROM, [email], )
     if send_status:
         return random_str
-
 
 
 def generic_random_str(randomlength=8):
